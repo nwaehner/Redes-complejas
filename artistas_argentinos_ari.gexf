@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2022-10-29">
+    <creator>NetworkX 2.8.7</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <nodes>
+      <node id="Kevin Johansen" label="Kevin Johansen" />
+      <node id="León Gieco" label="León Gieco" />
+      <node id="Sol Pereyra" label="Sol Pereyra" />
+      <node id="Attaque 77" label="Attaque 77" />
+      <node id="Vitillo Ábalos" label="Vitillo Ábalos" />
+      <node id="Peteco Carabajal" label="Peteco Carabajal" />
+      <node id="Los Pericos" label="Los Pericos" />
+      <node id="La Delio Valdez" label="La Delio Valdez" />
+      <node id="Guillermo Bonetto" label="Guillermo Bonetto" />
+      <node id="Ciro y los Persas" label="Ciro y los Persas" />
+      <node id="Los Piojos" label="Los Piojos" />
+      <node id="Mimi Maura" label="Mimi Maura" />
+      <node id="Omar Mollo" label="Omar Mollo" />
+      <node id="Lito Vitale" label="Lito Vitale" />
+      <node id="Juanse" label="Juanse" />
+      <node id="Luis Alberto Spinetta" label="Luis Alberto Spinetta" />
+      <node id="Gustavo Cordera" label="Gustavo Cordera" />
+      <node id="Árbol" label="Árbol" />
+      <node id="Celeste Carballo" label="Celeste Carballo" />
+      <node id="Vicentico" label="Vicentico" />
+      <node id="David Lebón" label="David Lebón" />
+      <node id="Liliana Vitale" label="Liliana Vitale" />
+      <node id="Alejandro Lerner" label="Alejandro Lerner" />
+      <node id="Fernando Ruiz Diaz" label="Fernando Ruiz Diaz" />
+      <node id="Claudia Puyó" label="Claudia Puyó" />
+      <node id="Pedro Aznar" label="Pedro Aznar" />
+      <node id="Juan Carlos Baglietto" label="Juan Carlos Baglietto" />
+      <node id="Los Auténticos Decadentes" label="Los Auténticos Decadentes" />
+      <node id="Los Tipitos" label="Los Tipitos" />
+      <node id="Turf" label="Turf" />
+      <node id="Intoxicados" label="Intoxicados" />
+      <node id="Juana La Loca" label="Juana La Loca" />
+      <node id="Mancha De Rolando" label="Mancha De Rolando" />
+      <node id="Las Pelotas" label="Las Pelotas" />
+      <node id="Ratones Paranoicos" label="Ratones Paranoicos" />
+      <node id="Kapanga" label="Kapanga" />
+      <node id="Bersuit Vergarabat" label="Bersuit Vergarabat" />
+      <node id="Catupecu Machu" label="Catupecu Machu" />
+      <node id="Diego Torres" label="Diego Torres" />
+      <node id="Fernando y Gabriel Ruiz Diaz" label="Fernando y Gabriel Ruiz Diaz" />
+      <node id="Los Natas" label="Los Natas" />
+      <node id="Ricardo Iorio" label="Ricardo Iorio" />
+      <node id="Illya Kuryaki And The Valderramas" label="Illya Kuryaki And The Valderramas" />
+      <node id="Dante Spinetta" label="Dante Spinetta" />
+      <node id="Illya Kuryaki &amp; The Valderramas" label="Illya Kuryaki &amp; The Valderramas" />
+      <node id="Jayway Sosa" label="Jayway Sosa" />
+      <node id="Babasónicos" label="Babasónicos" />
+      <node id="Tan Bionica" label="Tan Bionica" />
+      <node id="Divididos" label="Divididos" />
+      <node id="Gillespi" label="Gillespi" />
+      <node id="Soledad" label="Soledad" />
+      <node id="Almendra" label="Almendra" />
+      <node id="Los Beatniks" label="Los Beatniks" />
+      <node id="Los Gatos" label="Los Gatos" />
+      <node id="Manal" label="Manal" />
+      <node id="Miguel Abuelo" label="Miguel Abuelo" />
+      <node id="Moris" label="Moris" />
+      <node id="Vox Dei" label="Vox Dei" />
+      <node id="Pedro Y Pablo" label="Pedro Y Pablo" />
+      <node id="Arco Iris" label="Arco Iris" />
+      <node id="Alma Y Vida" label="Alma Y Vida" />
+      <node id="Pescado Rabioso" label="Pescado Rabioso" />
+      <node id="Sui Generis" label="Sui Generis" />
+      <node id="Invisible" label="Invisible" />
+      <node id="El Reloj" label="El Reloj" />
+      <node id="Fito Paez" label="Fito Paez" />
+      <node id="Gustavo Cerati" label="Gustavo Cerati" />
+      <node id="Soda Stereo" label="Soda Stereo" />
+      <node id="Sumo" label="Sumo" />
+      <node id="Memphis La Blusera" label="Memphis La Blusera" />
+      <node id="Virus" label="Virus" />
+      <node id="Los Fabulosos Cadillacs" label="Los Fabulosos Cadillacs" />
+      <node id="Javier Calamaro" label="Javier Calamaro" />
+      <node id="La Joven Guardia" label="La Joven Guardia" />
+      <node id="Spinetta Y Los Socios Del Desierto" label="Spinetta Y Los Socios Del Desierto" />
+      <node id="Charly García" label="Charly García" />
+      <node id="Ricardo Mollo" label="Ricardo Mollo" />
+      <node id="Bardero$" label="Bardero$" />
+      <node id="Franky Style" label="Franky Style" />
+      <node id="Chulu" label="Chulu" />
+      <node id="Homer El Mero Mero" label="Homer El Mero Mero" />
+      <node id="Lil Troca" label="Lil Troca" />
+      <node id="WOS" label="WOS" />
+      <node id="CA7RIEL" label="CA7RIEL" />
+      <node id="Nicki Nicole" label="Nicki Nicole" />
+      <node id="LOUTA" label="LOUTA" />
+      <node id="La Bomba de Tiempo" label="La Bomba de Tiempo" />
+      <node id="Baltasar Comotto" label="Baltasar Comotto" />
+      <node id="ACRU" label="ACRU" />
+      <node id="YSY A" label="YSY A" />
+      <node id="CLUB HATS" label="CLUB HATS" />
+      <node id="SPONSOR DIOS" label="SPONSOR DIOS" />
+      <node id="Sixto Yegros" label="Sixto Yegros" />
+      <node id="Obie Wanshot" label="Obie Wanshot" />
+      <node id="Marcianos Crew" label="Marcianos Crew" />
+      <node id="Yesan 雪山" label="Yesan 雪山" />
+      <node id="Asan" label="Asan" />
+      <node id="Bizarrap" label="Bizarrap" />
+      <node id="Cucuza Castiello" label="Cucuza Castiello" />
+      <node id="Amelita Baltar" label="Amelita Baltar" />
+      <node id="Dread Mar I" label="Dread Mar I" />
+      <node id="Trueno" label="Trueno" />
+      <node id="Tiago PZK" label="Tiago PZK" />
+      <node id="Cazzu" label="Cazzu" />
+      <node id="Dani Ribba" label="Dani Ribba" />
+      <node id="FMK" label="FMK" />
+      <node id="Lucho SSJ" label="Lucho SSJ" />
+      <node id="Dillom" label="Dillom" />
+      <node id="Muerejoven" label="Muerejoven" />
+      <node id="Saramalacara" label="Saramalacara" />
+      <node id="Miranda!" label="Miranda!" />
+      <node id="Broke Carrey" label="Broke Carrey" />
+      <node id="Punga" label="Punga" />
+      <node id="Parcas" label="Parcas" />
+      <node id="KAKTOV" label="KAKTOV" />
+      <node id="Ill Quentin" label="Ill Quentin" />
+      <node id="Paulo Londra" label="Paulo Londra" />
+      <node id="Pablo Lescano" label="Pablo Lescano" />
+      <node id="Victor Heredia" label="Victor Heredia" />
+      <node id="Taiu" label="Taiu" />
+      <node id="Kaleb Di Masi" label="Kaleb Di Masi" />
+      <node id="Perro Primo" label="Perro Primo" />
+      <node id="Veeyam" label="Veeyam" />
+      <node id="Kris Alaniz" label="Kris Alaniz" />
+      <node id="Ramiro Jota" label="Ramiro Jota" />
+      <node id="XXL Irione" label="XXL Irione" />
+      <node id="Alika" label="Alika" />
+      <node id="Lauphan" label="Lauphan" />
+      <node id="Fede Flores" label="Fede Flores" />
+      <node id="SidiRum" label="SidiRum" />
+      <node id="Fianru" label="Fianru" />
+      <node id="Mike Southside" label="Mike Southside" />
+      <node id="NEGRO DUB" label="NEGRO DUB" />
+      <node id="Miss Bolivia" label="Miss Bolivia" />
+      <node id="Fidel Nadal" label="Fidel Nadal" />
+      <node id="KHEA" label="KHEA" />
+      <node id="Rusherking" label="Rusherking" />
+      <node id="Maria Becerra" label="Maria Becerra" />
+      <node id="Frijo" label="Frijo" />
+      <node id="El Retutu" label="El Retutu" />
+      <node id="Pekeño 77" label="Pekeño 77" />
+      <node id="Jairo Vera" label="Jairo Vera" />
+      <node id="Mario La Moña" label="Mario La Moña" />
+    </nodes>
+    <edges>
+      <edge source="Kevin Johansen" target="León Gieco" id="0" />
+      <edge source="Kevin Johansen" target="Sol Pereyra" id="1" />
+      <edge source="León Gieco" target="Los Piojos" id="2" />
+      <edge source="Attaque 77" target="Vitillo Ábalos" id="3" />
+      <edge source="Attaque 77" target="Peteco Carabajal" id="4" />
+      <edge source="Attaque 77" target="Los Piojos" id="5" />
+      <edge source="Attaque 77" target="Almendra" id="6" />
+      <edge source="Los Pericos" target="La Delio Valdez" id="7" />
+      <edge source="Los Pericos" target="Guillermo Bonetto" id="8" />
+      <edge source="Los Pericos" target="Ciro y los Persas" id="9" />
+      <edge source="Los Piojos" target="Mimi Maura" id="10" />
+      <edge source="Los Piojos" target="Omar Mollo" id="11" />
+      <edge source="Los Piojos" target="Lito Vitale" id="12" />
+      <edge source="Los Piojos" target="Juanse" id="13" />
+      <edge source="Los Piojos" target="Luis Alberto Spinetta" id="14" />
+      <edge source="Los Piojos" target="Gustavo Cordera" id="15" />
+      <edge source="Los Piojos" target="Árbol" id="16" />
+      <edge source="Los Piojos" target="Celeste Carballo" id="17" />
+      <edge source="Los Piojos" target="Vicentico" id="18" />
+      <edge source="Los Piojos" target="David Lebón" id="19" />
+      <edge source="Los Piojos" target="Liliana Vitale" id="20" />
+      <edge source="Los Piojos" target="Alejandro Lerner" id="21" />
+      <edge source="Los Piojos" target="Fernando Ruiz Diaz" id="22" />
+      <edge source="Los Piojos" target="Claudia Puyó" id="23" />
+      <edge source="Los Piojos" target="Pedro Aznar" id="24" />
+      <edge source="Los Piojos" target="Juan Carlos Baglietto" id="25" />
+      <edge source="Los Piojos" target="Los Auténticos Decadentes" id="26" />
+      <edge source="Los Piojos" target="Los Tipitos" id="27" />
+      <edge source="Los Piojos" target="Turf" id="28" />
+      <edge source="Los Piojos" target="Intoxicados" id="29" />
+      <edge source="Los Piojos" target="Juana La Loca" id="30" />
+      <edge source="Los Piojos" target="Mancha De Rolando" id="31" />
+      <edge source="Los Piojos" target="Las Pelotas" id="32" />
+      <edge source="Los Piojos" target="Ratones Paranoicos" id="33" />
+      <edge source="Los Piojos" target="Kapanga" id="34" />
+      <edge source="Los Piojos" target="Bersuit Vergarabat" id="35" />
+      <edge source="Los Piojos" target="Catupecu Machu" id="36" />
+      <edge source="Juanse" target="Almendra" id="37" />
+      <edge source="Juanse" target="Luis Alberto Spinetta" id="38" />
+      <edge source="Luis Alberto Spinetta" target="Illya Kuryaki And The Valderramas" id="39" />
+      <edge source="Luis Alberto Spinetta" target="Almendra" id="40" />
+      <edge source="Luis Alberto Spinetta" target="Spinetta Y Los Socios Del Desierto" id="41" />
+      <edge source="Luis Alberto Spinetta" target="Gustavo Cerati" id="42" />
+      <edge source="Luis Alberto Spinetta" target="Charly García" id="43" />
+      <edge source="Luis Alberto Spinetta" target="Fito Paez" id="44" />
+      <edge source="Luis Alberto Spinetta" target="Ricardo Mollo" id="45" />
+      <edge source="Vicentico" target="Diego Torres" id="46" />
+      <edge source="David Lebón" target="Almendra" id="47" />
+      <edge source="Los Auténticos Decadentes" target="Almendra" id="48" />
+      <edge source="Catupecu Machu" target="Fernando y Gabriel Ruiz Diaz" id="49" />
+      <edge source="Los Natas" target="Ricardo Iorio" id="50" />
+      <edge source="Illya Kuryaki And The Valderramas" target="Dante Spinetta" id="51" />
+      <edge source="Illya Kuryaki And The Valderramas" target="Illya Kuryaki &amp; The Valderramas" id="52" />
+      <edge source="Illya Kuryaki And The Valderramas" target="Jayway Sosa" id="53" />
+      <edge source="Illya Kuryaki And The Valderramas" target="Babasónicos" id="54" />
+      <edge source="Illya Kuryaki And The Valderramas" target="Tan Bionica" id="55" />
+      <edge source="Divididos" target="Gillespi" id="56" />
+      <edge source="Divididos" target="Soledad" id="57" />
+      <edge source="Divididos" target="Almendra" id="58" />
+      <edge source="Almendra" target="Los Beatniks" id="59" />
+      <edge source="Almendra" target="Los Gatos" id="60" />
+      <edge source="Almendra" target="Manal" id="61" />
+      <edge source="Almendra" target="Miguel Abuelo" id="62" />
+      <edge source="Almendra" target="Moris" id="63" />
+      <edge source="Almendra" target="Vox Dei" id="64" />
+      <edge source="Almendra" target="Pedro Y Pablo" id="65" />
+      <edge source="Almendra" target="Arco Iris" id="66" />
+      <edge source="Almendra" target="Alma Y Vida" id="67" />
+      <edge source="Almendra" target="Pescado Rabioso" id="68" />
+      <edge source="Almendra" target="Sui Generis" id="69" />
+      <edge source="Almendra" target="Invisible" id="70" />
+      <edge source="Almendra" target="El Reloj" id="71" />
+      <edge source="Almendra" target="Fito Paez" id="72" />
+      <edge source="Almendra" target="Gustavo Cerati" id="73" />
+      <edge source="Almendra" target="Soda Stereo" id="74" />
+      <edge source="Almendra" target="Sumo" id="75" />
+      <edge source="Almendra" target="Memphis La Blusera" id="76" />
+      <edge source="Almendra" target="Virus" id="77" />
+      <edge source="Almendra" target="Los Fabulosos Cadillacs" id="78" />
+      <edge source="Almendra" target="Javier Calamaro" id="79" />
+      <edge source="Almendra" target="La Joven Guardia" id="80" />
+      <edge source="Ricardo Mollo" target="WOS" id="81" />
+      <edge source="Bardero$" target="Franky Style" id="82" />
+      <edge source="Bardero$" target="Chulu" id="83" />
+      <edge source="Bardero$" target="Homer El Mero Mero" id="84" />
+      <edge source="Bardero$" target="Lil Troca" id="85" />
+      <edge source="Bardero$" target="Marcianos Crew" id="86" />
+      <edge source="Franky Style" target="Homer El Mero Mero" id="87" />
+      <edge source="Franky Style" target="Chulu" id="88" />
+      <edge source="Franky Style" target="Lil Troca" id="89" />
+      <edge source="Franky Style" target="Obie Wanshot" id="90" />
+      <edge source="Homer El Mero Mero" target="FMK" id="91" />
+      <edge source="Homer El Mero Mero" target="Tiago PZK" id="92" />
+      <edge source="Homer El Mero Mero" target="Kaleb Di Masi" id="93" />
+      <edge source="Homer El Mero Mero" target="Lil Troca" id="94" />
+      <edge source="Homer El Mero Mero" target="Perro Primo" id="95" />
+      <edge source="Homer El Mero Mero" target="Fianru" id="96" />
+      <edge source="Homer El Mero Mero" target="Marcianos Crew" id="97" />
+      <edge source="Homer El Mero Mero" target="Pekeño 77" id="98" />
+      <edge source="Lil Troca" target="Lucho SSJ" id="99" />
+      <edge source="Lil Troca" target="NEGRO DUB" id="100" />
+      <edge source="WOS" target="CA7RIEL" id="101" />
+      <edge source="WOS" target="Nicki Nicole" id="102" />
+      <edge source="WOS" target="LOUTA" id="103" />
+      <edge source="WOS" target="La Bomba de Tiempo" id="104" />
+      <edge source="WOS" target="Baltasar Comotto" id="105" />
+      <edge source="WOS" target="ACRU" id="106" />
+      <edge source="WOS" target="Trueno" id="107" />
+      <edge source="Nicki Nicole" target="Dread Mar I" id="108" />
+      <edge source="Nicki Nicole" target="Bizarrap" id="109" />
+      <edge source="Nicki Nicole" target="Trueno" id="110" />
+      <edge source="Nicki Nicole" target="Tiago PZK" id="111" />
+      <edge source="Nicki Nicole" target="Cazzu" id="112" />
+      <edge source="ACRU" target="Trueno" id="113" />
+      <edge source="ACRU" target="Veeyam" id="114" />
+      <edge source="ACRU" target="Bizarrap" id="115" />
+      <edge source="YSY A" target="CLUB HATS" id="116" />
+      <edge source="YSY A" target="SPONSOR DIOS" id="117" />
+      <edge source="YSY A" target="Sixto Yegros" id="118" />
+      <edge source="YSY A" target="Obie Wanshot" id="119" />
+      <edge source="YSY A" target="Marcianos Crew" id="120" />
+      <edge source="YSY A" target="Yesan 雪山" id="121" />
+      <edge source="YSY A" target="Asan" id="122" />
+      <edge source="YSY A" target="Bizarrap" id="123" />
+      <edge source="YSY A" target="Cucuza Castiello" id="124" />
+      <edge source="YSY A" target="Amelita Baltar" id="125" />
+      <edge source="Obie Wanshot" target="Marcianos Crew" id="126" />
+      <edge source="Obie Wanshot" target="Lucho SSJ" id="127" />
+      <edge source="Marcianos Crew" target="Fianru" id="128" />
+      <edge source="Marcianos Crew" target="Miss Bolivia" id="129" />
+      <edge source="Marcianos Crew" target="Fidel Nadal" id="130" />
+      <edge source="Marcianos Crew" target="Mike Southside" id="131" />
+      <edge source="Marcianos Crew" target="KHEA" id="132" />
+      <edge source="Marcianos Crew" target="Lucho SSJ" id="133" />
+      <edge source="Yesan 雪山" target="Trueno" id="134" />
+      <edge source="Asan" target="KHEA" id="135" />
+      <edge source="Bizarrap" target="Dani Ribba" id="136" />
+      <edge source="Bizarrap" target="Paulo Londra" id="137" />
+      <edge source="Bizarrap" target="Trueno" id="138" />
+      <edge source="Bizarrap" target="Pablo Lescano" id="139" />
+      <edge source="Bizarrap" target="Tiago PZK" id="140" />
+      <edge source="Trueno" target="Dani Ribba" id="141" />
+      <edge source="Trueno" target="Victor Heredia" id="142" />
+      <edge source="Trueno" target="Taiu" id="143" />
+      <edge source="Trueno" target="Tiago PZK" id="144" />
+      <edge source="Tiago PZK" target="Dani Ribba" id="145" />
+      <edge source="Tiago PZK" target="FMK" id="146" />
+      <edge source="Cazzu" target="Fianru" id="147" />
+      <edge source="Cazzu" target="Pekeño 77" id="148" />
+      <edge source="Dani Ribba" target="FMK" id="149" />
+      <edge source="Dani Ribba" target="Lucho SSJ" id="150" />
+      <edge source="FMK" target="KHEA" id="151" />
+      <edge source="FMK" target="Rusherking" id="152" />
+      <edge source="FMK" target="Maria Becerra" id="153" />
+      <edge source="FMK" target="El Retutu" id="154" />
+      <edge source="Lucho SSJ" target="KHEA" id="155" />
+      <edge source="Dillom" target="Muerejoven" id="156" />
+      <edge source="Dillom" target="Saramalacara" id="157" />
+      <edge source="Dillom" target="Miranda!" id="158" />
+      <edge source="Dillom" target="Broke Carrey" id="159" />
+      <edge source="Dillom" target="Punga" id="160" />
+      <edge source="Dillom" target="Parcas" id="161" />
+      <edge source="Dillom" target="KAKTOV" id="162" />
+      <edge source="Dillom" target="Ill Quentin" id="163" />
+      <edge source="Punga" target="Frijo" id="164" />
+      <edge source="Kris Alaniz" target="Ramiro Jota" id="165" />
+      <edge source="Kris Alaniz" target="XXL Irione" id="166" />
+      <edge source="Kris Alaniz" target="Alika" id="167" />
+      <edge source="Kris Alaniz" target="Lauphan" id="168" />
+      <edge source="Kris Alaniz" target="Fede Flores" id="169" />
+      <edge source="Kris Alaniz" target="SidiRum" id="170" />
+      <edge source="Fianru" target="Mike Southside" id="171" />
+      <edge source="KHEA" target="Rusherking" id="172" />
+      <edge source="KHEA" target="Maria Becerra" id="173" />
+      <edge source="Pekeño 77" target="Jairo Vera" id="174" />
+      <edge source="Pekeño 77" target="Mario La Moña" id="175" />
+    </edges>
+  </graph>
+</gexf>
