@@ -2,6 +2,7 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 import requests
 import re
+from queue import queue
 
 CLIENT_ID = "3a533c6fd3434a29a09896712d5c19bd"
 CLIENT_SECRET = "65f9ad113dd54f6091cee7aa5498568b"
@@ -46,27 +47,24 @@ uri = "3vQ0GE3mI0dAaxIMYe5g7z"
 sp = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials(client_id = CLIENT_ID, client_secret=CLIENT_SECRET))
 
 
-
-
-
-id = "spotify:artist:" + conseguir_id("Duki")
-
-print(id)
 def conseguir_cuadrivector(nombre_artista):
 
     lista_cuadrivectores = []
+    albums_revisados = []
+    
+    # Uri es como el id del artista pero para spotipy
     uri = "spotify:artist:" + conseguir_id(nombre_artista)
-
+    # Conseguimos los albumes del artista
     results = sp.artist_albums(uri, album_type='album,single', country='AR')
-
     albums = results['items']
 
+    # No se que hace bien todavia 
     while results['next']:
         # Depaginate
         results = sp.next(results)
         albums.extend(results['items'])
 
-    # Filter albums/singles to unique
+    # Hacemos un filtro a los albumes para que sean únicos
     real_albums = dict()
     for album in albums:
         # Strip extraneous characters
@@ -76,6 +74,45 @@ def conseguir_cuadrivector(nombre_artista):
             print('Adding ' + name)
             real_albums[name] = album
 
+    # Ciclamos sobre los albumes que son únicos
+    for album in real_albums:
+        # Chequeamos que no hayamos revisado el album
+        if album not in albums_revisados:
+            # Mark album as analyzed
+            albums_revisados.add(album)
+            print('\tAlbum: ' + real_albums[album]['name'])
+
+            # Obtenemos las canciones del album
+            results = sp.album_tracks(real_albums[album]['id'])
+            canciones = results['items']
+            while results['next']:
+                results = sp.next(results)
+                canciones.extend(results['items'])
+
+            # Recorremos las canciones
+            for cancion in canciones:
+                # Recorremos los artistas de la canción
+                for artist in cancion['artists']:
+                    # Chequeamos que no tengan igual uri
+                    if artist['uri'] != uri:
+                        print('\t\t' + artist['name'])
+                        # La siguiente línea no la entiendo bien, pero creo que lo que hace es el time.sleep que haciamos pero mejor
+                        queue.put(artist['uri'])
+
+                        if artist['uri'] not in G:
+                            # Get detailed description of artist and create node
+                            artist = sp.artist(artist['uri'])
+                            G.add_node(artist['uri'], name=artist['name'], popularity=artist['popularity'])
+                            # Try adding artist's image
+                            if len(artist['images']) > 0:
+                                G.node[artist['uri']]['image_url'] = artist['images'][0]['url']
+                            else:
+                                G.node[artist['uri']]['image_url'] = "https://developer.spotify.com/wp-content/uploads/2016/07/icon1@2x.png"
+                        # Count how many collaborations
+                        try:
+                            G[artist['uri']][uri]['freq'] += 1
+                        except KeyError:
+                            G.add_edge(artist['uri'], uri, freq=1)
     return lista_cuadrivectores
 
 print(conseguir_cuadrivector("Rosalia"))
