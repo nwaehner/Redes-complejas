@@ -2,7 +2,8 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 import requests
 import re
-from queue import queue
+from multiprocessing import Queue
+import networkx as nx
 
 CLIENT_ID = "3a533c6fd3434a29a09896712d5c19bd"
 CLIENT_SECRET = "65f9ad113dd54f6091cee7aa5498568b"
@@ -45,8 +46,8 @@ uri = 'spotify:artist:7ltDVBr6mKbRvohxheJ9h1'
 uri = "3vQ0GE3mI0dAaxIMYe5g7z"
 # En la siguiente línea se define de donde se saca toda la info, como si este fuera el paquete
 sp = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials(client_id = CLIENT_ID, client_secret=CLIENT_SECRET))
-
-
+G = nx.Graph()
+q = Queue()
 def conseguir_cuadrivector(nombre_artista):
 
     lista_cuadrivectores = []
@@ -79,7 +80,7 @@ def conseguir_cuadrivector(nombre_artista):
         # Chequeamos que no hayamos revisado el album
         if album not in albums_revisados:
             # Mark album as analyzed
-            albums_revisados.add(album)
+            albums_revisados.append(album)
             print('\tAlbum: ' + real_albums[album]['name'])
 
             # Obtenemos las canciones del album
@@ -97,17 +98,17 @@ def conseguir_cuadrivector(nombre_artista):
                     if artist['uri'] != uri:
                         print('\t\t' + artist['name'])
                         # La siguiente línea no la entiendo bien, pero creo que lo que hace es el time.sleep que haciamos pero mejor
-                        queue.put(artist['uri'])
+                        q.put(artist['uri'])
 
                         if artist['uri'] not in G:
                             # Get detailed description of artist and create node
                             artist = sp.artist(artist['uri'])
                             G.add_node(artist['uri'], name=artist['name'], popularity=artist['popularity'])
-                            # Try adding artist's image
-                            if len(artist['images']) > 0:
-                                G.node[artist['uri']]['image_url'] = artist['images'][0]['url']
-                            else:
-                                G.node[artist['uri']]['image_url'] = "https://developer.spotify.com/wp-content/uploads/2016/07/icon1@2x.png"
+                            # # Try adding artist's image
+                            # if len(artist['images']) > 0:
+                            #     G.node[artist['uri']]['image_url'] = artist['images'][0]['url']
+                            # else:
+                            #     G.node[artist['uri']]['image_url'] = "https://developer.spotify.com/wp-content/uploads/2016/07/icon1@2x.png"
                         # Count how many collaborations
                         try:
                             G[artist['uri']][uri]['freq'] += 1
@@ -116,3 +117,4 @@ def conseguir_cuadrivector(nombre_artista):
     return lista_cuadrivectores
 
 print(conseguir_cuadrivector("Rosalia"))
+
