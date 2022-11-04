@@ -116,5 +116,5 @@ def conseguir_cuadrivector(nombre_artista):
                             G.add_edge(artist['uri'], uri, freq=1)
     return lista_cuadrivectores
 
-print(conseguir_cuadrivector("Rosalia"))
+
 
