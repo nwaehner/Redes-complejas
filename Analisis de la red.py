@@ -19,6 +19,8 @@ i = 1496
 # Cargamos el multigrafo
 with open(f"red_final/Iteracion {i}/red_final_hasta_indice_{i}.gpickle", "rb") as f:
     G = pickle.load(f)
+    
+
 #%%
 def hacer_lista_grados(red): #devuelve una lista con los nodos de la red.
   lista_grados=[grado for (nodo,grado) in red.degree()]
@@ -75,7 +77,7 @@ for i in range(n):
 
 
 #%%
-fig, ax = plt.subplots(nrows = 1, ncols = 1, figsize = (18, 6), facecolor='#D4CAC6')
+fig, ax = plt.subplots(nrows = 1, ncols = 1, figsize = (14, 8), facecolor='#D4CAC6')
 counts, bins = np.histogram(homofilia, bins=20)
 ax.hist(bins[:-1], bins, weights=counts/n, range = [0,1], rwidth = 0.80, facecolor='g', alpha=0.75)
 ax.vlines(x = np.mean(homofilia), ymin = 0, ymax = 0.3, linewidth = 3, linestyle = '--', alpha = 0.8, color = 'r', label = 'Media')
@@ -90,31 +92,30 @@ ax.set_xticks(np.arange(0.3,0.8,0.1))
 plt.title("Homofilia por recoloreo (n = 5000)",fontsize = 18)
 ax.set_xlim(0.3,0.8)
 ax.legend(loc = 'best')
-# plt.savefig("Homofilia por recoloreo.png")
+plt.savefig("Homofilia por recoloreo.png")
 plt.show()
 
 
 #%% CODIGO PRUEBA DE SUFFLEAR ENLACES
 red_random1 = nx.MultiGraph()
-red_random1.add_edges_from([(0, 2), (0, 3), (0, 1), (1, 2), (1, 3), (2, 3)])
+red_random1.add_edges_from([(0, 2), (0, 3), (0, 1), (1, 2), (1, 3), (2, 3),(0,2)])
 
 nx.draw(red_random1,with_labels = True)
 #%%
 # G_copia = G.copy()
 
-def shuflear_enlaces(red):
-  enlace1 = random.choice(list(red.edges()))
-  enlace2 = random.choice(list(red.edges()))
-  print("enlaces a remover:",[enlace1,enlace2])
+def shuflear_enlaces(red,enlace1,enlace2):
   
-  if enlace1 != enlace2 and enlace1[0] != enlace2[1] and enlace1[1] != enlace2[0]:
-    enlaces_nuevos = [(enlace1[0],enlace2[1]),(enlace1[1],enlace2[0])]
-    print("enlaces a agregar:", enlaces_nuevos)
-    print("enlaces iniciales:", red.edges())
-    red.remove_edges_from([enlace1,enlace2])
-    print("enlaces cuando saco:", red.edges())
-    red.add_edges_from(enlaces_nuevos)
-    print("enlaces cuando agrego:",red.edges())
+  #print("enlaces a remover:",[enlace1,enlace2])
+  
+  
+  enlaces_nuevos = [(enlace1[0],enlace2[1]),(enlace1[1],enlace2[0])]
+  # print("enlaces a agregar:", enlaces_nuevos)
+ # print("enlaces iniciales:", red.edges())
+  red.remove_edges_from([enlace1,enlace2])
+  # print("enlaces cuando saco:", red.edges())
+  red.add_edges_from(enlaces_nuevos)
+  # print("enlaces cuando agrego:",red.edges())
   
   return red
 
@@ -123,4 +124,35 @@ def shuflear_enlaces(red):
 # %%
 red_random = shuflear_enlaces(red_random1)
 nx.draw(red_random,with_labels = True)
+# %%
+G_copia = G.copy()
+
+#%%
+n = 0
+
+lista_enlaces = [i for i in G_copia.edges()]
+len(lista_enlaces)
+while n < len(G.edges())/2:
+  enlace1 = random.choice(lista_enlaces)
+  enlace2 = random.choice(lista_enlaces)
+  enlaces_nuevos = [(enlace1[0],enlace2[1]),(enlace1[1],enlace2[0])]
+  
+  if enlace1 != enlace2 and enlace1[0] != enlace2[1] and enlace1[1] != enlace2[0]:
+    len(lista_enlaces)
+
+    G_copia.remove_edges_from([enlace1,enlace2])
+    # print("enlaces cuando saco:", red.edges())
+    G_copia.add_edges_from(enlaces_nuevos)
+    
+    lista_enlaces.remove(enlace1)
+    lista_enlaces.remove(enlace2)
+    print(len(lista_enlaces))
+
+    
+  n += 1
+
+
+print(calcular_homofilia(G_copia))
+# %%
+
 # %%
