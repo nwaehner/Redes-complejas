@@ -35,7 +35,7 @@ plt.xlabel("Grado",fontsize = 16)
 plt.ylabel("Cantidad de nodos",fontsize = 16)
 plt.tick_params(axis='both', which='major', labelsize=14)
 plt.title("Distribución de grado (log-log)")
-plt.savefig("distribucion de grado.png")
+# plt.savefig("distribucion de grado.png")
 plt.show()
 
 
@@ -64,7 +64,7 @@ G_copia = G.copy()
 lista_genero = [i[1]["genero"] for i in G.nodes(data=True)]
 
 homofilia = []
-n = 1000
+n = 5000
 
 for i in range(n): 
     random.shuffle(lista_genero) 
@@ -87,10 +87,10 @@ ax.set_ylabel("Frecuencia normalizada", fontsize=12)
 ax.set_ylim(0,0.2)
 ax.set_yticks(np.arange(0,0.21,0.05))
 ax.set_xticks(np.arange(0.3,0.8,0.1))
-plt.title("Homofilia por recoloreo")
+plt.title("Homofilia por recoloreo (n = 5000)",fontsize = 18)
 ax.set_xlim(0.3,0.8)
 ax.legend(loc = 'best')
-plt.savefig("Homofilia por recoloreo.png")
+# plt.savefig("Homofilia por recoloreo.png")
 plt.show()
 
 
