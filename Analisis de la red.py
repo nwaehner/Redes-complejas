@@ -92,67 +92,40 @@ ax.set_xticks(np.arange(0.3,0.8,0.1))
 plt.title("Homofilia por recoloreo (n = 5000)",fontsize = 18)
 ax.set_xlim(0.3,0.8)
 ax.legend(loc = 'best')
-plt.savefig("Homofilia por recoloreo.png")
+# plt.savefig("Homofilia por recoloreo.png")
 plt.show()
 
 
 #%% CODIGO PRUEBA DE SUFFLEAR ENLACES
-red_random1 = nx.MultiGraph()
-red_random1.add_edges_from([(0, 2), (0, 3), (0, 1), (1, 2), (1, 3), (2, 3),(0,2)])
-
-nx.draw(red_random1,with_labels = True)
-#%%
-# G_copia = G.copy()
-
-def shuflear_enlaces(red,enlace1,enlace2):
-  
-  #print("enlaces a remover:",[enlace1,enlace2])
-  
-  
-  enlaces_nuevos = [(enlace1[0],enlace2[1]),(enlace1[1],enlace2[0])]
-  # print("enlaces a agregar:", enlaces_nuevos)
- # print("enlaces iniciales:", red.edges())
-  red.remove_edges_from([enlace1,enlace2])
-  # print("enlaces cuando saco:", red.edges())
-  red.add_edges_from(enlaces_nuevos)
-  # print("enlaces cuando agrego:",red.edges())
-  
-  return red
-
-  
-
-# %%
-red_random = shuflear_enlaces(red_random1)
-nx.draw(red_random,with_labels = True)
-# %%
-G_copia = G.copy()
-
-#%%
-n = 0
-
-lista_enlaces = [i for i in G_copia.edges()]
-len(lista_enlaces)
-while n < len(G.edges())/2:
-  enlace1 = random.choice(lista_enlaces)
-  enlace2 = random.choice(lista_enlaces)
-  enlaces_nuevos = [(enlace1[0],enlace2[1]),(enlace1[1],enlace2[0])]
-  
-  if enlace1 != enlace2 and enlace1[0] != enlace2[1] and enlace1[1] != enlace2[0]:
-    len(lista_enlaces)
-
-    G_copia.remove_edges_from([enlace1,enlace2])
-    # print("enlaces cuando saco:", red.edges())
-    G_copia.add_edges_from(enlaces_nuevos)
-    
-    lista_enlaces.remove(enlace1)
-    lista_enlaces.remove(enlace2)
-    print(len(lista_enlaces))
+from tqdm import tqdm
+iteracion = 0
+homofilia_recableo = []
+for iteracion in tqdm(range(100)):
+  nueva_red = nx.double_edge_swap(G, nswap=len(list(G_copia.edges())), max_tries=len(list(G_copia.edges()))*2)
+  homofilia_recableo.append(calcular_homofilia(nueva_red))
+print(homofilia_recableo)
 
     
-  n += 1
+  
 
-
-print(calcular_homofilia(G_copia))
 # %%
+
+fig, ax = plt.subplots(nrows = 1, ncols = 1, figsize = (14, 8), facecolor='#D4CAC6')
+counts, bins = np.histogram(homofilia_recableo, bins=20)
+ax.hist(bins[:-1], bins, weights=counts/iteracion, range = [0,1], rwidth = 0.80, facecolor='g', alpha=0.75)
+ax.vlines(x = np.mean(homofilia_recableo), ymin = 0, ymax = 0.3, linewidth = 3, linestyle = '--', alpha = 0.8, color = 'r', label = 'Media')
+ax.vlines(x = homofilia_real, ymin = 0, ymax = 0.3, linewidth = 3, linestyle = '--', alpha = 0.8, color = 'k', label = 'Homofilia de la red original')
+ax.fill_between(x = [np.mean(homofilia_recableo)-np.std(homofilia_recableo),np.std(homofilia_recableo)+np.mean(homofilia_recableo)], y1 = 0.3, color = 'g', alpha = 0.4, label = 'Desviación estándar')
+ax.grid('on', linestyle = 'dashed', alpha = 0.5)
+ax.set_xlabel("Homofilia", fontsize=12)
+ax.set_ylabel("Frecuencia normalizada", fontsize=12)
+ax.set_ylim(0,0.2)
+ax.set_yticks(np.arange(0,0.21,0.05))
+ax.set_xticks(np.arange(0.63,0.7,0.01))
+plt.title("Homofilia por recableo (n = 100)",fontsize = 18)
+ax.set_xlim(0.63,0.7)
+ax.legend(loc = 'best')
+# plt.savefig("Homofilia por recableo.png")
+plt.show()
 
 # %%
