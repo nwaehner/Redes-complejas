@@ -58,16 +58,13 @@ for artista_i in lista_artistas["nombre"]:
         if nombre_normalizado_j in nombre_normalizado_i and artista_i != artista_j and (nombre_normalizado_i, nombre_normalizado_j) not in artistas_normalizados:
             artistas_repetidos.append((artista_i, artista_j)) 
             artistas_normalizados.append((nombre_normalizado_i, nombre_normalizado_j))
-        # if comparar_strings(artista_i,artista_j,1)[0] and comparar_strings(artista_j,artista_i)[0] and artista_i != artista_j and (normalizar(artista_i),normalizar(artista_j)) not in artistas_normalizados:
-        #     artistas_repetidos.append((artista_i, artista_j)) 
-        #     artistas_normalizados.append((normalizar(artista_i), normalizar(artista_j)))
 
 #%%
 artistas_repetidos_filtrados = []
 palabras_filtro = ["UN","Fernando","Rodrigo","Axel","Emilia","TINI","Rei","Wen","Árbol",'Cacho Lafalce, Bernardo Baraj, Cacho Arce, Domingo Cura & Chino Rossi',
                    'David Lebón Jr',"Vandera",'Jairo',"Julio Martinez","Karina Cohen",'Lalo Schifrin',
-                   'Lagartijeando',"MYA","Juanse","MAX","ACRU","Oscar Alem",'Sandro',"Carca",
-                   ]
+                   'Lagartijeando',"MYA","Juanse","MAX","ACRU","Oscar Alem",'Sandro',"Carca"
+                   ,"La Mississippi","Roberto Diaz Velado"]
 
 
 for i in artistas_repetidos:
@@ -82,20 +79,50 @@ for i in artistas_repetidos:
     if filtro:
         artistas_repetidos_filtrados.append(i)
 #%%
-#print(artistas_coincidentes)
-print(artistas_repetidos_filtrados)
 for i in artistas_repetidos_filtrados:
-   if 'La Mississippi' in i:
     print(i)
-        
-# print(artistas_normalizados)
-# %%
-#intento acá generar una matriz de similaridad de artistas por bloques
-with open(f"red_final/Iteracion 1496/lista_artistas_argentinos_hasta_indice_1496.pickle", "rb") as f:
-    artistas = pickle.load(f)
-
-artistas_normalizados = sorted([normalizar(artista) for artista in artistas])
-transformed_strings = np.array(artistas_normalizados).reshape(-1,1)
-distance_matrix = pdist(transformed_strings,lambda x,y: td.hamming.normalized_similarity(x[0],y[0]))
 #%%
-plt.imshow(squareform(distance_matrix))
+i = 1496
+with open(f"red_final/Iteracion {i}/red_final_hasta_indice_{i}.gpickle", "rb") as f:
+    G = pickle.load(f)
+
+G_copia = G.copy()
+
+nodos_para_remover = ['David Lebón Jr',"Julio Martinez Oyanguren",'Lalo Schifrin Conducts Stravinsky, Schifrin, And Ravel',
+                      "Lagartijeando, Sajra", 'Mya feat. Spice','Mya feat. Stacie & Lacie','Mya feat. Trina'
+                      ,'KR3TURE', 'Feral Fauna', "MAX"]
+
+G_copia.remove_nodes_from(nodos_para_remover)
+
+# %%
+# enlaces = list(G.edges(data= True))
+
+artistas_repetidos_filtrados = sorted(artistas_repetidos_filtrados)
+artistas_a_matar = []
+for i,j in artistas_repetidos_filtrados:
+    if len(i) <= len(j):
+        enlaces = list(G.edges(j,data=True))
+        for dataenlace in enlaces:
+            G_copia.add_edge(i,dataenlace[1],nombre = dataenlace[2]["nombre"],fecha = dataenlace[2]["fecha"])
+        artistas_a_matar.append(j)
+    else:
+        enlaces = list(G.edges(i,data=True))
+        for dataenlace in enlaces:
+            G_copia.add_edge(j,dataenlace[1],nombre = dataenlace[2]["nombre"],fecha = dataenlace[2]["fecha"])
+            
+        artistas_a_matar.append(i)
+
+G_copia.remove_nodes_from(artistas_a_matar)
+
+
+datos = set(G.nodes()) ^ set(G_copia.nodes())
+
+#%%
+lista = [i for i,j in artistas_repetidos_filtrados] + [j for i,j in artistas_repetidos_filtrados]
+print(np.unique(lista))
+
+print(set(datos))
+# %%
+enlaces = [G.edges("Bizarrap",data = True)]
+print(enlaces)
+# %%
