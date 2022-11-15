@@ -52,17 +52,43 @@ artistas_coincidentes = []
 artistas_repetidos = []
 artistas_normalizados = []
 for artista_i in lista_artistas["nombre"]:
-    nombre_normalizado = normalizar(artista_i)
-    if "orquesta" in nombre_normalizado or "conjunto" in nombre_normalizado or "orquestra" in nombre_normalizado:
-        artistas_coincidentes.append(artista_i)
+    nombre_normalizado_i = normalizar(artista_i)
     for artista_j in lista_artistas["nombre"]:
-        if comparar_strings(artista_i,artista_j,1)[0] and comparar_strings(artista_j,artista_i)[0] and artista_i != artista_j and (normalizar(artista_i),normalizar(artista_j)) not in artistas_normalizados:
-            artistas_repetidos.append((artista_i, artista_j))
-            artistas_normalizados.append((normalizar(artista_i), normalizar(artista_j)))
+        nombre_normalizado_j = normalizar(artista_j)
+        if nombre_normalizado_j in nombre_normalizado_i and artista_i != artista_j and (nombre_normalizado_i, nombre_normalizado_j) not in artistas_normalizados:
+            artistas_repetidos.append((artista_i, artista_j)) 
+            artistas_normalizados.append((nombre_normalizado_i, nombre_normalizado_j))
+        # if comparar_strings(artista_i,artista_j,1)[0] and comparar_strings(artista_j,artista_i)[0] and artista_i != artista_j and (normalizar(artista_i),normalizar(artista_j)) not in artistas_normalizados:
+        #     artistas_repetidos.append((artista_i, artista_j)) 
+        #     artistas_normalizados.append((normalizar(artista_i), normalizar(artista_j)))
 
 #%%
+artistas_repetidos_filtrados = []
+palabras_filtro = ["UN","Fernando","Rodrigo","Axel","Emilia","TINI","Rei","Wen","Árbol",'Cacho Lafalce, Bernardo Baraj, Cacho Arce, Domingo Cura & Chino Rossi',
+                   'David Lebón Jr',"Vandera",'Jairo',"Julio Martinez","Karina Cohen",'Lalo Schifrin',
+                   'Lagartijeando',"MYA","Juanse","MAX","ACRU","Oscar Alem",'Sandro',"Carca",
+                   ]
+
+
+for i in artistas_repetidos:
+    filtro = True
+    j = 0
+    while filtro and j < len(palabras_filtro):
+        
+        if palabras_filtro[j] in i:
+            filtro = False
+        j+= 1
+
+    if filtro:
+        artistas_repetidos_filtrados.append(i)
+#%%
 #print(artistas_coincidentes)
-print(artistas_repetidos)
+print(artistas_repetidos_filtrados)
+for i in artistas_repetidos_filtrados:
+   if 'La Mississippi' in i:
+    print(i)
+        
+# print(artistas_normalizados)
 # %%
 #intento acá generar una matriz de similaridad de artistas por bloques
 with open(f"red_final/Iteracion 1496/lista_artistas_argentinos_hasta_indice_1496.pickle", "rb") as f:
