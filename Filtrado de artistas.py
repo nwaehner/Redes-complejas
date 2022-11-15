@@ -4,7 +4,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 from unicodedata import normalize
-
+import pickle 
+import textdistance as td
+from scipy.spatial.distance import pdist, squareform
 #%%
 
 def normalizar(string):
@@ -62,3 +64,12 @@ for artista_i in lista_artistas["nombre"]:
 #print(artistas_coincidentes)
 print(artistas_repetidos)
 # %%
+#intento acá generar una matriz de similaridad de artistas por bloques
+with open(f"red_final/Iteracion 1496/lista_artistas_argentinos_hasta_indice_1496.pickle", "rb") as f:
+    artistas = pickle.load(f)
+
+artistas_normalizados = sorted([normalizar(artista) for artista in artistas])
+transformed_strings = np.array(artistas_normalizados).reshape(-1,1)
+distance_matrix = pdist(transformed_strings,lambda x,y: td.hamming.normalized_similarity(x[0],y[0]))
+#%%
+plt.imshow(squareform(distance_matrix))
