@@ -4,13 +4,108 @@ import pickle
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+import requests
+from bs4 import BeautifulSoup as bs
+import wikipedia as wiki
+import warnings
+import wikipediaapi
+import networkx as nx
+import pickle
 plt.style.use("seaborn")
+#%%
+def obtener_genero(artista_nombre):
+    #obtengo genero musicales de artista scrapeando
+    lista_generos = []
+    wiki_wiki = wikipediaapi.Wikipedia(
+            language='es',    
+    )
+    warnings.filterwarnings("ignore")
+    try:
+        #usa el buscador de wikipedia para buscar el artista
+        #y agarra primer elemento
+        id_artista = wiki.search(artista_nombre)[0]
+    except:
+        print(f'{artista_nombre} NO TIENE WIKIPAGE')
+        return lista_generos
+    try:
+        page_py = wiki_wiki.page(id_artista)
+    except wiki.exceptions.DisambiguationError as e:
+        queries='\n'.join(str(e).split('\n')[1:])
+        queries=queries.split('\n')
+        page_py = wiki_wiki.page(queries[0])
+    if page_py.exists():
+        #si la pagina del artista existe, busco la tabla de contenidos
+        #y me fijo si dice 'Género' o 'Géneros' en algun lado
+        #y levanto el texto
+        try:
+            page = requests.get(page_py.fullurl)
+            soup = bs(page.content, 'html.parser')
+            ta = soup.find_all('table',class_="infobox biography vcard")[0].tbody
+            for t in ta:
+                if 'Género' in t.text:
+                    lista_generos = t.text.splitlines()
+                    lista_generos.remove('Género')
+        except:
+            print('NO ENCONTRÓ GENERO')
+    return lista_generos
+
+def es_realmente_argentino(artista_nombre):
+    es_argentino = False
+    wiki_wiki = wikipediaapi.Wikipedia(
+            language='es',    
+    )
+    warnings.filterwarnings("ignore")
+    try:
+        id_artista = wiki.search(artista_nombre)[0]
+    except:
+        print(f'{artista_nombre} NO TIENE WIKIPAGE')
+        return es_argentino
+    try:
+        page_py = wiki_wiki.page(id_artista)
+    except wiki.exceptions.DisambiguationError as e:
+        queries='\n'.join(str(e).split('\n')[1:])
+        queries=queries.split('\n')
+        page_py = wiki_wiki.page(queries[0])
+    if page_py.exists():
+        try:
+            sumario = page_py.summary[0:200]
+            print(sumario)
+            if 'argentino' in sumario or 'argentina' in sumario or 'Argentina' in sumario :
+                es_argentino = True
+            else:
+                page = requests.get(page_py.fullurl)
+                soup = bs(page.content, 'html.parser')
+                ta = soup.find_all('table',class_="infobox biography vcard")[0].tbody
+                for t in ta:
+                    if 'Nacionalidad' in t.text:
+                        if 'argentino' in t.text or 'Argentina' in t.text:
+                            es_argentino = True
+                        break
+                    elif 'Nacimiento' in t.text:
+                        if 'Argentina' in t.text:
+                            es_argentino = True
+                            break
+        except:
+            print(f'{artista_nombre} dudoso q sea argentino mmm')
+    else:
+        print('no existe la pagina de duki')
+    return es_argentino
 #%%-----------------------Cargamos el multigrafo---------------------------
 i = 1496
-
 with open(f"red_final/Iteracion {i}/red_final_hasta_indice_{i}.gpickle", "rb") as f:
     G = pickle.load(f)
-
+#%%Me armo esta celda para agregar géneros musicales con wikipedia
+lista_nodos = list(G.nodes())
+for i,nodo in enumerate(lista_nodos):
+    print(i, nodo)
+    G.nodes()[nodo]["generos_musicales"] = obtener_genero(nodo)
+#%%
+nodos_sin_etiquetas = []
+for nodo in lista_nodos:
+    if len(G.nodes()[nodo]["generos_musicales"])==0:
+        nodos_sin_etiquetas.append(nodo)
+print(len(nodos_sin_etiquetas)/1496)
+    
 #%%Defino una función para encontrar la fecha donde salió la primera colaboración de un artista
 def encontrar_fecha_menor(lista_fechas):
 
@@ -32,7 +127,6 @@ for nodo in lista_nodos:
 
     fecha_aparicion = encontrar_fecha_menor(lista_fechas)
     G.nodes[nodo]["fecha_aparicion"] = fecha_aparicion
-
 #%%---------------Definimos los generos que vamos a estudiar--------------
 
 generos_representativos = ["Rock","Jazz","Trap","Rap", "Hip Hop", "Classic",
@@ -81,8 +175,9 @@ lista_labels=node_classification.harmonic_function(G_copia)
 #prediccion de colaboraciones:
 #sacar enlaces, uso embedding de nodos para predecir esos enlaces
 #a partir de similaridad 
-#ultima clase de embbeding de nodos (borrar enlaces antes de pasar al espacio metrico sin sacar nodos)
-#link prediction
+#ultima clase de embbeding de nodos 
+# PREGUNTAR A NICO (borrar enlaces antes de pasar al espacio metrico sin sacar nodos)
+#link prediction    
 #preguntat grupo de netflix?
 
 #Ariel dijo: sacar enlaces y luego calcular similaridad entre nodos (con una matriz).
