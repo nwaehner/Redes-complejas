@@ -42,10 +42,13 @@ generos_representativos = ["Rock","Jazz","Trap","Rap", "Hip Hop", "Classic",
 
 generos_no_representativos = ["Chamame", "Cuarteto", "Reggae", "Metal", 
                     "Infantil", "Blues", "Punk"]
+
+G_copia = G.copy()
 #%%
+nodos_sin_etiquetas = []  #artistas que no tienen genero musical
 for nodo in lista_nodos:
     generos_nuevos =[]
-    generos_spotify = (G.nodes())[nodo]["generos_musicales"]
+    generos_spotify = (G_copia.nodes())[nodo]["generos_musicales"]
     # Recorremos los generos que creemos que son importantes
     for genero in generos_representativos:
         # Recorremos los generos de spotify del cantante
@@ -55,7 +58,65 @@ for nodo in lista_nodos:
                 generos_nuevos.append(genero)
     
     generos_nuevos = list(np.unique(generos_nuevos))
-    G.nodes[nodo]["generos_musicales"] = generos_nuevos
+    try:
+        G_copia.nodes[nodo]["label"] = generos_nuevos[0]
+    except:
+        nodos_sin_etiquetas.append(nodo)
+        
+
+print(len(nodos_sin_etiquetas))
+#%%
+for nodo in G_copia.nodes(data=True):
+    print(nodo[1]["label"])
+#%%
+from networkx.algorithms import node_classification
+lista_labels=node_classification.harmonic_function(G_copia)
+#IDEAS:
+#cada genero como una coordenada
+#scrapear wiki
+#testear con una parte de los que tienen etiquetas 
+#clusterizar artistas por vectores con sus generos (kmeans etc)
+#(PCA o SVD) reduccion de dimensionalidad >> clusterizar 
+
+#prediccion de colaboraciones:
+#sacar enlaces, uso embedding de nodos para predecir esos enlaces
+#a partir de similaridad 
+#ultima clase de embbeding de nodos (borrar enlaces antes de pasar al espacio metrico sin sacar nodos)
+#link prediction
+#preguntat grupo de netflix?
+
+#Ariel dijo: sacar enlaces y luego calcular similaridad entre nodos (con una matriz).
+# Ver si los nodos con mayor similaridad estaban enlazados y ahora no e iterar sacando
+#distintos enlaces. calcular finalmente probabilidad.
+
+#
+#Ariel:
+#difusion de a un genero por vez y sumar, ver el mas representativo por nodo. Para esto usar laplaciano, ver clase
+#para homofilia, sacar los que no tiene etiqueta.
+
+for i,nodo in enumerate(G_copia.nodes(data=True)):
+    #asigno la etiqueta para cada nodo
+    nodo[1]["label"] = lista_labels[i]
+for nodo in G_copia.nodes(data=True):
+    if nodo[0] in nodos_sin_etiquetas:
+        print(f'{nodo[0]} toca {nodo[1]["label"]} ')  
+#%%
+for nodo in G_copia.nodes(data=True):
+    print(f"{nodo[0]} tiene categoria {nodo[1]['label']}")
+
+#%%
+labels = nx.get_node_attributes(G_copia, 'label')
+labels["Bizarrap"]
+
+
+def asignar_indice(atributo,lista):
+    np.where(np.array(lista) == atributo)
+    
+print(asignar_indice('Classic', generos_representativos))
+#%%
+plt.figure(figsize=(18,12))
+nx.draw(G_copia,node_color=[plt.get_cmap('tab20')(generos_representativos.index(v[1]['label'])) for v in G_copia.nodes(data = True)])
+
 
 #%% Vemos cuantos artistas aparecen cada año
 fig, axs = plt.subplots(ncols = 2, figsize = (14,8))
