@@ -26,14 +26,13 @@ G2.add_edges_from(G.edges())
 def centralidades(Red):
     df= pd.DataFrame(dict(
     Grado = dict(Red.degree),
-    Centralidad = nx.degree_centrality(Red),
-    Autovalores= nx.eigenvector_centrality(Red, max_iter=1000, tol=1e-06, nstart=None, weight='weight'),
+    #Autovalores= nx.eigenvector_centrality(Red, max_iter=1000, tol=1e-06, nstart=None, weight='weight'),
     Intermediatez = nx.betweenness_centrality(Red,k=None, normalized=True, weight=None, endpoints=False, seed=None),
     Cercania = nx.closeness_centrality(Red, u=None, distance=None, wf_improved=True),
     Popularidad = {nodo: G.nodes()[nodo]["popularidad"] for nodo in G.nodes()}))
     return df
 
-df_centralidad = centralidades(G2)   
+df_centralidad = centralidades(G)   
 #%%
 def armar_componente_gigante(Red):
     Conjunto_nodos_en_gigante = max(nx.connected_components(Red), key=len)
@@ -77,7 +76,8 @@ def desarmar_red(red,lista_sacar):
 frac_quit_random_iterada = []
 frac_en_gig_random_iterada = []
 
-for i in tqdm(range(100)):
+cant_iteraciones = 1000
+for i in tqdm(range(cant_iteraciones)):
 
     lista_random = list(G2.nodes())
     random.shuffle(lista_random)
@@ -97,9 +97,14 @@ frac_en_gig_random = [i[0:minimo_quit] for i in frac_en_gig_random_iterada]
 frac_quit_random_x = sum(np.array(frac_quit_random))/len(frac_quit_random)
 frac_en_gig_random_y = sum(np.array(frac_en_gig_random))/len(frac_en_gig_random)
 
+#%% Para guardar los datos
+df = pd.DataFrame([frac_quit_random_x,frac_en_gig_random_y], columns= ["Frac_quitados", "Tamaño_gigante"] )
+
+filename = "1000 iteraciones" 
+df.to_csv(filename)
 #%%
 fig, axs = plt.subplots(figsize = (12, 8))
-for columna in tqdm(df_centralidad.columns[0:2]):
+for columna in tqdm(df_centralidad.columns):
     lista_centralidad = df_centralidad.sort_values(by = columna, ascending = False).index
 
     frac_quitados, frac_en_gigante = desarmar_red(G2, lista_centralidad)
@@ -113,5 +118,6 @@ axs.set_xlabel("Fracción de nodos quitados",fontsize = 16)
 axs.set_ylabel("Fracción de nodos en la componente gigante", fontsize = 16)
 axs.legend(fontsize = 16)
 axs.tick_params(axis='both', which='major', labelsize=14)
+plt.savefig(f"imagenes del analisis/centralidad multienlace random {cant_iteraciones} iteraciones.png")
 plt.show()
 # %%

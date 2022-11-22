@@ -1,5 +1,4 @@
 #%%
-
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -7,6 +6,7 @@ from unicodedata import normalize
 import pickle 
 import textdistance as td
 from scipy.spatial.distance import pdist, squareform
+import networkx as nx
 #%%
 
 def normalizar(string):
@@ -18,6 +18,7 @@ def normalizar(string):
 lista_artistas = pd.read_csv("artistas.csv")
 
 # %%
+artistas_coincidentes = []
 artistas_repetidos = []
 artistas_normalizados = []
 for artista_i in lista_artistas["nombre"]:
@@ -52,7 +53,7 @@ for i in artistas_repetidos_filtrados:
     print(i)
 #%%
 i = 1496
-with open(f"red_final/Iteracion {i}/red_final_hasta_indice_{i}.gpickle", "rb") as f:
+with open(f"red_final_generos.gpickle", "rb") as f:
     G = pickle.load(f)
 
 G_copia = G.copy()
@@ -65,9 +66,7 @@ G_copia.remove_nodes_from(nodos_para_remover)
 
 # %%
 # enlaces = list(G.edges(data= True))
-
-#artistas_repetidos_filtrados = sorted(artistas_repetidos_filtrados)
-
+artistas_repetidos_filtrados = sorted(artistas_repetidos_filtrados)
 
 artistas_a_matar = []
 
@@ -75,29 +74,32 @@ for i,j in artistas_repetidos_filtrados:
     if len(i) <= len(j):
         enlaces = list(G.edges(j,data=True))
         for data_enlace in enlaces:
-           # print(i,j)
             if i not in list(G_copia.nodes()):
                 print(f"agregue a {i}")
-              #  print(i,j)
-              #  print("ajdhajdhja")
             G_copia.add_edge(i,data_enlace[1],nombre = data_enlace[2]["nombre"],fecha = data_enlace[2]["fecha"])
 
+        artistas_a_matar.append(j)
     else:
         enlaces = list(G.edges(i,data=True))
         for data_enlace in enlaces:
             if j not in list(G_copia.nodes()):
                 print(f"agregue a {j}")
-               # print(i,j)
-                #print("ajdhajdhja")
             G_copia.add_edge(j,data_enlace[1],nombre = data_enlace[2]["nombre"],fecha = data_enlace[2]["fecha"])
+
+        artistas_a_matar.append(i)
 #print(artistas_a_matar)
 
 G_copia.remove_nodes_from(artistas_a_matar)
 
+#%%--------------------Para guardar la red--------------------
+
+nx.write_gpickle(G, f"red_filtrada/red_filtrada.gpickle")
+
+#%% Lo siguiente es para comprobar que no hayan quedado artistas por filtrar
 
 datos = set(G.nodes()) ^ set(G_copia.nodes()) 
-#%%
 
+#%%
 for i in datos:
     if i not in artistas_repetidos_filtrados:
         print(i)
@@ -107,8 +109,10 @@ lista = list(np.unique(lista))
 
 no_interseccion = datos ^ set(lista)
 
-print(len(no_interseccion))
+print(no_interseccion)
+
 # %%
-enlaces = [G.edges("Bizarrap",data = True)]
-print(enlaces)
+lista_artistas_copia = pd.DataFrame(list(G_copia.nodes()), columns = ["nombre"])
+
+lista_artistas_copia.to_csv("artistas copia.csv")
 # %%

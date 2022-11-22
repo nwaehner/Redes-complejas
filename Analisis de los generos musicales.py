@@ -11,7 +11,18 @@ import warnings
 import wikipediaapi
 import networkx as nx
 import pickle
+from tqdm import tqdm 
+from unicodedata import normalize
+
 plt.style.use("seaborn")
+#%%
+
+def normalizar(string):
+    trans_tab = dict.fromkeys(map(ord, u'\u0301\u0308'), None)
+    string_normalizado = normalize('NFKC', normalize('NFKD', string).translate(trans_tab)).lower().replace(" ", "")
+    return string_normalizado
+
+
 #%%
 def obtener_genero(artista_nombre):
     #obtengo genero musicales de artista scrapeando
@@ -20,15 +31,15 @@ def obtener_genero(artista_nombre):
             language='es',    
     )
     warnings.filterwarnings("ignore")
+    # try:
+    #     #usa el buscador de wikipedia para buscar el artista
+    #     #y agarra primer elemento
+    #     id_artista = wiki.search(artista_nombre)[0]
+    # except:
+    #     print(f'{artista_nombre} NO TIENE WIKIPAGE')
+    #     return lista_generos
     try:
-        #usa el buscador de wikipedia para buscar el artista
-        #y agarra primer elemento
-        id_artista = wiki.search(artista_nombre)[0]
-    except:
-        print(f'{artista_nombre} NO TIENE WIKIPAGE')
-        return lista_generos
-    try:
-        page_py = wiki_wiki.page(id_artista)
+        page_py = wiki_wiki.page(artista_nombre)
     except wiki.exceptions.DisambiguationError as e:
         queries='\n'.join(str(e).split('\n')[1:])
         queries=queries.split('\n')
@@ -42,18 +53,22 @@ def obtener_genero(artista_nombre):
             soup = bs(page.content, 'html.parser')
             ta = soup.find_all('table',class_="infobox biography vcard")[0].tbody
             for t in ta:
-                if 'Género' in t.text:
+                if 'Géneros' in t.text:
                     lista_generos = t.text.splitlines()
-                    lista_generos.remove('Género')
+                    lista_generos.remove('Géneros')
+                elif 'Género' in t.text:
+                    lista_generos = t.text.splitlines()
+                    lista_generos.remove('Género')    
         except:
             print('NO ENCONTRÓ GENERO')
+    
+    if "" in lista_generos:
+        lista_generos.remove("")
     return lista_generos
 
 def es_realmente_argentino(artista_nombre):
     es_argentino = False
-    wiki_wiki = wikipediaapi.Wikipedia(
-            language='es',    
-    )
+    wiki_wiki = wikipediaapi.Wikipedia(language='es',)
     warnings.filterwarnings("ignore")
     try:
         id_artista = wiki.search(artista_nombre)[0]
@@ -92,20 +107,29 @@ def es_realmente_argentino(artista_nombre):
     return es_argentino
 #%%-----------------------Cargamos el multigrafo---------------------------
 i = 1496
-with open(f"red_final/Iteracion {i}/red_final_hasta_indice_{i}.gpickle", "rb") as f:
+with open(f"red_filtrada/red_filtrada.gpickle", "rb") as f:
     G = pickle.load(f)
 #%%Me armo esta celda para agregar géneros musicales con wikipedia
 lista_nodos = list(G.nodes())
 for i,nodo in enumerate(lista_nodos):
     print(i, nodo)
-    G.nodes()[nodo]["generos_musicales"] = obtener_genero(nodo)
+    # Agregamos los generos del scrap de wikipedia
+    print("Tenia",len(G.nodes()[nodo]["generos_musicales"]), "generos")
+    G.nodes()[nodo]["generos_musicales"].extend(obtener_genero(nodo))
+    
+    # Pedimos que los géneros sean unicos
+    generos_normalizados = [normalizar(i) for i in G.nodes()[nodo]["generos_musicales"]]
+    G.nodes()[nodo]["generos_musicales"] = list(np.unique(generos_normalizados))
+    print("Tengo ahora",len(G.nodes()[nodo]["generos_musicales"]), "generos")
 #%%
 nodos_sin_etiquetas = []
 for nodo in lista_nodos:
     if len(G.nodes()[nodo]["generos_musicales"])==0:
         nodos_sin_etiquetas.append(nodo)
 print(len(nodos_sin_etiquetas)/1496)
-    
+#%%
+nx.write_gpickle(G, f"red_filtrada/red_filtrada.gpickle")
+
 #%%Defino una función para encontrar la fecha donde salió la primera colaboración de un artista
 def encontrar_fecha_menor(lista_fechas):
 
