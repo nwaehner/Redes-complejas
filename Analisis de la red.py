@@ -1,34 +1,23 @@
 #%%
-import spotipy
-from spotipy.oauth2 import SpotifyClientCredentials
-import requests
-import json
-import re
-from multiprocessing import Queue
 import networkx as nx
-import musicbrainzngs as mb 
 import pickle
 import numpy as np
 import matplotlib.pyplot as plt
-import wikipedia as wiki
-import time
-from unicodedata import normalize
 import pandas as pd
 import random 
-i = 1496
+import plfit
+
 # Cargamos el multigrafo
-with open(f"red_final/Iteracion {i}/red_final_hasta_indice_{i}.gpickle", "rb") as f:
+with open(f"red_filtrada/red_filtrada.gpickle", "rb") as f:
     G = pickle.load(f)
 
-for i in G.edges(data = True):
-  if 'Feral Fauna' in i:
-    print(i)
 #%%
 def hacer_lista_grados(red): #devuelve una lista con los nodos de la red.
   lista_grados=[grado for (nodo,grado) in red.degree()]
   return lista_grados
 
 lista_grados = hacer_lista_grados(G)
+
 
 #Distribución de grado, con escala log y bineado log también.
 bins = np.logspace(np.log10(1),np.log10(max(lista_grados)), 15)
@@ -42,6 +31,15 @@ plt.title("Distribución de grado (log-log)")
 # plt.savefig("distribucion de grado.png")
 plt.show()
 
+ajuste_grafo = plfit.plfit(lista_grados)
+plt.figure(1)
+plt.title("Red", fontsize = 14)
+ajuste_grafo.plotpdf() #Grafica directamente el histograma, sin normalizar
+# Grafica la frecuencia, no la probabilidad
+Kmin = ajuste_grafo._xmin #este sería nuestro Kmin
+gamma = ajuste_grafo._alpha #este sería nuestro gamma
+print('Kmin = '+str(Kmin))
+print('gamma = '+str(gamma))
 
 
 #%%
@@ -130,4 +128,4 @@ ax.legend(loc = 'best')
 # plt.savefig("Homofilia por recableo.png")
 plt.show()
 
-# %%
+# %%Asortatividad
