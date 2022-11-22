@@ -20,8 +20,8 @@ i = 1496
 with open(f"red_final/Iteracion {i}/red_final_hasta_indice_{i}.gpickle", "rb") as f:
     G = pickle.load(f)
 
-for i in G.edges():
-  if 'Ricardo Tapia (La Mississippi)' in i:
+for i in G.edges(data = True):
+  if 'Feral Fauna' in i:
     print(i)
 #%%
 def hacer_lista_grados(red): #devuelve una lista con los nodos de la red.
