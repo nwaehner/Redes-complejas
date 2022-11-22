@@ -12,26 +12,25 @@ i = 1496
 with open(f"red_final/Iteracion {i}/red_final_hasta_indice_{i}.gpickle", "rb") as f:
     G = pickle.load(f)
 
-matriz_adyacencia = nx.adjacency_matrix(G)
+matriz_adyacencia = nx.to_pandas_adjacency(G).to_numpy()
 #%%
 genero = "vintagetango"
 vector_generos = []
+
 for nodo in G.nodes():
-
-
-vector_generos = [G.nodes(nodo)["generos_musicales"] for nodo in G.nodes()]
-
-
+    lista_generos_nodo = G.nodes()[nodo]["generos_musicales"] 
+    if genero in lista_generos_nodo:
+        vector_generos.append(1)
+    elif len(lista_generos_nodo) == 0:
+        vector_generos.append(-1)
+    else:
+        vector_generos.append(0)
+        
 #%%
 
-
 label_prop_model = LabelPropagation()
-iris = datasets.load_iris()
-rng = np.random.RandomState(42)
-random_unlabeled_points = rng.rand(len(iris.target)) < 0.3
-labels = np.copy(iris.target)
-labels[random_unlabeled_points] = -1
-label_prop_model.fit(iris.data, labels)
+label_prop_model.fit(matriz_adyacencia, vector_generos)
+prediccion = label_prop_model.predict_proba(matriz_adyacencia)
 
-
+print(prediccion)
 # %%

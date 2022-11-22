@@ -1,4 +1,4 @@
-,Id,Label,id_artista,popularidad,generos_musicales,genero
+numero,Id,Label,id_artista,popularidad,generos_musicales,genero
 0,Paulo Londra,Paulo Londra,spotify:artist:3vQ0GE3mI0dAaxIMYe5g7z,78,"['argentine hip hop', 'trap argentino', 'trap latino']",male
 1,Bizarrap,Bizarrap,spotify:artist:716NhGYqD1jl2wI1Qkgq36,84,"['argentine hip hop', 'pop venezolano', 'trap argentino']",male
 2,Trueno,Trueno,spotify:artist:2x7PC78TmgqpEIjaGAZ0Oz,74,"['argentine hip hop', 'bases de freestyle', 'trap argentino', 'trap latino']",male

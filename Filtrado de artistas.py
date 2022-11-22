@@ -18,9 +18,11 @@ def normalizar(string):
 lista_artistas = pd.read_csv("artistas.csv")
 
 # %%
-artistas_coincidentes = []
+# Creamos una lista con los artistas repetidos
 artistas_repetidos = []
+# Creamos una lista con los artistas repetidos pero los strings normalizados
 artistas_normalizados = []
+
 for artista_i in lista_artistas["nombre"]:
     nombre_normalizado_i = normalizar(artista_i)
     for artista_j in lista_artistas["nombre"]:
@@ -29,7 +31,7 @@ for artista_i in lista_artistas["nombre"]:
             artistas_repetidos.append((artista_i, artista_j)) 
             artistas_normalizados.append((nombre_normalizado_i, nombre_normalizado_j))
 
-#%%
+#%% Sacamos palabras de artistas que no queremos combinar/eliminar de la red
 artistas_repetidos_filtrados = []
 
 palabras_filtro = ["UN","Fernando","Rodrigo","Axel","Emilia","TINI","Rei","Wen","Árbol",'Cacho Lafalce, Bernardo Baraj, Cacho Arce, Domingo Cura & Chino Rossi',

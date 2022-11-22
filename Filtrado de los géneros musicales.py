@@ -36,8 +36,7 @@ for nodo in G.nodes():
     lista_generos_nodo = G.nodes()[nodo]["generos_musicales"]
 
     for genero in lista_generos_nodo:
-        if "reggaeton" in genero:
-            print(nodo) 
+
         if genero in dic_generos.keys():
             dic_generos[genero] += 1
         else:
