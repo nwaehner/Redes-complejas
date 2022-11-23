@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import random 
 import plfit
+from scipy.optimize import curve_fit
 
 # Cargamos el multigrafo
 with open(f"red_filtrada/red_filtrada.gpickle", "rb") as f:
@@ -16,10 +17,9 @@ def hacer_lista_grados(red): #devuelve una lista con los nodos de la red.
   lista_grados=[grado for (nodo,grado) in red.degree()]
   return lista_grados
 
-lista_grados = hacer_lista_grados(G)
+lista_grados = np.array(hacer_lista_grados(G))
 
-
-#Distribución de grado, con escala log y bineado log también.
+#%% Distribución de grado, con escala log y bineado log también.
 bins = np.logspace(np.log10(1),np.log10(max(lista_grados)), 15)
 plt.hist(lista_grados, bins = bins, color='#901c8e',rwidth = 0.80, alpha= 0.8)
 plt.xscale("log")
@@ -31,15 +31,62 @@ plt.title("Distribución de grado (log-log)")
 # plt.savefig("distribucion de grado.png")
 plt.show()
 
+#%%---------------------------Hacemos el ajuste--------------------------------
 ajuste_grafo = plfit.plfit(lista_grados)
-plt.figure(1)
-plt.title("Red", fontsize = 14)
 ajuste_grafo.plotpdf() #Grafica directamente el histograma, sin normalizar
 # Grafica la frecuencia, no la probabilidad
 Kmin = ajuste_grafo._xmin #este sería nuestro Kmin
 gamma = ajuste_grafo._alpha #este sería nuestro gamma
+plt.xlabel("Grado",fontsize = 16)
+plt.ylabel("Cantidad de nodos",fontsize = 16)
 print('Kmin = '+str(Kmin))
 print('gamma = '+str(gamma))
+p,sims = ajuste_grafo.test_pl(usefortran=True, niter=10000, nosmall=False)
+print(f"El p_valor de la red es {p}")
+#%%--------------------Análisis de la asortatividad por Barabási-----------------------
+
+def f_ajuste(x, a, mu): return a*x**mu
+
+# Creamos un dataframe con el grado y el grado medio de los vecinosdataframe 
+df = pd.DataFrame(dict(
+    GRADO = dict(G.degree),
+    GRADO_MEDIO_VECINOS = nx.average_neighbor_degree(G)
+)) 
+
+#calculo el grado medio por grado para ambas redes
+grado_medio_por_grado = df.groupby(['GRADO'])['GRADO_MEDIO_VECINOS'].mean()
+
+# Defino las variables x e y de lo que voy a ajustar
+var_x = grado_medio_por_grado.index 
+var_y = grado_medio_por_grado.values
+
+# Utilizo curve_fit() para el ajuste
+popt, pcov = curve_fit(f_ajuste, var_x, var_y)
+
+# Imprimo en pantalla los valores de popt y pcov
+a, mu = popt
+err_a, err_mu = np.sqrt(np.diag(pcov))
+print("Los parametros de ajuste son:")
+print(f'a: {a} ± {err_a}')
+print(f'mu: {mu} ± {err_mu}')
+
+a, mu = popt
+var_x_ajuste = np.linspace(1, max(var_x),100000)
+var_y_ajuste = f_ajuste(var_x_ajuste, a, mu)
+
+
+
+# Graficamos
+fig, axs = plt.subplots(figsize = (16,6), facecolor='#f4e8f4')
+axs.loglog(grado_medio_por_grado.index,grado_medio_por_grado.values,'.',color='#901c8e', alpha= 0.8, label = "Datos")
+axs.loglog(var_x_ajuste,var_y_ajuste,color='g', alpha= 0.8, label = "Ajuste")
+axs.grid('on', linestyle = 'dashed', alpha = 0.5)
+axs.set_title("Red ",fontsize = 16)
+axs.set_xlabel("Grado",fontsize = 16)
+axs.set_ylabel("Grado medio de los vecinos",fontsize = 16)
+axs.legend(True)
+plt.show()
+#%%--------------------Análisis de la asortatividad por Newman-----------------------
 
 
 #%%

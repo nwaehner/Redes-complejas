@@ -31,13 +31,12 @@ def obtener_genero(artista_nombre):
             language='es',    
     )
     warnings.filterwarnings("ignore")
-    # try:
-    #     #usa el buscador de wikipedia para buscar el artista
-    #     #y agarra primer elemento
-    #     id_artista = wiki.search(artista_nombre)[0]
-    # except:
-    #     print(f'{artista_nombre} NO TIENE WIKIPAGE')
-    #     return lista_generos
+    try:
+        #usa el buscador de wikipedia para buscar el artista y agarra primer elemento
+        id_artista = wiki.search(artista_nombre)[0]
+    except:
+        print(f'{artista_nombre} NO TIENE WIKIPAGE')
+        return lista_generos
     try:
         page_py = wiki_wiki.page(artista_nombre)
     except wiki.exceptions.DisambiguationError as e:
@@ -106,26 +105,29 @@ def es_realmente_argentino(artista_nombre):
         print('no existe la pagina de duki')
     return es_argentino
 #%%-----------------------Cargamos el multigrafo---------------------------
-i = 1496
 with open(f"red_filtrada/red_filtrada.gpickle", "rb") as f:
     G = pickle.load(f)
-#%%Me armo esta celda para agregar géneros musicales con wikipedia
+
+#%%--------Me armo esta celda para agregar géneros musicales con wikipedia----------
 lista_nodos = list(G.nodes())
-for i,nodo in enumerate(lista_nodos):
+for i,nodo in (enumerate(lista_nodos)):
     print(i, nodo)
     # Agregamos los generos del scrap de wikipedia
-    print("Tenia",len(G.nodes()[nodo]["generos_musicales"]), "generos")
     G.nodes()[nodo]["generos_musicales"].extend(obtener_genero(nodo))
     
     # Pedimos que los géneros sean unicos
     generos_normalizados = [normalizar(i) for i in G.nodes()[nodo]["generos_musicales"]]
     G.nodes()[nodo]["generos_musicales"] = list(np.unique(generos_normalizados))
-    print("Tengo ahora",len(G.nodes()[nodo]["generos_musicales"]), "generos")
+
 #%%
 nodos_sin_etiquetas = []
 for nodo in lista_nodos:
-    if len(G.nodes()[nodo]["generos_musicales"])==0:
-        nodos_sin_etiquetas.append(nodo)
+    try: 
+        G.nodes()[nodo]["generos_musicales"]
+        if len(G.nodes()[nodo]["generos_musicales"])==0:
+            nodos_sin_etiquetas.append(nodo)
+    except:
+        pass
 print(len(nodos_sin_etiquetas)/1496)
 #%%
 nx.write_gpickle(G, f"red_filtrada/red_filtrada.gpickle")
