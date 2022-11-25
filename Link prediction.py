@@ -39,7 +39,7 @@ with open(f"red_filtrada/red_filtrada.gpickle", "rb") as f:
     
 #%% NODE TO VEC:
 
-g_emb = n2v(G, dimensions=16)
+g_emb = n2v(G, dimensions=8)
 WINDOW = 1 # Node2Vec fit window
 MIN_COUNT = 1 # Node2Vec min. count
 BATCH_WORDS = 4 # Node2Vec batch words
@@ -61,7 +61,7 @@ emb_df = (
 
 
 # %%
-def predict_links(G, df, article_id):
+def predict_links_no_conect(G, df, article_id):
     
     # separate target article with all others
     article = df[df.index == article_id]
@@ -83,20 +83,8 @@ def predict_links(G, df, article_id):
     articles = [art[0] for art in similar_articles]
     similaridad_articles = [art[1] for art in similar_articles]
     return articles,similaridad_articles
-#%%
-nodos_recorridos = []
-similaridades_no_conectados = []
 
-for i in list(G.nodes()):
-    nodos_similares,similaridad = predict_links(G, emb_df, i)
-    nodos_recorridos.append(i)
-    #Hago esto para no agregar similaridad de nodos dos veces.
-    for j,nodo in enumerate(nodos_similares):
-        if nodo not in nodos_recorridos:
-            similaridades_no_conectados.append(similaridad[j])
-
-# %%
-def predict_links_conectados(G, df, article_id):
+def predict_links_conect(G, df, article_id):
     
     # separate target article with all others
     article = df[df.index == article_id]
@@ -120,19 +108,32 @@ def predict_links_conectados(G, df, article_id):
     similaridad_articles = [art[1] for art in similar_articles]
     return articles,similaridad_articles
 
-# %%
 
+#%%
 nodos_recorridos = []
-similaridades_conectados = []
-for i in list(G.nodes()):
-    nodos_similares,similaridad = predict_links_conectados(G, emb_df, i)
-    nodos_recorridos.append(i)
+artistas_y_similaridades_conectados = []
+artistas_y_similaridades_no_conectados = []
+for nodo in list(G.nodes()):
+    nodos_sim_no_conect , sim_no_conect = predict_links_no_conect(G, emb_df, nodo)
+    
+    nodos_sim_conect , sim_conect = predict_links_conect(G, emb_df, nodo)
+    
+    nodos_recorridos.append(nodo)
     #Hago esto para no agregar similaridad de nodos dos veces.
-    for i,nodo in enumerate(nodos_similares):
-        if nodo not in nodos_recorridos:
-            similaridades_conectados.append(similaridad[i])
+    
+    for j,nodo_sim_conect in enumerate(nodos_sim_conect):
+        if nodo_sim_conect not in nodos_recorridos:
+            artistas_y_similaridades_conectados.append([nodo,nodo_sim_conect,sim_conect[j]])
+            
+    for j,nodo_sim_no_conect in enumerate(nodos_sim_no_conect):
+        if nodo_sim_no_conect not in nodos_recorridos:
+            artistas_y_similaridades_no_conectados.append([nodo,nodo_sim_no_conect,sim_no_conect[j]])
+            
+# %% ARMO LISTA CON LAS SIMILARIDADES
+similaridades_conectados = [i[2] for i in artistas_y_similaridades_conectados]
+similaridades_no_conectados = [i[2] for i in artistas_y_similaridades_no_conectados]
 
-# %%
+#%%
 fig, ax = plt.subplots(nrows = 1, ncols = 1, figsize = (14, 8), facecolor='#D4CAC6')
 counts, bins = np.histogram(similaridades_no_conectados, bins=30)
 ax.hist(bins[:-1], bins,weights=counts/max(counts),range = [0,1], rwidth = 0.80, facecolor='r', alpha=0.75,label= "Artistas no enlazados")
@@ -145,28 +146,12 @@ ax.set_xlabel("Similaridad", fontsize=12)
 ax.set_ylabel("Frecuencia normalizada", fontsize=12)
 plt.title("Similaridad entre artistas enlazados y no enlazados",fontsize = 18)
 ax.legend(loc = 'best')
-#plt.savefig("Similaridad entre artistas.png")
+plt.savefig("Similaridad entre artistas.png")
 plt.show()
  
 # %%
-nodos_recorridos = []
-artistas_y_similaridades = []
-similaridades= []
-for nodo in list(G.nodes()):
-    nodos_similares,similaridad = predict_links(G, emb_df, nodo)
-    nodos_recorridos.append(nodo)
-    #Hago esto para no agregar similaridad de nodos dos veces.
-    for j,nodo_similar in enumerate(nodos_similares):
-        if nodo_similar not in nodos_recorridos:
-            artistas_y_similaridades.append([nodo,nodo_similar,similaridad[j]])
-            
-
-# %%
 def tomartercero(elem):
     return elem[2]
-
-artistas_y_similaridades.sort(key=tomartercero,reverse=True)
-
-# %%
-print(artistas_y_similaridades[0:100])
+artistas_y_similaridades_no_conectados.sort(key=tomartercero,reverse=True)
+print(artistas_y_similaridades_no_conectados[0:100])
 # %%
