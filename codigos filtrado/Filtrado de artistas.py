@@ -14,8 +14,10 @@ def normalizar(string):
     string_normalizado = normalize('NFKC', normalize('NFKD', string).translate(trans_tab)).lower().replace(" ", "")
     return string_normalizado
 
+with open(f"red_filtrada/red_filtrada.gpickle", "rb") as f:
+    G = pickle.load(f)
 # %%
-lista_artistas = pd.read_csv("artistas.csv")
+lista_artistas = list(G.nodes())
 
 # %%
 # Creamos una lista con los artistas repetidos
