@@ -11,18 +11,11 @@ from tqdm import tqdm
 
 plt.style.use("seaborn")
 #%%-----------------------Cargamos el multigrafo---------------------------
-i = 1496
 
-with open(f"red_final/Iteracion {i}/red_final_hasta_indice_{i}.gpickle", "rb") as f:
+with open(f"red_filtrada/red_filtrada.gpickle", "rb") as f:
     G = pickle.load(f)
 
-#%%---------------------Paso la red a pesada para analizarla-------------------
-
-G2 = nx.Graph()# Lo escribo así a cambio de perder la información de los enlaces
-G2.add_nodes_from(G.nodes())
-G2.add_edges_from(G.edges())
-
-# %%
+#%%-------Calculamos las distintas centralidades y las metemos en un dataframe--------
 def centralidades(Red):
     df= pd.DataFrame(dict(
     Grado = dict(Red.degree),
@@ -72,9 +65,16 @@ def desarmar_red(red,lista_sacar):
         i +=1
     return fraccion_quitados, fraccion_en_gigante
 
-#%% Calculamos la ruptura por aleatoriedad
-frac_quit_random_iterada = []
-frac_en_gig_random_iterada = []
+
+#%%---------------------Paso la red a pesada para analizarla-------------------
+
+G2 = nx.Graph()# Lo escribo así a cambio de perder la información de los enlaces
+G2.add_nodes_from(G.nodes())
+G2.add_edges_from(G.edges())
+
+#%%--------------------Calculamos la ruptura por aleatoriedad-----------------------
+lista_frac_quit_random_iterada = []
+lista_frac_en_gig_random_iterada = []
 
 cant_iteraciones = 1000
 for i in tqdm(range(cant_iteraciones)):
@@ -82,27 +82,30 @@ for i in tqdm(range(cant_iteraciones)):
     lista_random = list(G2.nodes())
     random.shuffle(lista_random)
     frac_quit_random, frac_en_gig_random = desarmar_red(G2,lista_random) 
-    frac_quit_random_iterada.append(np.array(frac_quit_random))
-    frac_en_gig_random_iterada.append(np.array(frac_en_gig_random))
+    lista_frac_quit_random_iterada.append(np.array(frac_quit_random))
+    lista_frac_en_gig_random_iterada.append(np.array(frac_en_gig_random))
 
 #Redefino la lista para q todos tengan el minimo de longitud(sino no puedo sumar los array):
 
-minimo_quit = min([len(i) for i in frac_quit_random_iterada])
+minimo_quit = min([len(i) for i in lista_frac_quit_random_iterada])
 
-frac_quit_random = [i[0:minimo_quit] for i in frac_quit_random_iterada]
-frac_en_gig_random = [i[0:minimo_quit] for i in frac_en_gig_random_iterada]
+frac_quit_random = [i[0:minimo_quit] for i in lista_frac_quit_random_iterada]
+frac_en_gig_random = [i[0:minimo_quit] for i in lista_frac_en_gig_random_iterada]
 
 #Creo mis listas para plotear: promedio sobre todas las random
 
-frac_quit_random_x = sum(np.array(frac_quit_random))/len(frac_quit_random)
-frac_en_gig_random_y = sum(np.array(frac_en_gig_random))/len(frac_en_gig_random)
+frac_quit_random = sum(np.array(frac_quit_random))/len(frac_quit_random)
+frac_en_gig_random = sum(np.array(frac_en_gig_random))/len(frac_en_gig_random)
 
-#%% Para guardar los datos
-df = pd.DataFrame([frac_quit_random_x,frac_en_gig_random_y], columns= ["Frac_quitados", "Tamaño_gigante"] )
-
-filename = "1000 iteraciones" 
-df.to_csv(filename)
-#%%
+#%%---------------------------Celda para guardar los datos---------------------
+pickle.dump(frac_quit_random, open(f'frac_quit_random.pickle', 'wb'))
+pickle.dump(frac_en_gig_random, open(f'frac_en_gig_random.pickle', 'wb'))
+#%%-------------------------Celda para cargar los datos--------------------
+with open(f"red_filtrada/centralidad/frac_quit_random.pickle", "rb") as f:
+    frac_quit_random = pickle.load(f)
+with open(f"red_filtrada/centralidad/frac_en_gig_random.pickle", "rb") as f:
+    frac_en_gig_random = pickle.load(f)    
+#%%---------Celda para graficar y romper la red con el resto de centralidades---------
 fig, axs = plt.subplots(figsize = (12, 8))
 for columna in tqdm(df_centralidad.columns):
     lista_centralidad = df_centralidad.sort_values(by = columna, ascending = False).index
@@ -112,12 +115,12 @@ for columna in tqdm(df_centralidad.columns):
     axs.plot(frac_quitados, frac_en_gigante, label = columna)
 
 
-axs.plot(frac_quit_random_x, frac_en_gig_random_y,label = "Aleatorio",c = "k")
+axs.plot(frac_quit_random, frac_en_gig_random,label = "Aleatorio",c = "k")
 axs.grid(True)
 axs.set_xlabel("Fracción de nodos quitados",fontsize = 16)
 axs.set_ylabel("Fracción de nodos en la componente gigante", fontsize = 16)
 axs.legend(fontsize = 16)
 axs.tick_params(axis='both', which='major', labelsize=14)
-plt.savefig(f"imagenes del analisis/centralidad multienlace random {cant_iteraciones} iteraciones.png")
+plt.savefig(f"imagenes del analisis/centralidad multienlace.png")
 plt.show()
 # %%
