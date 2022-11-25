@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 import random 
-import plfit
+# import plfit
 from scipy.optimize import curve_fit
 
 # Cargamos el multigrafo
@@ -45,9 +45,6 @@ p,sims = ajuste_grafo.test_pl(usefortran=True, niter=10000, nosmall=False)
 print(f"El p_valor de la red es {p}")
 
 
-#%% KRETUREW NO ANDAAAA
-
-G.nodes()["KR3TURE"]["popularidad"] = np.nan
 
 #%%--------------------Análisis de la asortatividad por Barabási-----------------------
 
@@ -194,10 +191,10 @@ plt.show()
 #RESHUFFLEAR LOS ENLACES RANDOM Y RECOLOREAR. EN AMBOS CASOS CALCULAR HOMOFILIA.
 
 
-
 def calcular_homofilia(red):
     homofilia_numerador = 0
     for enlace in red.edges(data=True):
+        
         genero_artista1 = red.nodes()[enlace[0]]["genero"]
         genero_artista2 = red.nodes()[enlace[1]]["genero"]
       
@@ -210,19 +207,30 @@ homofilia_real = calcular_homofilia(G)
 
 #%%
 G_copia = G.copy()
-#%%
+#%% HOMOFILIA POR RECOLOREO
 lista_genero = [i[1]["genero"] for i in G.nodes(data=True)]
-
 homofilia = []
 n = 5000
-
 for i in range(n): 
     random.shuffle(lista_genero) 
     for j, nodo in enumerate(list(G_copia.nodes())): 
         G_copia.nodes()[nodo]['genero'] = lista_genero[j] 
         
     homofilia.append(calcular_homofilia(G_copia)) 
+#%% HOMOFILIA POR RECABLEO
 
+from tqdm import tqdm
+iteracion = 0
+lista_nodos = list(G.nodes())
+homofilia_recableo = []
+clustering_recableo = []
+for iteracion in tqdm(range(5000)):
+  nueva_red = nx.double_edge_swap(G, nswap=len(list(G_copia.edges())), max_tries=len(list(G_copia.edges()))*10)
+  homofilia_recableo.append(calcular_homofilia(nueva_red))
+  nueva_red_simple = nx.Graph()
+  nueva_red_simple.add_nodes_from(lista_nodos)
+  nueva_red_simple.add_edges_from(nueva_red.edges())
+  clustering_recableo.append(nx.average_clustering(nueva_red_simple))
 
 #%%
 fig, ax = plt.subplots(nrows = 1, ncols = 1, figsize = (14, 8), facecolor='#D4CAC6')
@@ -242,18 +250,6 @@ ax.set_xlim(0.3,0.8)
 ax.legend(loc = 'best')
 # plt.savefig("Homofilia por recoloreo.png")
 plt.show()
-
-
-#%% CODIGO PRUEBA DE SUFFLEAR ENLACES
-from tqdm import tqdm
-iteracion = 0
-homofilia_recableo = []
-for iteracion in tqdm(range(100)):
-  nueva_red = nx.double_edge_swap(G, nswap=len(list(G_copia.edges())), max_tries=len(list(G_copia.edges()))*2)
-  homofilia_recableo.append(calcular_homofilia(nueva_red))
-print(homofilia_recableo)
-
-    
   
 
 # %%
@@ -267,12 +263,15 @@ ax.fill_between(x = [np.mean(homofilia_recableo)-np.std(homofilia_recableo),np.s
 ax.grid('on', linestyle = 'dashed', alpha = 0.5)
 ax.set_xlabel("Homofilia", fontsize=12)
 ax.set_ylabel("Frecuencia normalizada", fontsize=12)
-ax.set_ylim(0,0.2)
-ax.set_yticks(np.arange(0,0.21,0.05))
-ax.set_xticks(np.arange(0.63,0.7,0.01))
+# ax.set_ylim(0,0.2)
+# ax.set_yticks(np.arange(0,0.21,0.05))
+# ax.set_xticks(np.arange(0.63,0.7,0.01))
 plt.title("Homofilia por recableo (n = 100)",fontsize = 18)
-ax.set_xlim(0.63,0.7)
+# ax.set_xlim(0.63,0.7)
 ax.legend(loc = 'best')
+counts, bins = np.histogram(homofilia, bins=20)
+ax.hist(bins[:-1], bins, weights=counts/n, range = [0,1], rwidth = 0.80, facecolor='g', alpha=0.75)
+ax.vlines(x = np.mean(homofilia), ymin = 0, ymax = 0.3, linewidth = 3, linestyle = '--', alpha = 0.8, color = 'r', label = 'Media')
 # plt.savefig("Homofilia por recableo.png")
 plt.show()
 
