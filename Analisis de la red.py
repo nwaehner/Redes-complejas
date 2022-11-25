@@ -224,7 +224,7 @@ lista_nodos = list(G.nodes())
 homofilia_recableo = []
 clustering_recableo = []
 for iteracion in tqdm(range(1000)):
-  nueva_red = nx.double_edge_swap(G, nswap=len(list(G_copia.edges())), max_tries=len(list(G_copia.edges()))*10)
+  nueva_red = nx.double_edge_swap(G, nswap=len(list(G_copia.edges()))*2, max_tries=len(list(G_copia.edges()))*10)
   homofilia_recableo.append(calcular_homofilia(nueva_red))
   nueva_red_simple = nx.Graph()
   nueva_red_simple.add_nodes_from(lista_nodos)
@@ -264,14 +264,15 @@ ax.legend(loc = 'best')
 #plt.savefig("Homofilia por recableo.png")
 plt.show()
 
-# %% CALCULO DE CLUSTERING POR RECABLEO
-clustering = pd.read_pickle("Clustering_por_recableo.pickle")
+# # %% CALCULO DE CLUSTERING POR RECABLEO
+# clustering_recableo = pd.read_pickle("Clustering_por_recableo.pickle")
 
 nueva_red_simple = nx.Graph()
-nueva_red_simple.add_nodes_from(lista_nodos)
-nueva_red_simple.add_edges_from(G.edges())
+nueva_red_simple.add_nodes_from(list(G.nodes()))
+nueva_red_simple.add_edges_from(list(G.edges()))
+
 print(f"El valor del clustering es {nx.average_clustering(nueva_red_simple)}")
-print(f"El valor del clustering al recablear es de {np.mean(clustering)} +- {np.std(clustering)}")
+print(f"El valor del clustering al recablear es de {np.mean(clustering_recableo)} +- {np.std(clustering_recableo)}")
 
 # %%
 pickle.dump(homofilia, open(f'Homofilia_por_recoloreo.pickle', 'wb'))
