@@ -190,7 +190,6 @@ plt.show()
 #%%
 #RESHUFFLEAR LOS ENLACES RANDOM Y RECOLOREAR. EN AMBOS CASOS CALCULAR HOMOFILIA.
 
-
 def calcular_homofilia(red):
     homofilia_numerador = 0
     for enlace in red.edges(data=True):
@@ -224,15 +223,16 @@ iteracion = 0
 lista_nodos = list(G.nodes())
 homofilia_recableo = []
 clustering_recableo = []
-for iteracion in tqdm(range(5000)):
+for iteracion in tqdm(range(1000)):
   nueva_red = nx.double_edge_swap(G, nswap=len(list(G_copia.edges())), max_tries=len(list(G_copia.edges()))*10)
   homofilia_recableo.append(calcular_homofilia(nueva_red))
   nueva_red_simple = nx.Graph()
   nueva_red_simple.add_nodes_from(lista_nodos)
   nueva_red_simple.add_edges_from(nueva_red.edges())
   clustering_recableo.append(nx.average_clustering(nueva_red_simple))
-
 #%%
+print(iteracion)
+#%% GRAFICO HOMOFILIA RECOLOREO
 fig, ax = plt.subplots(nrows = 1, ncols = 1, figsize = (14, 8), facecolor='#D4CAC6')
 counts, bins = np.histogram(homofilia, bins=20)
 ax.hist(bins[:-1], bins, weights=counts/n, range = [0,1], rwidth = 0.80, facecolor='g', alpha=0.75)
@@ -242,17 +242,13 @@ ax.fill_between(x = [np.mean(homofilia)-np.std(homofilia),np.std(homofilia)+np.m
 ax.grid('on', linestyle = 'dashed', alpha = 0.5)
 ax.set_xlabel("Homofilia", fontsize=12)
 ax.set_ylabel("Frecuencia normalizada", fontsize=12)
-ax.set_ylim(0,0.2)
-ax.set_yticks(np.arange(0,0.21,0.05))
-ax.set_xticks(np.arange(0.3,0.8,0.1))
 plt.title("Homofilia por recoloreo (n = 5000)",fontsize = 18)
-ax.set_xlim(0.3,0.8)
 ax.legend(loc = 'best')
-# plt.savefig("Homofilia por recoloreo.png")
+plt.savefig("Homofilia por recoloreo.png")
 plt.show()
   
 
-# %%
+# %% GRAFICO HOMOFOLIA RECABLEO
 
 fig, ax = plt.subplots(nrows = 1, ncols = 1, figsize = (14, 8), facecolor='#D4CAC6')
 counts, bins = np.histogram(homofilia_recableo, bins=20)
@@ -263,16 +259,22 @@ ax.fill_between(x = [np.mean(homofilia_recableo)-np.std(homofilia_recableo),np.s
 ax.grid('on', linestyle = 'dashed', alpha = 0.5)
 ax.set_xlabel("Homofilia", fontsize=12)
 ax.set_ylabel("Frecuencia normalizada", fontsize=12)
-# ax.set_ylim(0,0.2)
-# ax.set_yticks(np.arange(0,0.21,0.05))
-# ax.set_xticks(np.arange(0.63,0.7,0.01))
-plt.title("Homofilia por recableo (n = 100)",fontsize = 18)
-# ax.set_xlim(0.63,0.7)
+plt.title("Homofilia por recableo (n = 1000)",fontsize = 18)
 ax.legend(loc = 'best')
-counts, bins = np.histogram(homofilia, bins=20)
-ax.hist(bins[:-1], bins, weights=counts/n, range = [0,1], rwidth = 0.80, facecolor='g', alpha=0.75)
-ax.vlines(x = np.mean(homofilia), ymin = 0, ymax = 0.3, linewidth = 3, linestyle = '--', alpha = 0.8, color = 'r', label = 'Media')
-# plt.savefig("Homofilia por recableo.png")
+#plt.savefig("Homofilia por recableo.png")
 plt.show()
 
-# %%Asortatividad
+# %% CALCULO DE CLUSTERING POR RECABLEO
+clustering = pd.read_pickle("Clustering_por_recableo.pickle")
+
+nueva_red_simple = nx.Graph()
+nueva_red_simple.add_nodes_from(lista_nodos)
+nueva_red_simple.add_edges_from(G.edges())
+print(f"El valor del clustering es {nx.average_clustering(nueva_red_simple)}")
+print(f"El valor del clustering al recablear es de {np.mean(clustering)} +- {np.std(clustering)}")
+
+# %%
+pickle.dump(homofilia, open(f'Homofilia_por_recoloreo.pickle', 'wb'))
+pickle.dump(homofilia_recableo, open(f'Homofilia_por_recableo.pickle', 'wb'))
+pickle.dump(clustering_recableo, open(f'Clustering_por_recableo.pickle', 'wb'))
+# %%
