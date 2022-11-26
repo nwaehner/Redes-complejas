@@ -2,6 +2,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pickle
+import networkx as nx
 #%% Cargamos la red
 with open('../red_filtrada/red_filtrada.gpickle', "rb") as f:
     G = pickle.load(f)
@@ -100,7 +101,18 @@ dic_artistas_por_genero.pop("Indie")
 #%% LE CAMBIAMOS LOS GENEROS MUSICALES A LA RED EN G_COPIA.
 G_copia = G.copy()
 
-#%%
-for i in G_copia.nodes():
+#%% ---------------------------------CAMBIO LOS GENEROS MUSICALES--------------------------------
+for i in list(G_copia.nodes(data=True)):
+    generos_viejos = i[1]["generos_musicales"]
+    generos_nuevos = []
+
+    for genero,lista_artistas in dic_artistas_por_genero.items():
+        if i[0] in lista_artistas:
+            generos_nuevos.append(genero)
     
+    i[1]["generos_musicales"] = generos_nuevos
+
+
     
+# %%-------------------------------GUARDO LA RED----------------------------------
+nx.write_gpickle(G_copia, f"../red_filtrada/red_filtrada.gpickle")
