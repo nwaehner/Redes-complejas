@@ -54,7 +54,7 @@ for (i, j), z in np.ndenumerate(matriz_confusion):
     ax.text(j, i, int(z), ha='center', va='center')
 ax.set_xticks(np.arange(len(generos_representativos))) 
 ax.set_yticks(np.arange(clusters))
-
+matriz_confusion.sort(axis=- 1, kind='stable', order=None)
 ax.set_xticklabels(generos_representativos, rotation = 90)
 ax.set_ylabel("Comunidades por cluster", fontsize=12)
 ax.set_xlabel("Géneros Musicales", fontsize=12)
