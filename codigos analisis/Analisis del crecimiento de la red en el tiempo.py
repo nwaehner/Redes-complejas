@@ -16,7 +16,7 @@ def normalizar(string):
     return string_normalizado
 
 #%%-----------------------Cargamos el multigrafo---------------------------
-with open(f"red_filtrada/red_filtrada.gpickle", "rb") as f:
+with open("../red_filtrada/red_filtrada.gpickle", "rb") as f:
     G = pickle.load(f)
 
 #%%
@@ -42,7 +42,7 @@ for nodo in lista_nodos:
     fecha_aparicion = encontrar_fecha_menor(lista_fechas)
     G.nodes[nodo]["fecha_aparicion"] = fecha_aparicion
 #%% Vemos cuantos artistas aparecen cada año
-fig, axs = plt.subplots(ncols = 2, figsize = (14,8))
+fig, axs = plt.subplots(ncols = 2, figsize = (14,8), facecolor = "None")
 
 # Guardo en un diccionario cuantos nodos aparecen por año
 dic_años = {}
@@ -67,18 +67,29 @@ for i, año in enumerate(dic_años_ordenado):
         artistas_acumulados_año[i] += artistas_acumulados_año[i-1]
 
 axs[0].plot(dic_años_ordenado.keys(),dic_años_ordenado.values(),".", c = "m")
-axs[0].set_title("$Artistas\;por\;año$",fontsize = 22)
+axs[0].set_title("$Artistas\;por\;año$",fontsize = 22, color = "white")
 axs[0].set_xlabel("Año",fontsize = 18)
 axs[0].set_ylabel("Cantidad de artistas", fontsize = 18)
-axs[0].tick_params(axis = "both", labelsize = 16)
+axs[0].tick_params(axis = "both", labelsize = 16, colors = "white")
+axs[0].xaxis.label.set_color('white')
+axs[0].yaxis.label.set_color('white')
 
 axs[1].plot(dic_años_ordenado.keys(), artistas_acumulados_año, ".")
-axs[1].set_title("$Artistas\;por\;año\;acumulado$",fontsize = 22)
+axs[1].set_title("$Artistas\;por\;año\;acumulado$",fontsize = 22, color = "white")
 axs[1].set_xlabel("Año",fontsize = 18)
-axs[1].tick_params(axis = "both", labelsize = 16)
+axs[1].tick_params(axis = "both", labelsize = 16, colors = "white")
+axs[1].xaxis.label.set_color('white')
+axs[1].yaxis.label.set_color('white')
 
-plt.savefig("imagenes del analisis/artistas por año.png")
+plt.savefig("../imagenes del analisis/artistas por año.png")
 plt.show()
+#%%
+lista_cant_artistas = dic_años_ordenado.values()
+max_artistas = max(lista_cant_artistas)
+año_max_artistas = lista_años_ordenados[list(lista_cant_artistas).index(max_artistas)]
+
+print(f"El año en que se unió la mayor cantidad de artistas fue {año_max_artistas} con {max_artistas}")
+
 #%%-------------Analisis de cuantas canciones se hicieron en cada año----------------
 
 # Guardo en un diccionario cuantas colaboraciones hubo en cada año
@@ -106,19 +117,30 @@ for i, año in enumerate(dic_canciones_por_año_ordenado):
         canciones_acumuladas_por_año[i] += canciones_acumuladas_por_año[i-1]
 
 #%%-----------------Vemos cantas colaboraciones se hacen en cada año-----------------
-fig, axs = plt.subplots(ncols = 2, figsize = (16,8))
+fig, axs = plt.subplots(ncols = 2, figsize = (16,8), facecolor = "None")
 
 axs[0].plot(dic_canciones_por_año_ordenado.keys(),dic_canciones_por_año_ordenado.values(),".", c = "m")
-axs[0].set_title("$Colaboraciones\;por\;año$",fontsize = 22)
+axs[0].set_title("$Colaboraciones\;por\;año$",fontsize = 22, color = "white")
 axs[0].set_xlabel("Año",fontsize = 18)
 axs[0].set_ylabel("Cantidad de colaboraciones", fontsize = 18)
-axs[0].tick_params(axis = "both", labelsize = 16)
+axs[0].tick_params(axis = "both", labelsize = 16, colors = "white")
+axs[0].xaxis.label.set_color('white')
+axs[0].yaxis.label.set_color('white')
 
 axs[1].plot(dic_canciones_por_año_ordenado.keys(), canciones_acumuladas_por_año, ".")
-axs[1].set_title("$Colaboraciones\;por\;año\;acumuladas$",fontsize = 22)
+axs[1].set_title("$Colaboraciones\;por\;año\;acumuladas$",fontsize = 22, color = "white")
 axs[1].set_xlabel("Año",fontsize = 18)
-axs[1].tick_params(axis = "both", labelsize = 16)
+axs[1].tick_params(axis = "both", labelsize = 16, colors = "white")
+axs[1].xaxis.label.set_color('white')
+axs[1].yaxis.label.set_color('white')
 
-plt.savefig("imagenes del analisis/Colaboraciones por año.png")
+plt.savefig("../imagenes del analisis/Colaboraciones por año.png")
 plt.show()
+# %%
+lista_cant_colaboraciones = dic_canciones_por_año_ordenado.values()
+max_colaboraciones = max(lista_cant_colaboraciones)
+año_max_colaboraciones = lista_años_ordenados[list(lista_cant_colaboraciones).index(max_colaboraciones)]
+
+print(f"El año en que hubo la mayor cantidad de colaboraciones fue {año_max_colaboraciones} con {max_colaboraciones}")
+
 # %%

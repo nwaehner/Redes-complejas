@@ -9,7 +9,7 @@ import random
 from scipy.optimize import curve_fit
 
 # Cargamos el multigrafo
-with open(f"red_filtrada/red_filtrada.gpickle", "rb") as f:
+with open("red_filtrada/red_filtrada.gpickle", "rb") as f:
     G = pickle.load(f)
 
 #%%

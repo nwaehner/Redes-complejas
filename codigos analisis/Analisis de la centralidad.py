@@ -12,20 +12,33 @@ from tqdm import tqdm
 plt.style.use("seaborn")
 #%%-----------------------Cargamos el multigrafo---------------------------
 
-with open(f"red_filtrada/red_filtrada.gpickle", "rb") as f:
+with open(f"../red_filtrada/red_filtrada.gpickle", "rb") as f:
     G = pickle.load(f)
 
 #%%-------Calculamos las distintas centralidades y las metemos en un dataframe--------
 def centralidades(Red):
     df= pd.DataFrame(dict(
-    Grado = dict(Red.degree),
+    grado = dict(Red.degree),
     #Autovalores= nx.eigenvector_centrality(Red, max_iter=1000, tol=1e-06, nstart=None, weight='weight'),
-    Intermediatez = nx.betweenness_centrality(Red,k=None, normalized=True, weight=None, endpoints=False, seed=None),
-    Cercania = nx.closeness_centrality(Red, u=None, distance=None, wf_improved=True),
-    Popularidad = {nodo: G.nodes()[nodo]["popularidad"] for nodo in G.nodes()}))
+    intermediatez = nx.betweenness_centrality(Red,k=None, normalized=True, weight=None, endpoints=False, seed=None),
+    cercania = nx.closeness_centrality(Red, u=None, distance=None, wf_improved=True),
+    popularidad = {nodo: G.nodes()[nodo]["popularidad"] for nodo in G.nodes()}))
     return df
 
-df_centralidad = centralidades(G)   
+df_centralidad = centralidades(G)
+#%%-------------Para agregar las centralidades como atributos de los nodos---------------
+df_nodos = pd.read_csv("../red_filtrada/tabla_nodos.csv")
+
+# Le ponemos el mismo nombre a los índices
+df_nodos = df_nodos.set_index("Id")
+df_centralidad.index.name = "Id"
+# Saco las columnas que no quiero mergear
+df_centralidad = df_centralidad.drop(["popularidad"], axis = 1)
+df_nodos = df_nodos.drop("numero", axis = 1)
+# Uno los dos dataframes
+df_nodos = pd.concat([df_nodos,df_centralidad], axis = 1)
+#%%-------------------Para guardar el dataframe-----------------------------
+df_nodos.to_csv("../red_filtrada/tabla_nodos.csv")
 #%%
 def armar_componente_gigante(Red):
     Conjunto_nodos_en_gigante = max(nx.connected_components(Red), key=len)
