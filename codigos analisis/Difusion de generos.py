@@ -41,7 +41,7 @@ for genero in generos:
         else: #SI NO TIENE GENEROS, LE ASIGNO 0.
             vector.append(0)
 
-    for i in range(1000):
+    for i in range(10):
         vector_nuevo = np.matmul(matriz,vector) #Esto multiplica la matriz por el vector
         for indice,elemento in enumerate(vector): ##Esto vuelve a setear los elementos que eran 1 a -1 a esos valores
 
@@ -54,9 +54,7 @@ for genero in generos:
         vector = vector_nuevo
         
     vectores_finales.append(vector_nuevo)
-    
-for i in vectores_finales[0]:
-    print(i)
+
 
     
 #%%
@@ -83,8 +81,7 @@ nodos_sin_genero = []
 for nodo in G_copia.nodes(data=True):
     if len(nodo[1]["generos_musicales"]) == 0:
         nodos_sin_genero.append(nodo[0])
-        
-print(nodos_sin_genero)
+
 
 
 #%%
@@ -106,6 +103,9 @@ for nodo in list(G.nodes(data=True)):
         j+=1
 print(len(G.nodes())-j) #Con esto me fijo de que de la cantidad q tenia inicialmente genero. Da 741. ta bien. :D
 
+#%%
+
+nx.write_gpickle(G_copia, f"../red_filtrada/red_filtrada_difusion.gpickle")
 
 # %% -----------------------------------------------------------------------------
 # ACa calculo que tan bien lo hace. Voy a sacarle a aprox el 10% de los nodos aleatoriamente los generos musicales
