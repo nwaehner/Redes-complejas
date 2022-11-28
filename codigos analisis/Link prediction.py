@@ -24,8 +24,6 @@ from sklearn.ensemble import RandomForestClassifier
 #GridSearchCV  paraajuste de hiperparámetros con cross-validation
 from sklearn.model_selection import GridSearchCV
 
-
-
 ###     ¿ QUE MEDIDA DE DISTANCIA USAR? COSENO TIENE SENTIDO? 
 #        preguntar por el algoritmo de machine learning y que hace. 
 #         que nos dice MCC score?
@@ -193,8 +191,7 @@ def tomartercero(elem):
 artistas_y_similaridades_no_conectados.sort(key=tomartercero,reverse=True)
 print(artistas_y_similaridades_no_conectados[0:10])
 for i in artistas_y_similaridades_no_conectados:
-    if "Anibal Troilo" in i:
+    if "Bizarrap" in i:
         print(i)
-    
     
 # %%

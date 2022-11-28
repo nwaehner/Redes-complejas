@@ -81,13 +81,13 @@ nodos_sin_genero = []
 for nodo in G_copia.nodes(data=True):
     if len(nodo[1]["generos_musicales"]) == 0:
         nodos_sin_genero.append(nodo[0])
-
+print(nodos_sin_genero)
 
 
 #%%
 #Creo lista en orden con los generos de cada uno.
-generos_para_estos_nodos = [["Cumbia","Rap"], ["Cumbia"],["Reggae"],["Cumbia"],["Rock"],["Cumbia"]
-                            ,["Alternative","Tango"],["Trap","Pop"],["Tango"],["Folklore"]]
+generos_para_estos_nodos = [["Cumbia","Rap"], ["Cumbia"],["Reggae"],["Rock"],["Cumbia"]
+                            ,["Alternative","Tango"],["Trap","Pop"],["Tango"],["Pop"]]
 
 
 for indice,nodo in enumerate(nodos_sin_genero):
@@ -101,7 +101,7 @@ for nodo in list(G.nodes(data=True)):
     if (len(nodo[1]["generos_musicales"]) == 0) and (len(G_copia.nodes()[nodo[0]]["generos_musicales"]) != 0):
         print(f'{nodo[0]} tiene finalmente géneros musicales:  {G_copia.nodes()[nodo[0]]["generos_musicales"]}')
         j+=1
-print(len(G.nodes())-j) #Con esto me fijo de que de la cantidad q tenia inicialmente genero. Da 741. ta bien. :D
+print(len(G.nodes())) #Con esto me fijo de que de la cantidad q tenia inicialmente genero. Da 741. ta bien. :D
 
 #%%
 
