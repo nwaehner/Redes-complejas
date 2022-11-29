@@ -239,7 +239,7 @@ clustering_recableo = []
 for iteracion in tqdm(range(1000)):
   nueva_red = nx.double_edge_swap(G, nswap=len(list(G_copia.edges()))*2, max_tries=len(list(G_copia.edges()))*10)
   homofilia_recableo.append(calcular_homofilia(nueva_red))
-  homofilia_recableo.append(calcular_homofilia_generos_musicales(nueva_red))
+  homofilia_recableo_generos_musicales.append(calcular_homofilia_generos_musicales(nueva_red))
   nueva_red_simple = nx.Graph()
   nueva_red_simple.add_nodes_from(lista_nodos)
   nueva_red_simple.add_edges_from(nueva_red.edges())
