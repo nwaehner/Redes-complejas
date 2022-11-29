@@ -9,7 +9,7 @@ import random
 from scipy.optimize import curve_fit
 
 # Cargamos el multigrafo
-with open("red_filtrada/red_filtrada.gpickle", "rb") as f:
+with open("../red_filtrada/red_filtrada.gpickle", "rb") as f:
     G = pickle.load(f)
 
 #%%
@@ -201,8 +201,20 @@ def calcular_homofilia(red):
             homofilia_numerador += 1
 
     return homofilia_numerador/len(red.edges())
+def calcular_homofilia_generos_musicales(red):
+    homofilia_numerador = 0
+    for enlace in red.edges(data=True):
+        # print(enlace)
+        genero_artista1 = red.nodes()[enlace[0]]["generos_musicales"]
+        print(genero_artista1)
+        genero_artista2 = red.nodes()[enlace[1]]["generos_musicales"]
+        if set(genero_artista1).intersection(set(genero_artista2)) != set():
+            homofilia_numerador += 1
+            
+    return homofilia_numerador/len(red.edges())
 
 homofilia_real = calcular_homofilia(G)
+homofilia_generos = calcular_homofilia_generos_musicales(G)
 
 #%%
 G_copia = G.copy()
@@ -222,10 +234,12 @@ from tqdm import tqdm
 iteracion = 0
 lista_nodos = list(G.nodes())
 homofilia_recableo = []
+homofilia_recableo_generos_musicales = []
 clustering_recableo = []
 for iteracion in tqdm(range(1000)):
   nueva_red = nx.double_edge_swap(G, nswap=len(list(G_copia.edges()))*2, max_tries=len(list(G_copia.edges()))*10)
   homofilia_recableo.append(calcular_homofilia(nueva_red))
+  homofilia_recableo.append(calcular_homofilia_generos_musicales(nueva_red))
   nueva_red_simple = nx.Graph()
   nueva_red_simple.add_nodes_from(lista_nodos)
   nueva_red_simple.add_edges_from(nueva_red.edges())
@@ -263,6 +277,23 @@ plt.title("Homofilia por recableo (n = 1000)",fontsize = 18)
 ax.legend(loc = 'best')
 #plt.savefig("Homofilia por recableo.png")
 plt.show()
+
+# %% GRAFICO HOMOFOLIA RECABLEO GENEROS MUSICALES
+
+fig, ax = plt.subplots(nrows = 1, ncols = 1, figsize = (14, 8), facecolor='#D4CAC6')
+counts, bins = np.histogram(homofilia_recableo_generos_musicales, bins=20)
+ax.hist(bins[:-1], bins, weights=counts/iteracion, range = [0,1], rwidth = 0.80, facecolor='g', alpha=0.75)
+ax.vlines(x = np.mean(homofilia_recableo_generos_musicales), ymin = 0, ymax = 0.3, linewidth = 3, linestyle = '--', alpha = 0.8, color = 'r', label = 'Media')
+ax.vlines(x = homofilia_generos, ymin = 0, ymax = 0.3, linewidth = 3, linestyle = '--', alpha = 0.8, color = 'k', label = 'Homofilia de la red original')
+ax.fill_between(x = [np.mean(homofilia_recableo_generos_musicales)-np.std(homofilia_recableo_generos_musicales),np.std(homofilia_recableo_generos_musicales)+np.mean(homofilia_recableo)], y1 = 0.3, color = 'g', alpha = 0.4, label = 'Desviación estándar')
+ax.grid('on', linestyle = 'dashed', alpha = 0.5)
+ax.set_xlabel("Homofilia", fontsize=12)
+ax.set_ylabel("Frecuencia normalizada", fontsize=12)
+plt.title("Homofilia por recableo (n = 1000)",fontsize = 18)
+ax.legend(loc = 'best')
+#plt.savefig("Homofilia por recableo.png")
+plt.show()
+
 
 # # %% CALCULO DE CLUSTERING POR RECABLEO
 # clustering_recableo = pd.read_pickle("Clustering_por_recableo.pickle")
