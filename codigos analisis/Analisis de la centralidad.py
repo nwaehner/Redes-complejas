@@ -18,11 +18,11 @@ with open(f"../red_filtrada/red_filtrada.gpickle", "rb") as f:
 #%%-------Calculamos las distintas centralidades y las metemos en un dataframe--------
 def centralidades(Red):
     df= pd.DataFrame(dict(
-    grado = dict(Red.degree),
+    Grado = dict(Red.degree),
     #Autovalores= nx.eigenvector_centrality(Red, max_iter=1000, tol=1e-06, nstart=None, weight='weight'),
-    intermediatez = nx.betweenness_centrality(Red,k=None, normalized=True, weight=None, endpoints=False, seed=None),
-    cercania = nx.closeness_centrality(Red, u=None, distance=None, wf_improved=True),
-    popularidad = {nodo: G.nodes()[nodo]["popularidad"] for nodo in G.nodes()}))
+    Intermediatez = nx.betweenness_centrality(Red,k=None, normalized=True, weight=None, endpoints=False, seed=None),
+    Cercania = nx.closeness_centrality(Red, u=None, distance=None, wf_improved=True),
+    Popularidad = {nodo: G.nodes()[nodo]["popularidad"] for nodo in G.nodes()}))
     return df
 
 df_centralidad = centralidades(G)
@@ -89,7 +89,7 @@ G2.add_edges_from(G.edges())
 lista_frac_quit_random_iterada = []
 lista_frac_en_gig_random_iterada = []
 
-cant_iteraciones = 1000
+cant_iteraciones = 100
 for i in tqdm(range(cant_iteraciones)):
 
     lista_random = list(G2.nodes())
@@ -119,7 +119,7 @@ with open(f"../datos analisis/frac_quit_random.pickle", "rb") as f:
 with open(f"../datos analisis/frac_en_gig_random.pickle", "rb") as f:
     frac_en_gig_random = pickle.load(f)    
 #%%---------Celda para graficar y romper la red con el resto de centralidades---------
-fig, axs = plt.subplots(figsize = (12, 8))
+fig, axs = plt.subplots(figsize = (12, 8), facecolor = "None")
 for columna in tqdm(df_centralidad.columns):
     lista_centralidad = df_centralidad.sort_values(by = columna, ascending = False).index
 
@@ -132,9 +132,12 @@ axs.plot(frac_quit_random, frac_en_gig_random,label = "Aleatorio",c = "k")
 axs.grid(True)
 axs.set_xlabel("Fracción de nodos quitados",fontsize = 16)
 axs.set_ylabel("Fracción de nodos en la componente gigante", fontsize = 16)
-axs.legend(fontsize = 16)
-axs.tick_params(axis='both', which='major', labelsize=14)
-plt.savefig(f"imagenes del analisis/centralidad multienlace.png")
+axs.legend(fontsize = 20)
+axs.tick_params(axis = "both", labelsize = 16, colors = "white")
+axs.xaxis.label.set_color('white')
+axs.yaxis.label.set_color('white')
+#axs.set_ylim(0.5,1)
+plt.savefig(f"../imagenes del analisis/centralidad multienlace.png")
 plt.show()
 
 #%%--------------------Rompo la red por género musical-----------------------
@@ -145,7 +148,7 @@ generos_representativos = ["Trap","Jazz", "Pop", "HipHop", "Clasico", "Indie",
                            "Reggae","Alternative"]
 
 min_artistas_en_comunidad = 54
-cant_iteraciones = 5
+cant_iteraciones = 100
 generos_a_analizar = []
 lista_frac_quit_iterada_por_genero = []
 lista_frac_en_gig_iterada_por_genero = []
@@ -182,7 +185,7 @@ for genero in tqdm(generos_representativos):
 #seaborn.set(rc={'axes.facecolor':'black', 'figure.facecolor':'black'})
 
 
-fig, axs = plt.subplots(ncols = 2, figsize = (16, 8))
+fig, axs = plt.subplots(figsize = (8, 5), facecolor = "None")
 cmap = plt.get_cmap("Dark2")#Dark2
 for i, genero in enumerate(generos_a_analizar):
     frac_quit_random_genero = lista_frac_quit_iterada_por_genero[i]
@@ -197,9 +200,9 @@ axs.set_ylabel("Fracción de nodos en la componente gigante", fontsize = 16)
 axs.legend(fontsize = 16, labelcolor='k')
 axs.set_xlim(0, max(lista_frac_quit_iterada_por_genero[generos_a_analizar.index("Tango")]))
 axs.set_ylim(min(lista_frac_en_gig_iterada_por_genero[generos_a_analizar.index("Tango")]),1)
-axs.tick_params(axis = "both", labelsize = 14, colors = "k")
-axs.xaxis.label.set_color('k')
-axs.yaxis.label.set_color('k')
+axs.tick_params(axis = "both", labelsize = 16, colors = "white")
+axs.xaxis.label.set_color('white')
+axs.yaxis.label.set_color('white')
 
 #Para graficar mas de cerca
 
@@ -221,7 +224,29 @@ axs.yaxis.label.set_color('k')
 # axs[1].yaxis.label.set_color('k')
 
 
-plt.savefig(f"imagenes del analisis/centralidad multienlace.png")
+#plt.savefig(f"../imagenes del analisis/centralidad por genero.png")
 plt.show()
 
-# %%
+#%% Artistas más centrales según el criterio
+cant_artistas = 8
+dict_centralidad = {columna: df_centralidad.sort_values(by = columna, ascending = False).index[0:cant_artistas] for columna in df_centralidad.columns}
+cmap = plt.get_cmap("plasma")#Dark2
+def color(artista):
+    cant_apariciones = 0
+
+    for columna in dict_centralidad.values():
+        for artista_central in columna:
+            if artista == artista_central:
+                cant_apariciones += 1
+
+    # No hay artistas que aparezcan más de 3 veces
+    color = "white"
+    if cant_apariciones >= 2:
+        color = "yellow" 
+    if cant_apariciones >= 3:
+        color = "cyan"
+    return 'color: % s' % color
+
+df_artistas_centrales = pd.DataFrame(dict_centralidad)
+
+df_artistas_centrales.style.applymap(color)
