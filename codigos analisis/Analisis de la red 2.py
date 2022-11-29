@@ -5,6 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 import random 
+import copy
 # import plfit
 from scipy.optimize import curve_fit
 
@@ -217,7 +218,8 @@ homofilia_real = calcular_homofilia(G)
 homofilia_generos = calcular_homofilia_generos_musicales(G)
 
 #%%
-G_copia = G.copy()
+
+G_copia = copy.deepcopy(G)
 #%% HOMOFILIA POR RECOLOREO
 lista_genero = [i[1]["genero"] for i in G.nodes(data=True)]
 homofilia = []
@@ -230,23 +232,27 @@ for i in range(n):
     homofilia.append(calcular_homofilia(G_copia)) 
 #%% HOMOFILIA POR RECABLEO
 
+G_copia = copy.deepcopy(G)
+#%%
 from tqdm import tqdm
 iteracion = 0
-lista_nodos = list(G.nodes())
+lista_nodos = list(G_copia.nodes())
 homofilia_recableo = []
 homofilia_recableo_generos_musicales = []
 clustering_recableo = []
 for iteracion in tqdm(range(1000)):
-  nueva_red = nx.double_edge_swap(G, nswap=len(list(G_copia.edges()))*4, max_tries=len(list(G_copia.edges()))*10)
-  homofilia_recableo.append(calcular_homofilia(nueva_red))
-  homofilia_recableo_generos_musicales.append(calcular_homofilia_generos_musicales(nueva_red))
-  nueva_red_simple = nx.Graph()
-  nueva_red_simple.add_nodes_from(lista_nodos)
-  nueva_red_simple.add_edges_from(nueva_red.edges())
-  clustering_recableo.append(nx.average_clustering(nueva_red_simple))
+    G_copia = copy.deepcopy(G) #CREO Q ESTO ERA EL PROBLEMA
+    nueva_red = nx.double_edge_swap(G_copia, nswap=len(list(G_copia.edges()))*4, max_tries=len(list(G_copia.edges()))*10)
+    homofilia_recableo.append(calcular_homofilia(nueva_red))
+    homofilia_recableo_generos_musicales.append(calcular_homofilia_generos_musicales(nueva_red))
+    nueva_red_simple = nx.Graph()
+    nueva_red_simple.add_nodes_from(lista_nodos)
+    nueva_red_simple.add_edges_from(nueva_red.edges())
+    clustering_recableo.append(nx.average_clustering(nueva_red_simple))
 #%%
 print(iteracion)
 #%% GRAFICO HOMOFILIA RECOLOREO
+
 fig, ax = plt.subplots(nrows = 1, ncols = 1, figsize = (14, 8), facecolor='#D4CAC6')
 counts, bins = np.histogram(homofilia, bins=20)
 ax.hist(bins[:-1], bins, weights=counts/n, range = [0,1], rwidth = 0.80, facecolor='g', alpha=0.75)
@@ -258,7 +264,7 @@ ax.set_xlabel("Homofilia", fontsize=20)
 ax.set_ylabel("Frecuencia normalizada", fontsize=20)
 plt.title("Homofilia por recoloreo (n = 5000)",fontsize = 25)
 ax.legend(loc = 'best')
-plt.savefig("Homofilia por recoloreo.png")
+#plt.savefig("Homofilia por recoloreo.png")
 plt.show()
   
 
@@ -297,12 +303,13 @@ plt.show()
 
 # # %% CALCULO DE CLUSTERING POR RECABLEO
 # clustering_recableo = pd.read_pickle("Clustering_por_recableo.pickle")
-
+#%%
 nueva_red_simple = nx.Graph()
 nueva_red_simple.add_nodes_from(list(G.nodes()))
 nueva_red_simple.add_edges_from(list(G.edges()))
-
-print(f"El valor del clustering es {nx.average_clustering(nueva_red_simple)}")
+#%%
+G_copia = nx.Graph(G)
+print(f"El valor del clustering es {nx.average_clustering(G_copia)}")
 print(f"El valor del clustering al recablear es de {np.mean(clustering_recableo)} +- {np.std(clustering_recableo)}")
 
 # %%
