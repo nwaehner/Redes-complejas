@@ -5,6 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 import random 
+import copy
 # import plfit
 from scipy.optimize import curve_fit
 
@@ -201,12 +202,12 @@ def calcular_homofilia(red):
             homofilia_numerador += 1
 
     return homofilia_numerador/len(red.edges())
+
 def calcular_homofilia_generos_musicales(red):
     homofilia_numerador = 0
     for enlace in red.edges(data=True):
         # print(enlace)
         genero_artista1 = red.nodes()[enlace[0]]["generos_musicales"]
-        print(genero_artista1)
         genero_artista2 = red.nodes()[enlace[1]]["generos_musicales"]
         if set(genero_artista1).intersection(set(genero_artista2)) != set():
             homofilia_numerador += 1
@@ -217,7 +218,8 @@ homofilia_real = calcular_homofilia(G)
 homofilia_generos = calcular_homofilia_generos_musicales(G)
 
 #%%
-G_copia = G.copy()
+
+G_copia = copy.deepcopy(G)
 #%% HOMOFILIA POR RECOLOREO
 lista_genero = [i[1]["genero"] for i in G.nodes(data=True)]
 homofilia = []
@@ -230,35 +232,39 @@ for i in range(n):
     homofilia.append(calcular_homofilia(G_copia)) 
 #%% HOMOFILIA POR RECABLEO
 
+G_copia = copy.deepcopy(G)
+#%%
 from tqdm import tqdm
 iteracion = 0
-lista_nodos = list(G.nodes())
+lista_nodos = list(G_copia.nodes())
 homofilia_recableo = []
 homofilia_recableo_generos_musicales = []
 clustering_recableo = []
 for iteracion in tqdm(range(1000)):
-  nueva_red = nx.double_edge_swap(G, nswap=len(list(G_copia.edges()))*2, max_tries=len(list(G_copia.edges()))*10)
-  homofilia_recableo.append(calcular_homofilia(nueva_red))
-  homofilia_recableo_generos_musicales.append(calcular_homofilia_generos_musicales(nueva_red))
-  nueva_red_simple = nx.Graph()
-  nueva_red_simple.add_nodes_from(lista_nodos)
-  nueva_red_simple.add_edges_from(nueva_red.edges())
-  clustering_recableo.append(nx.average_clustering(nueva_red_simple))
+    G_copia = copy.deepcopy(G) #CREO Q ESTO ERA EL PROBLEMA
+    nueva_red = nx.double_edge_swap(G_copia, nswap=len(list(G_copia.edges()))*4, max_tries=len(list(G_copia.edges()))*10)
+    homofilia_recableo.append(calcular_homofilia(nueva_red))
+    homofilia_recableo_generos_musicales.append(calcular_homofilia_generos_musicales(nueva_red))
+    nueva_red_simple = nx.Graph()
+    nueva_red_simple.add_nodes_from(lista_nodos)
+    nueva_red_simple.add_edges_from(nueva_red.edges())
+    clustering_recableo.append(nx.average_clustering(nueva_red_simple))
 #%%
 print(iteracion)
 #%% GRAFICO HOMOFILIA RECOLOREO
+
 fig, ax = plt.subplots(nrows = 1, ncols = 1, figsize = (14, 8), facecolor='#D4CAC6')
 counts, bins = np.histogram(homofilia, bins=20)
 ax.hist(bins[:-1], bins, weights=counts/n, range = [0,1], rwidth = 0.80, facecolor='g', alpha=0.75)
-ax.vlines(x = np.mean(homofilia), ymin = 0, ymax = 0.3, linewidth = 3, linestyle = '--', alpha = 0.8, color = 'r', label = 'Media')
-ax.vlines(x = homofilia_real, ymin = 0, ymax = 0.3, linewidth = 3, linestyle = '--', alpha = 0.8, color = 'k', label = 'Homofilia de la red original')
-ax.fill_between(x = [np.mean(homofilia)-np.std(homofilia),np.std(homofilia)+np.mean(homofilia)], y1 = 0.3, color = 'g', alpha = 0.4, label = 'Desviación estándar')
+ax.vlines(x = np.mean(homofilia), ymin = 0, ymax = 0.2, linewidth = 3, linestyle = '--', alpha = 0.8, color = 'r', label = 'Media')
+ax.vlines(x = homofilia_real, ymin = 0, ymax = 0.2, linewidth = 3, linestyle = '--', alpha = 0.8, color = 'k', label = 'Homofilia de la red original')
+ax.fill_between(x = [np.mean(homofilia)-np.std(homofilia),np.std(homofilia)+np.mean(homofilia)], y1 = 0.2, color = 'g', alpha = 0.4, label = 'Desviación estándar')
 ax.grid('on', linestyle = 'dashed', alpha = 0.5)
-ax.set_xlabel("Homofilia", fontsize=12)
-ax.set_ylabel("Frecuencia normalizada", fontsize=12)
-plt.title("Homofilia por recoloreo (n = 5000)",fontsize = 18)
+ax.set_xlabel("Homofilia", fontsize=20)
+ax.set_ylabel("Frecuencia normalizada", fontsize=20)
+plt.title("Homofilia por recoloreo (n = 5000)",fontsize = 25)
 ax.legend(loc = 'best')
-plt.savefig("Homofilia por recoloreo.png")
+#plt.savefig("Homofilia por recoloreo.png")
 plt.show()
   
 
@@ -271,11 +277,11 @@ ax.vlines(x = np.mean(homofilia_recableo), ymin = 0, ymax = 0.3, linewidth = 3, 
 ax.vlines(x = homofilia_real, ymin = 0, ymax = 0.3, linewidth = 3, linestyle = '--', alpha = 0.8, color = 'k', label = 'Homofilia de la red original')
 ax.fill_between(x = [np.mean(homofilia_recableo)-np.std(homofilia_recableo),np.std(homofilia_recableo)+np.mean(homofilia_recableo)], y1 = 0.3, color = 'g', alpha = 0.4, label = 'Desviación estándar')
 ax.grid('on', linestyle = 'dashed', alpha = 0.5)
-ax.set_xlabel("Homofilia", fontsize=12)
-ax.set_ylabel("Frecuencia normalizada", fontsize=12)
-plt.title("Homofilia por recableo (n = 1000)",fontsize = 18)
+ax.set_xlabel("Homofilia", fontsize=20)
+ax.set_ylabel("Frecuencia normalizada", fontsize=20)
+plt.title("Homofilia por recableo (n = 1000)",fontsize = 25)
 ax.legend(loc = 'best')
-#plt.savefig("Homofilia por recableo.png")
+plt.savefig("Homofilia por recableo.png")
 plt.show()
 
 # %% GRAFICO HOMOFOLIA RECABLEO GENEROS MUSICALES
@@ -283,30 +289,32 @@ plt.show()
 fig, ax = plt.subplots(nrows = 1, ncols = 1, figsize = (14, 8), facecolor='#D4CAC6')
 counts, bins = np.histogram(homofilia_recableo_generos_musicales, bins=20)
 ax.hist(bins[:-1], bins, weights=counts/iteracion, range = [0,1], rwidth = 0.80, facecolor='g', alpha=0.75)
-ax.vlines(x = np.mean(homofilia_recableo_generos_musicales), ymin = 0, ymax = 0.3, linewidth = 3, linestyle = '--', alpha = 0.8, color = 'r', label = 'Media')
-ax.vlines(x = homofilia_generos, ymin = 0, ymax = 0.3, linewidth = 3, linestyle = '--', alpha = 0.8, color = 'k', label = 'Homofilia de la red original')
-ax.fill_between(x = [np.mean(homofilia_recableo_generos_musicales)-np.std(homofilia_recableo_generos_musicales),np.std(homofilia_recableo_generos_musicales)+np.mean(homofilia_recableo)], y1 = 0.3, color = 'g', alpha = 0.4, label = 'Desviación estándar')
+ax.vlines(x = np.mean(homofilia_recableo_generos_musicales), ymin = 0, ymax = 0.5, linewidth = 3, linestyle = '--', alpha = 0.8, color = 'r', label = 'Media')
+ax.vlines(x = homofilia_generos, ymin = 0, ymax = 0.5, linewidth = 3, linestyle = '--', alpha = 0.8, color = 'k', label = 'Homofilia de la red original')
+ax.fill_between(x = [np.mean(homofilia_recableo_generos_musicales)-np.std(homofilia_recableo_generos_musicales),np.std(homofilia_recableo_generos_musicales)+np.mean(homofilia_recableo_generos_musicales)], y1 = 0.5, color = 'g', alpha = 0.4, label = 'Desviación estándar')
 ax.grid('on', linestyle = 'dashed', alpha = 0.5)
-ax.set_xlabel("Homofilia", fontsize=12)
-ax.set_ylabel("Frecuencia normalizada", fontsize=12)
-plt.title("Homofilia por recableo (n = 1000)",fontsize = 18)
+ax.set_xlabel("Homofilia", fontsize=20)
+ax.set_ylabel("Frecuencia normalizada", fontsize=20)
+plt.title("Homofilia géneros musicales por recableo (n = 1000)",fontsize = 25)
 ax.legend(loc = 'best')
-#plt.savefig("Homofilia por recableo.png")
+plt.savefig("Homofilia generos musicales por recableo.png")
 plt.show()
 
 
 # # %% CALCULO DE CLUSTERING POR RECABLEO
 # clustering_recableo = pd.read_pickle("Clustering_por_recableo.pickle")
-
+#%%
 nueva_red_simple = nx.Graph()
 nueva_red_simple.add_nodes_from(list(G.nodes()))
 nueva_red_simple.add_edges_from(list(G.edges()))
-
-print(f"El valor del clustering es {nx.average_clustering(nueva_red_simple)}")
+#%%
+G_copia = nx.Graph(G)
+print(f"El valor del clustering es {nx.average_clustering(G_copia)}")
 print(f"El valor del clustering al recablear es de {np.mean(clustering_recableo)} +- {np.std(clustering_recableo)}")
 
 # %%
 pickle.dump(homofilia, open(f'Homofilia_por_recoloreo.pickle', 'wb'))
 pickle.dump(homofilia_recableo, open(f'Homofilia_por_recableo.pickle', 'wb'))
 pickle.dump(clustering_recableo, open(f'Clustering_por_recableo.pickle', 'wb'))
+pickle.dump(homofilia_recableo_generos_musicales, open(f'Homofilia_generos_musicales_por_recableo.pickle', 'wb'))
 # %%
