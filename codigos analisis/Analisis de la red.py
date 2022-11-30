@@ -89,22 +89,24 @@ var_x_ajuste = np.linspace(1, max(var_x),100000)
 var_y_ajuste = f_ajuste(var_x_ajuste, a, mu)
 
 # Graficamos
-fig, axs = plt.subplots(figsize = (8,6), facecolor='#f4e8f4')
+fig, axs = plt.subplots(figsize = (8,6), facecolor='None')
 axs.loglog(grado_medio_por_grado.index,grado_medio_por_grado.values,'.',color='#901c8e', alpha= 0.8, label = "Datos")
 axs.loglog(var_x_ajuste,var_y_ajuste,color='g', alpha= 0.8, label = "Ajuste")
 axs.grid('on', linestyle = 'dashed', alpha = 0.5)
 axs.set_xlabel("Grado",fontsize = 16)
 axs.set_ylabel("Grado medio de los vecinos",fontsize = 16)
 axs.legend(fontsize = 16)
-axs.tick_params(axis='both', which='major', labelsize=14)
+axs.tick_params(axis = "both", labelsize = 16, colors = "white")
+axs.xaxis.label.set_color('white')
+axs.yaxis.label.set_color('white')
 plt.savefig("../imagenes del analisis/Asortatividad de grado.png")
 plt.show()
 #%%---------------------Calculamos asortatividad de Newman-------------------
 dict_grados = G.degree()
 enlaces = G.edges()
 
-S_e = 2*sum([dict_grados[i[0]]*dict_grados[i[1]] for i in enlaces]) #Chequearlo
-S_1 = sum(lista_grados)
+S_e = 2*sum([dict_grados[i[0]]*dict_grados[i[1]] for i in enlaces]) 
+S_1 = sum(np.array(lista_grados,dtype = np.float64))
 S_2 =  sum(np.array(lista_grados, dtype=np.float64)**2)
 S_3 =  sum(np.array(lista_grados, dtype=np.float64)**3)
 
