@@ -3,7 +3,6 @@ import pickle
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-import pickle
 from tqdm import tqdm 
 from unicodedata import normalize
 
@@ -42,8 +41,6 @@ for nodo in lista_nodos:
     fecha_aparicion = encontrar_fecha_menor(lista_fechas)
     G.nodes[nodo]["fecha_aparicion"] = fecha_aparicion
 #%% Vemos cuantos artistas aparecen cada año
-fig, axs = plt.subplots(ncols = 2, figsize = (14,8), facecolor = "None")
-
 # Guardo en un diccionario cuantos nodos aparecen por año
 dic_años = {}
 
@@ -66,20 +63,23 @@ for i, año in enumerate(dic_años_ordenado):
     if i > 0:
         artistas_acumulados_año[i] += artistas_acumulados_año[i-1]
 
+#%% Graficamos
+fig, axs = plt.subplots(ncols = 2, figsize = (12,6))
+
 axs[0].plot(dic_años_ordenado.keys(),dic_años_ordenado.values(),".", c = "m")
-axs[0].set_title("$Artistas\;por\;año$",fontsize = 22, color = "white")
+axs[0].set_title("$Artistas\;por\;año$",fontsize = 22)
 axs[0].set_xlabel("Año",fontsize = 18)
 axs[0].set_ylabel("Cantidad de artistas", fontsize = 18)
-axs[0].tick_params(axis = "both", labelsize = 16, colors = "white")
-axs[0].xaxis.label.set_color('white')
-axs[0].yaxis.label.set_color('white')
+axs[0].tick_params(axis = "both", labelsize = 16)
+#axs[0].xaxis.label.set_color('white')
+#axs[0].yaxis.label.set_color('white')
 
 axs[1].plot(dic_años_ordenado.keys(), artistas_acumulados_año, ".")
-axs[1].set_title("$Artistas\;por\;año\;acumulado$",fontsize = 22, color = "white")
+axs[1].set_title("$Artistas\;por\;año\;acumulado$",fontsize = 22)
 axs[1].set_xlabel("Año",fontsize = 18)
-axs[1].tick_params(axis = "both", labelsize = 16, colors = "white")
-axs[1].xaxis.label.set_color('white')
-axs[1].yaxis.label.set_color('white')
+axs[1].tick_params(axis = "both", labelsize = 16)
+#axs[1].xaxis.label.set_color('white')
+#axs[1].yaxis.label.set_color('white')
 
 plt.savefig("../imagenes del analisis/artistas por año.png")
 plt.show()
@@ -117,22 +117,22 @@ for i, año in enumerate(dic_canciones_por_año_ordenado):
         canciones_acumuladas_por_año[i] += canciones_acumuladas_por_año[i-1]
 
 #%%-----------------Vemos cantas colaboraciones se hacen en cada año-----------------
-fig, axs = plt.subplots(ncols = 2, figsize = (16,8), facecolor = "None")
+fig, axs = plt.subplots(ncols = 2, figsize = (12,6))
 
 axs[0].plot(dic_canciones_por_año_ordenado.keys(),dic_canciones_por_año_ordenado.values(),".", c = "m")
-axs[0].set_title("$Colaboraciones\;por\;año$",fontsize = 22, color = "white")
+axs[0].set_title("$Colaboraciones\;por\;año$",fontsize = 22)
 axs[0].set_xlabel("Año",fontsize = 18)
 axs[0].set_ylabel("Cantidad de colaboraciones", fontsize = 18)
-axs[0].tick_params(axis = "both", labelsize = 16, colors = "white")
-axs[0].xaxis.label.set_color('white')
-axs[0].yaxis.label.set_color('white')
+axs[0].tick_params(axis = "both", labelsize = 16)
+#axs[0].xaxis.label.set_color('white')
+#axs[0].yaxis.label.set_color('white')
 
 axs[1].plot(dic_canciones_por_año_ordenado.keys(), canciones_acumuladas_por_año, ".")
-axs[1].set_title("$Colaboraciones\;por\;año\;acumuladas$",fontsize = 22, color = "white")
+axs[1].set_title("$Colaboraciones\;por\;año\;acumuladas$",fontsize = 22)
 axs[1].set_xlabel("Año",fontsize = 18)
-axs[1].tick_params(axis = "both", labelsize = 16, colors = "white")
-axs[1].xaxis.label.set_color('white')
-axs[1].yaxis.label.set_color('white')
+axs[1].tick_params(axis = "both", labelsize = 16)
+#axs[1].xaxis.label.set_color('white')
+#axs[1].yaxis.label.set_color('white')
 
 plt.savefig("../imagenes del analisis/Colaboraciones por año.png")
 plt.show()
