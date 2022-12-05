@@ -289,7 +289,7 @@ img = axs.imshow(matriz_info_mutua,cmap='GnBu', vmin= 0, vmax=1)
 axs.set_xticks(range(0,n)) # pongo los ticks de los ejes
 axs.set_yticks(range(0,n))
 axs.grid('on', linestyle = 'dashed', alpha = 0)
-axs.set_title('Intersección mutua',fontsize = 16)
+axs.set_title('ISolapamiento de centralidades',fontsize = 16)
 axs.set_yticklabels(df_artistas_centrales.columns.values) 
 axs.set_xticklabels(df_artistas_centrales.columns.values)
 fig.colorbar(img, orientation="vertical", pad=0.1,fraction=0.04,extend='min') # la barra de colores
