@@ -33,8 +33,7 @@ df_nodos = pd.read_csv("../red_filtrada/tabla_nodos.csv")
 df_nodos = df_nodos.set_index("Id")
 df_centralidad.index.name = "Id"
 # Saco las columnas que no quiero mergear
-df_centralidad = df_centralidad.drop(["popularidad"], axis = 1)
-df_nodos = df_nodos.drop("numero", axis = 1)
+df_centralidad = df_centralidad.drop(["Popularidad"], axis = 1)
 # Uno los dos dataframes
 df_nodos = pd.concat([df_nodos,df_centralidad], axis = 1)
 #%%-------------------Para guardar el dataframe-----------------------------
@@ -111,15 +110,15 @@ frac_quit_random = sum(np.array(frac_quit_random))/len(frac_quit_random)
 frac_en_gig_random = sum(np.array(frac_en_gig_random))/len(frac_en_gig_random)
 
 #%%---------------------------Celda para guardar los datos---------------------
-pickle.dump(frac_quit_random, open(f'frac_quit_random.pickle', 'wb'))
-pickle.dump(frac_en_gig_random, open(f'frac_en_gig_random.pickle', 'wb'))
+pickle.dump(frac_quit_random, open(f'../datos analisis/frac_quit_random_100.pickle', 'wb'))
+pickle.dump(frac_en_gig_random, open(f'../datos analisis/frac_en_gig_random_100.pickle', 'wb'))
 #%%-------------------------Celda para cargar los datos--------------------
-with open(f"../datos analisis/frac_quit_random.pickle", "rb") as f:
+with open(f"../datos analisis/frac_quit_random_100.pickle", "rb") as f:
     frac_quit_random = pickle.load(f)
-with open(f"../datos analisis/frac_en_gig_random.pickle", "rb") as f:
+with open(f"../datos analisis/frac_en_gig_random_100.pickle", "rb") as f:
     frac_en_gig_random = pickle.load(f)    
 #%%---------Celda para graficar y romper la red con el resto de centralidades---------
-fig, axs = plt.subplots(figsize = (12, 8), facecolor = "None")
+fig, axs = plt.subplots(figsize = (12, 8))
 for columna in tqdm(df_centralidad.columns):
     lista_centralidad = df_centralidad.sort_values(by = columna, ascending = False).index
 
@@ -133,11 +132,11 @@ axs.grid(True)
 axs.set_xlabel("Fracción de nodos quitados",fontsize = 16)
 axs.set_ylabel("Fracción de nodos en la componente gigante", fontsize = 16)
 axs.legend(fontsize = 20)
-axs.tick_params(axis = "both", labelsize = 16, colors = "white")
-axs.xaxis.label.set_color('white')
-axs.yaxis.label.set_color('white')
-#axs.set_ylim(0.5,1)
-plt.savefig(f"../imagenes del analisis/centralidad multienlace.png")
+axs.tick_params(axis = "both", labelsize = 16)
+#axs.xaxis.label.set_color('white')
+#axs.yaxis.label.set_color('white')
+axs.set_ylim(0.5,1)
+#plt.savefig(f"../imagenes del analisis/centralidad multienlace.png", bbox_inches = 'tight')
 plt.show()
 
 #%%--------------------Rompo la red por género musical-----------------------
@@ -180,12 +179,11 @@ for genero in tqdm(generos_representativos):
         
         lista_frac_quit_iterada_por_genero.append(frac_quit_random_genero)
         lista_frac_en_gig_iterada_por_genero.append(frac_en_gig_random_genero)
+
+
 #%%--------------------------------Grafico-----------------------------------
 
-#seaborn.set(rc={'axes.facecolor':'black', 'figure.facecolor':'black'})
-
-
-fig, axs = plt.subplots(figsize = (8, 5), facecolor = "None")
+fig, axs = plt.subplots(figsize = (8, 5))
 cmap = plt.get_cmap("Dark2")#Dark2
 for i, genero in enumerate(generos_a_analizar):
     frac_quit_random_genero = lista_frac_quit_iterada_por_genero[i]
@@ -193,16 +191,16 @@ for i, genero in enumerate(generos_a_analizar):
 
     axs.plot(frac_quit_random_genero, frac_en_gig_random_genero,label = genero, c = cmap(i))
 
-axs.plot(frac_quit_random, frac_en_gig_random,label = "Aleatorio",c = "k")
+axs.plot(frac_quit_random, frac_en_gig_random,label = "Aleatorio",c = "k", linestyle = "--")
 axs.grid(True)
 axs.set_xlabel("Fracción de nodos quitados",fontsize = 16)
 axs.set_ylabel("Fracción de nodos en la componente gigante", fontsize = 16)
-axs.legend(fontsize = 16, labelcolor='k')
+axs.legend(fontsize = 16, labelcolor='k', loc = "lower left")
 axs.set_xlim(0, max(lista_frac_quit_iterada_por_genero[generos_a_analizar.index("Tango")]))
 axs.set_ylim(min(lista_frac_en_gig_iterada_por_genero[generos_a_analizar.index("Tango")]),1)
-axs.tick_params(axis = "both", labelsize = 16, colors = "white")
-axs.xaxis.label.set_color('white')
-axs.yaxis.label.set_color('white')
+axs.tick_params(axis = "both", labelsize = 16)
+#axs.xaxis.label.set_color('white')
+#axs.yaxis.label.set_color('white')
 
 #Para graficar mas de cerca
 
@@ -224,7 +222,29 @@ axs.yaxis.label.set_color('white')
 # axs[1].yaxis.label.set_color('k')
 
 
-#plt.savefig(f"../imagenes del analisis/centralidad por genero.png")
+plt.savefig(f"../imagenes del analisis/centralidad por genero.png", bbox_inches = 'tight')
+plt.show()
+
+#%%----------------Grafico de manera relativa a la curva aleatoria-----------------------------------
+
+# Esto lo hicimos para comparar la ruptura respecto a la curva random pero no nos convenció
+
+fig, axs = plt.subplots(figsize = (8, 5))
+cmap = plt.get_cmap("Dark2")#Dark2
+for i, genero in enumerate(generos_a_analizar):
+    frac_quit_random_genero = lista_frac_quit_iterada_por_genero[i]
+    frac_en_gig_random_genero = lista_frac_en_gig_iterada_por_genero[i]
+    
+    frac_relativa = frac_en_gig_random_genero-frac_en_gig_random[:len(frac_en_gig_random_genero)]
+    
+    axs.plot(frac_quit_random_genero, frac_relativa,label = genero, c = cmap(i))
+
+
+axs.grid(True)
+axs.set_xlabel("Fracción de nodos quitados",fontsize = 16)
+axs.set_ylabel("Ruptura respecto a la curva aleatoria", fontsize = 16)
+axs.legend(fontsize = 16, labelcolor='k')
+axs.tick_params(axis = "both", labelsize = 16)
 plt.show()
 
 #%% Artistas más centrales según el criterio

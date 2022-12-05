@@ -87,19 +87,19 @@ print(f'mu: {mu} ± {err_mu}')
 a, mu = popt
 var_x_ajuste = np.linspace(1, max(var_x),100000)
 var_y_ajuste = f_ajuste(var_x_ajuste, a, mu)
-
-# Graficamos
-fig, axs = plt.subplots(figsize = (8,6), facecolor='None')
+#%% Graficamos
+fig, axs = plt.subplots(figsize = (8,4))
 axs.loglog(grado_medio_por_grado.index,grado_medio_por_grado.values,'.',color='#901c8e', alpha= 0.8, label = "Datos")
 axs.loglog(var_x_ajuste,var_y_ajuste,color='g', alpha= 0.8, label = "Ajuste")
 axs.grid('on', linestyle = 'dashed', alpha = 0.5)
 axs.set_xlabel("Grado",fontsize = 16)
 axs.set_ylabel("Grado medio de los vecinos",fontsize = 16)
 axs.legend(fontsize = 16)
-axs.tick_params(axis = "both", labelsize = 16, colors = "white")
-axs.xaxis.label.set_color('white')
-axs.yaxis.label.set_color('white')
-plt.savefig("../imagenes del analisis/Asortatividad de grado.png")
+axs.tick_params(axis = "both", labelsize = 16)
+
+#axs.xaxis.label.set_color('white')
+#axs.yaxis.label.set_color('white')
+plt.savefig("../imagenes del analisis/Asortatividad de grado.png", bbox_inches = 'tight')
 plt.show()
 #%%---------------------Calculamos asortatividad de Newman-------------------
 dict_grados = G.degree()
