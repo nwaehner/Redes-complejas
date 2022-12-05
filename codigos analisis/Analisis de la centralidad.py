@@ -248,7 +248,8 @@ axs.tick_params(axis = "both", labelsize = 16)
 plt.show()
 
 #%% Artistas más centrales según el criterio
-cant_artistas = 8
+cant_artistas = 30
+
 dict_centralidad = {columna: df_centralidad.sort_values(by = columna, ascending = False).index[0:cant_artistas] for columna in df_centralidad.columns}
 cmap = plt.get_cmap("plasma")#Dark2
 def color(artista):
@@ -270,3 +271,27 @@ def color(artista):
 df_artistas_centrales = pd.DataFrame(dict_centralidad)
 
 df_artistas_centrales.style.applymap(color)
+
+# %%
+n = 4
+umbral = 30
+matriz_info_mutua = np.zeros((n, n))
+fig, axs = plt.subplots(nrows = 1, ncols = 1, figsize = (8, 8))
+for i in range(4):
+    for j in range(4):
+        conjunto_1 = set(df_artistas_centrales[df_artistas_centrales.columns[i]].values[0:umbral])
+        total = len(conjunto_1)
+        conjunto_2 = set(df_artistas_centrales[df_artistas_centrales.columns[j]].values[0:umbral])
+        z = len(conjunto_1.intersection(conjunto_2)) / total
+        matriz_info_mutua[i][j] = z 
+        axs.text(j, i, round(z,2), ha='center', va='center')
+img = axs.imshow(matriz_info_mutua,cmap='GnBu', vmin= 0, vmax=1)
+axs.set_xticks(range(0,n)) # pongo los ticks de los ejes
+axs.set_yticks(range(0,n))
+axs.grid('on', linestyle = 'dashed', alpha = 0)
+axs.set_title('Intersección mutua',fontsize = 16)
+axs.set_yticklabels(df_artistas_centrales.columns.values) 
+axs.set_xticklabels(df_artistas_centrales.columns.values)
+fig.colorbar(img, orientation="vertical", pad=0.1,fraction=0.04,extend='min') # la barra de colores
+plt.show()
+# %%
