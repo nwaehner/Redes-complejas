@@ -9,8 +9,7 @@ import pickle
 from unicodedata import normalize
 from wordcloud import WordCloud
 #%%
-
-with open('red_final_generos.gpickle', "rb") as f:
+with open('../red_filtrada/red_filtrada_difusion.gpickle', "rb") as f:
     G = pickle.load(f)
 # %%
 lista_nodos = []

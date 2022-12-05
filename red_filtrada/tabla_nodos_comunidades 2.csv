@@ -1,0 +1,1389 @@
+Id,Label,id_artista,popularidad,generos_musicales,genero,betweenness
+Paulo Londra,Paulo Londra,spotify:artist:3vQ0GE3mI0dAaxIMYe5g7z,78,"['Trap', 'Pop', 'HipHop', 'R&B', 'Electronica', 'Rock', 'Punk', 'Rap']",male,4
+Bizarrap,Bizarrap,spotify:artist:716NhGYqD1jl2wI1Qkgq36,84,"['Trap', 'Pop', 'HipHop', 'Electronica', 'Rap']",male,4
+Trueno,Trueno,spotify:artist:2x7PC78TmgqpEIjaGAZ0Oz,74,"['Trap', 'HipHop', 'Rap']",male,4
+L-Gante,L-Gante,spotify:artist:4YYxffPVDFe9XoqqbRW6Bq,70,['Cumbia'],male,4
+Pablo Lescano,Pablo Lescano,spotify:artist:6pztqmUqWADMZQKrrmGWGx,44,['Cumbia'],male,7
+Tiago PZK,Tiago PZK,spotify:artist:5Y3MV9DZ0d87NnVm56qSY1,79,"['Trap', 'HipHop', 'Rap']",male,4
+Duki,Duki,spotify:artist:1bAftSH8umNcGZ0uyV7LMg,83,"['Trap', 'Pop', 'HipHop', 'R&B', 'Rock', 'Rap']",male,4
+Nicki Nicole,Nicki Nicole,spotify:artist:2UZIAOlrnyZmyzt1nuXr9y,76,"['Trap', 'Pop', 'HipHop', 'R&B', 'Rap']",female,4
+YSY A,YSY A,spotify:artist:2qWK8K2Jfh67UqtwY8tCW6,72,"['Trap', 'HipHop', 'Rap']",male,4
+Asan,Asan,spotify:artist:6Nl4VXcX86fBMO4YE6oYfN,56,['Trap'],male,4
+ACRU,ACRU,spotify:artist:0bYQe0JDIjxkSHQoXlfngl,50,"['HipHop', 'Rap']",male,4
+KHEA,KHEA,spotify:artist:4m6ubhNsdwF4psNf3R8kwR,74,"['Trap', 'HipHop']",male,4
+Seven Kayne,Seven Kayne,spotify:artist:4C29ETLBPmYKYwtJUepbJz,62,"['Trap', 'HipHop']",male,4
+Cazzu,Cazzu,spotify:artist:6w3SkAHYPsQ1bxV7VDlG5y,73,"['Trap', 'HipHop', 'R&B', 'Rap']",female,4
+ZARAMAY,ZARAMAY,spotify:artist:3wsYquQ9CiMlYG54BUR2ff,55,['HipHop'],male,4
+Homer El Mero Mero,Homer El Mero Mero,spotify:artist:0Xo4VFS3v07L0GwIVkZLfg,60,"['HipHop', 'Rap']",male,4
+LIT killah,LIT killah,spotify:artist:1vqR17Iv8VFdzure1TAXEq,73,"['Trap', 'HipHop', 'R&B', 'Rap']",male,4
+C.R.O,C.R.O,spotify:artist:4puAp107dCehraE47QXVQX,70,['Trap'],male,4
+Lucho SSJ,Lucho SSJ,spotify:artist:1OBizG9nrnHJkrL9NjnWYN,57,['Trap'],male,4
+Dani Ribba,Dani Ribba,spotify:artist:6cC67GpmPCjQjOYLpmOGhN,61,"['Trap', 'HipHop']",male,4
+Pekeño 77,Pekeño 77,spotify:artist:5eIRbSES1yeGSBuqZ4xvuD,50,"['Trap', 'Rap']",male,4
+LOUTA,LOUTA,spotify:artist:5l4GdLELvdnXZVT5g947i3,56,"['Pop', 'Electronica', 'Rock', 'Alternative']",male,4
+Frijo,Frijo,spotify:artist:4D2d63igYEdzhzFnxrSow7,55,"['Trap', 'HipHop']",male,4
+John C,John C,spotify:artist:66lf5bQo2BIEue1pxfgxQS,56,"['Trap', 'HipHop', 'Cumbia', 'Rap']",male,4
+CA7RIEL,CA7RIEL,spotify:artist:348pk4o3EhKmsSahzuClSf,55,"['Trap', 'Electronica', 'Alternative']",male,4
+Kiddo Toto,Kiddo Toto,spotify:artist:1Mj0XQhXbzIXfoWTN391N6,44,['Trap'],male,4
+Dillom,Dillom,spotify:artist:4cJD9t5QBFTUQcd3xfbOb2,63,"['Trap', 'Pop', 'HipHop']",male,4
+Kodigo,Kodigo,spotify:artist:3hwgckfLtTHdnkf694c7HS,50,"['Trap', 'HipHop', 'Rap']",male,4
+Blunted Vato,Blunted Vato,spotify:artist:15RLdM61VHtknTIYIuNviR,54,"['Trap', 'HipHop', 'Cumbia']",male,4
+Paco Amoroso,Paco Amoroso,spotify:artist:3E7NGbzUGlOjgYY8nvtijR,54,['Alternative'],male,4
+Axel Fiks,Axel Fiks,spotify:artist:6GEaxHZNiogI175zUr4KvH,51,['Alternative'],male,4
+Halpe,Halpe,spotify:artist:5fUaIEaRhzIad7C49MqTsy,51,['Trap'],NA,4
+Ecko,Ecko,spotify:artist:2Jb9jVnCpWkXtoGznFJ6bF,63,"['Trap', 'HipHop']",male,4
+XOVOX,XOVOX,spotify:artist:2mzbm2cwDrAgc9zxcXvfC1,46,"['Trap', 'HipHop', 'Rap']",male,4
+Victor Heredia,Victor Heredia,spotify:artist:07S2B15CcvWG4jyfMhqx8X,49,"['Folklore', 'Rock']",male,0
+Taiu,Taiu,spotify:artist:5szJHKg5xeUlQ9pTqzdpic,60,"['Trap', 'HipHop', 'Rap']",male,4
+Yesan 雪山,Yesan 雪山,spotify:artist:6pJPxDgaE0H343SrASnY9J,53,"['Trap', 'HipHop', 'Rap']",male,4
+ONIRIA,ONIRIA,spotify:artist:6mkRgafSHF30Dr2wEch4YU,44,['Trap'],NA,4
+WOS,WOS,spotify:artist:5YCc6xS5Gpj3EkaYGdjyNK,71,"['Trap', 'HipHop', 'R&B', 'Rock', 'Rap', 'Alternative']",male,4
+2 minutos,2 minutos,spotify:artist:5sASmkskUJsvYDSYKRkkYd,49,"['Rock', 'Punk', 'Alternative']",NA,4
+NEGRO DUB,NEGRO DUB,spotify:artist:65VS702SIPGgTpWgTQupMA,51,"['HipHop', 'Rap']",male,4
+Kaleb Di Masi,Kaleb Di Masi,spotify:artist:5U5wYVqrbD6J8SK4kNhau4,67,"['Trap', 'Cumbia']",male,4
+Omar Varela,Omar Varela,spotify:artist:5xIOUIBQhGFX7HIj8lhdyU,70,['Trap'],NA,4
+Papichamp,Papichamp,spotify:artist:1qoJTYkRvsRJMTOxnUnpNW,55,"['Trap', 'Cumbia']",male,4
+Perro Primo,Perro Primo,spotify:artist:4MUsDaGK0nPDJvYSoaoFUA,57,['Cumbia'],male,4
+Rodrigo,Rodrigo,spotify:artist:235Vf4hkmwvxjVEMuCbRxm,59,"['Cumbia', 'Rock']",male,3
+TINI,TINI,spotify:artist:7vXDAI8JwjW531ouMGbfcp,77,['Pop'],female,4
+Nestor En Bloque,Nestor En Bloque,spotify:artist:2to8xMgnoxHCXPF7eWJPvg,56,['Cumbia'],male,7
+Fidel Nadal,Fidel Nadal,spotify:artist:7l2wptrNdI4wEHxTlWa6SS,48,"['Rock', 'Punk', 'Reggae', 'Alternative']",male,7
+Damas Gratis,Damas Gratis,spotify:artist:3YeBTR1Q1rUxKguz4jP6UV,63,['Cumbia'],NA,4
+Papu DJ,Papu DJ,spotify:artist:1Z7q2glJYLsPpPoPIgBjdE,52,['Cumbia'],NA,4
+Bruno LC,Bruno LC,spotify:artist:5XUp43SjeL84EDkWoCG3qR,53,['Cumbia'],male,4
+Zato DJ,Zato DJ,spotify:artist:75VwO8amb6eCuE9gYagNZZ,43,['Cumbia'],male,4
+Seba TC,Seba TC,spotify:artist:6W8GoLLEJXK5EvU1TcaYI2,22,['Cumbia'],NA,4
+Rusherking,Rusherking,spotify:artist:3Apb2lGmGJaBmr0TTBJvIZ,70,['Trap'],male,4
+Maria Becerra,Maria Becerra,spotify:artist:1DxLCyH42yaHKGK3cl5bvG,81,"['Trap', 'Pop']",female,4
+FMK,FMK,spotify:artist:0dUyjgCyjfj5eMx6bX2TWf,67,['Trap'],male,4
+Emilia,Emilia,spotify:artist:0AqlFI0tz2DsEoJlKSIiT9,69,['Pop'],female,4
+Emkier,Emkier,spotify:artist:5yEDqRhb3ABb25Of0IYpcn,38,"['Trap', 'HipHop', 'Rap']",male,4
+Lara91k,Lara91k,spotify:artist:2zPvDg6LI6NHPQVQIESjfW,49,"['R&B', 'Alternative']",female,4
+Rei,Rei,spotify:artist:4IG1SDlwgNKzqTmjBrvY3K,71,['Trap'],male,4
+Obie Wanshot,Obie Wanshot,spotify:artist:48vP5SxlTO6yOI7SLKIOQV,54,['Trap'],male,4
+Neo Pistea,Neo Pistea,spotify:artist:01m2XZ7m7rAz6KY3scTdaV,62,"['Trap', 'HipHop']",male,4
+CLUB HATS,CLUB HATS,spotify:artist:3Nk2mAv4k4ZOzrP5tpXL2G,61,"['Trap', 'HipHop', 'Rap']",male,4
+Marcianos Crew,Marcianos Crew,spotify:artist:0Hkx0YcHHxDRRbH9WsSW0I,52,"['Trap', 'HipHop', 'Rap']",male,4
+MYA,MYA,spotify:artist:5Rj6rNR8zIlUUDCs1OyPmW,63,['Pop'],NA,4
+Vicentico,Vicentico,spotify:artist:25THA9HUHoxpCT4LBp7UsZ,63,"['Pop', 'Rock', 'Reggae', 'Alternative']",male,3
+La Bomba de Tiempo,La Bomba de Tiempo,spotify:artist:2kzyHS3WRPwclRl5gsydu8,37,['Reggae'],NA,3
+Chulu,Chulu,spotify:artist:1VAc90Avnm4J5j2cYu5RVB,47,['Rap'],NA,4
+Dante Spinetta,Dante Spinetta,spotify:artist:4Dcz7srpGyeBFxFpQTxlvC,40,"['Jazz', 'HipHop', 'Rock', 'Rap', 'Alternative']",male,4
+Sixto Yegros,Sixto Yegros,spotify:artist:2mddrRrlMf3ykcKyh1jlSs,36,"['Trap', 'HipHop', 'Rap']",male,4
+Panther,Panther,spotify:artist:6bigFvZX5HdrC98srqxRLQ,53,['Trap'],male,4
+Amelita Baltar,Amelita Baltar,spotify:artist:5Z2Vs6p7u0a44wcO68iiQk,28,['Tango'],female,1
+KAKTOV,KAKTOV,spotify:artist:4G8DaRnN7oPFkEJXwX2i94,49,['Trap'],male,4
+Veeyam,Veeyam,spotify:artist:0mUKZR7k8cOSewS6faryVf,43,['Rap'],male,4
+Axel Caram,Axel Caram,spotify:artist:2PkjYgKhHI4qofYoxWB9ZP,50,"['Pop', 'Cumbia']",male,4
+Maia Reficco,Maia Reficco,spotify:artist:3bSOF3p2LElLzyfeazQSOM,41,"['Pop', 'R&B']",female,4
+Chita,Chita,spotify:artist:7ejyCwT1b7MIwHVCVO8HjX,43,"['R&B', 'Alternative']",female,4
+La Duraca,La Duraca,spotify:artist:7x7vfF89MqM94K8wvK3Omq,41,"['Trap', 'HipHop', 'R&B', 'Rap']",female,4
+Mechi Pieretti,Mechi Pieretti,spotify:artist:5rnUlLid4WEcDmAz6McM33,34,['Pop'],NA,4
+Lali,Lali,spotify:artist:22P1OY4TRFRwhP0q29loQ8,64,"['Pop', 'HipHop']",female,0
+Bardero$,Bardero$,spotify:artist:5Q2fyL2TcdUY9IqKTkGk5G,59,['HipHop'],NA,4
+Franky Style,Franky Style,spotify:artist:1cLDC1abeY1jIY5AX2Rtbx,58,"['Trap', 'Cumbia']",male,4
+XLAB,XLAB,spotify:artist:1oagCrMTYkUXI9pmudj2w6,46,['Trap'],male,4
+Lil Troca,Lil Troca,spotify:artist:51Q6RZOMEMuZHySsfWLTtk,47,['Rap'],male,4
+T&K,T&K,spotify:artist:62zZb3lpCFBqLDjMccQgND,48,"['HipHop', 'Rap']",male,4
+Los Palmeras,Los Palmeras,spotify:artist:2Htm0q72SjGSmsy8EOIhRG,63,['Cumbia'],NA,0
+Selecta,Selecta,spotify:artist:1m9WPOccw8sizsVYUhSVjZ,50,['Trap'],male,4
+Mike Southside,Mike Southside,spotify:artist:4jIPjVHNkAKmqfWjfwg960,34,"['Trap', 'HipHop', 'Rap']",male,4
+Jairo Vera,Jairo Vera,spotify:artist:5CAruGjgds3QlF5ICtEnnc,65,"['Trap', 'Reggae']",male,4
+Marilina Bertoldi,Marilina Bertoldi,spotify:artist:1nm9PdmvzPXJmIlMOk5XLy,45,"['Rock', 'Alternative']",female,4
+Zoe Gotusso,Zoe Gotusso,spotify:artist:3XBw8ImFEo86mEB2dYh0vS,53,"['Pop', 'Rock', 'Alternative']",female,0
+Miranda!,Miranda!,spotify:artist:2eEmsgWmUFMbtU7agJpnjY,67,"['Pop', 'Electronica', 'Rock', 'Alternative']",NA,4
+Malena Villa,Malena Villa,spotify:artist:0RlibgJa8rtPvVn415J6WN,40,"['Pop', 'Alternative']",female,4
+Ilan Amores,Ilan Amores,spotify:artist:0gQKzAKJSt3Ko7SKEr9y9z,31,"['Cumbia', 'Rap']",male,4
+Gandu,Gandu,spotify:artist:6bx6A2ZgZA9erQg6hH453L,9,['Trap'],male,4
+Cieloazul,Cieloazul,spotify:artist:2mFYQhy4Pcp2yvzuZQN9Dw,32,['Trap'],male,4
+Wirchi,Wirchi,spotify:artist:7xfNmsjjymUmtxwxATAIT1,12,['Trap'],male,4
+Muerejoven,Muerejoven,spotify:artist:2yGXs7AlyNVetlMvwsFXGk,49,['Trap'],male,4
+Saramalacara,Saramalacara,spotify:artist:3QchzUOTSCKWmaRGEEiuir,54,"['Trap', 'Pop']",female,4
+K4,K4,spotify:artist:0yjlGMMFuIci8JCTAOb2AU,37,['Trap'],NA,4
+Broke Carrey,Broke Carrey,spotify:artist:6FWTqLIVK9jjMGcNJnF7xE,42,['Trap'],male,4
+Parcas,Parcas,spotify:artist:5p3XXlSBTvUHz4X1yCW1J4,24,"['Trap', 'Pop', 'HipHop']",male,4
+Ill Quentin,Ill Quentin,spotify:artist:26TC05Yq727xEWV77nRinH,44,['Trap'],male,4
+Naiky Unic,Naiky Unic,spotify:artist:4RiS74hj1A525qvPs66MMP,19,"['Trap', 'HipHop']",NA,4
+Adrian Dargelos,Adrian Dargelos,spotify:artist:4F55zi79SZIr5PPOLTJ6cg,32,"['Pop', 'Rock']",male,4
+Juan Ingaramo,Juan Ingaramo,spotify:artist:2XVoz4hoXgQ3C2BTGxl9V2,52,"['Trap', 'Pop', 'Rock', 'Alternative']",male,4
+Julio Cortázar,Julio Cortázar,spotify:artist:6W4YLMJJjhfR6qMH334AGO,10,['Alternative'],male,4
+Angela Torres,Angela Torres,spotify:artist:6LZA6PhNCwUfHzqfpN1nYL,55,"['Pop', 'Reggae']",female,4
+Goyo Degano,Goyo Degano,spotify:artist:2jdmT8GGcp6lWM58D0ROYf,38,['Alternative'],male,3
+BB ASUL,BB ASUL,spotify:artist:27PauMy7dOiHb7sI8h6s4T,27,['Pop'],NA,4
+Cintia Aldana,Cintia Aldana,spotify:artist:2P1om2xP9Qw4adZzOZKZeP,18,"['Trap', 'HipHop', 'Rap']",female,4
+Teresa Parodi,Teresa Parodi,spotify:artist:4D56DujhnBViJ4oYCSl1GK,36,"['Chamame', 'Folklore']",female,0
+Andrés Gimenez,Andrés Gimenez,spotify:artist:54au8jquUdJ4NFUehWHjpg,9,['Rock'],male,0
+Abel Pintos,Abel Pintos,spotify:artist:6HTUcOExehqydqa7C3usAa,67,"['Pop', 'Folklore', 'Rock']",male,0
+Jairo,Jairo,spotify:artist:45NmCZDtKwIIVLpl2c3csx,38,"['Pop', 'Folklore', 'Rock']",male,1
+Adriana Varela,Adriana Varela,spotify:artist:5diAzb0BD6mSdU1xOhM7dc,36,['Tango'],female,0
+Piero,Piero,spotify:artist:0kavuvnHTeqwjKLV7qPpQm,49,"['Pop', 'Folklore', 'Rock']",male,0
+Miss Bolivia,Miss Bolivia,spotify:artist:4xx3PjUWxXY0qEXUdDhrwx,39,"['Cumbia', 'Rap']",female,5
+Lautaro Heredia,Lautaro Heredia,spotify:artist:7vihyogEq7rNUA6kcrYcUr,1,['Folklore'],male,0
+Motta Luna,Motta Luna,spotify:artist:2VwThHR4o6olzyThu7YJiz,1,['Folklore'],NA,0
+Sandra Mihanovich,Sandra Mihanovich,spotify:artist:34wPpdJXRno0eRFI5IAOYh,40,"['Jazz', 'Pop', 'Rock']",female,0
+Adrián Iaies,Adrián Iaies,spotify:artist:38yosjfq6EXdWuWbLSKulh,10,['Jazz'],male,0
+Peteco Carabajal,Peteco Carabajal,spotify:artist:5gii2fYcxLoUHWd1lWe4aT,43,"['Chamame', 'Folklore']",male,6
+Nahuel Pennisi,Nahuel Pennisi,spotify:artist:4IjHltwoSKbUeZLPeULyDe,57,['Folklore'],male,0
+Bersuit Vergarabat,Bersuit Vergarabat,spotify:artist:6MxyNXnnmwQwdW2PD0gXYO,60,"['Rock', 'Alternative']",NA,0
+Liliana Herrero,Liliana Herrero,spotify:artist:6iqeypk1XRa2zQVRcIVmlF,32,"['Folklore', 'Rock']",female,0
+Lito Vitale,Lito Vitale,spotify:artist:7lw1BVWquad5hKtDPU26JG,41,"['Jazz', 'Tango', 'Rock']",male,0
+Juanse,Juanse,spotify:artist:5AQlQBU9LCmQwReukeom2I,32,['Rock'],male,9
+Ricardo Mollo,Ricardo Mollo,spotify:artist:7M6qgWRcVoBqgkczMPT1x7,48,['Rock'],male,0
+Franco Luciani,Franco Luciani,spotify:artist:4BWj4rAdhcYB8aQXfnzfHy,27,"['Jazz', 'Tango', 'Folklore']",NA,0
+Rolando Sartorio,Rolando Sartorio,spotify:artist:7p5juUWSPwGbJH4BI3n8u1,29,['Rock'],male,0
+Raly Barrionuevo,Raly Barrionuevo,spotify:artist:0mdD8YXAyJDJ2BHxIKF0Yf,49,"['Folklore', 'Rock']",male,6
+Soledad,Soledad,spotify:artist:0K59Fm1y7s3j498ueS4qzY,59,"['Folklore', 'Rock']",female,0
+Axel,Axel,spotify:artist:32x1uogH2zajP85pzZAtuE,56,['Pop'],male,8
+León Gieco,León Gieco,spotify:artist:5yoimVE1rbc3kAx4uwr7eq,51,"['Folklore', 'Rock', 'Alternative']",male,0
+Pedro Aznar,Pedro Aznar,spotify:artist:2FFrhWZS9vJsh2UvxYPRr6,54,"['Jazz', 'Pop', 'Tango', 'Rock', 'Alternative']",male,0
+David Lebón,David Lebón,spotify:artist:48Idb5uZga8diRAMTc9q3E,46,['Rock'],male,0
+Juan Carlos Baglietto,Juan Carlos Baglietto,spotify:artist:1Mt6JeVWV9Tvgk8ercp5O9,45,"['Pop', 'Folklore', 'Rock']",male,0
+Marcela Morelo,Marcela Morelo,spotify:artist:63xFjf6Ww22O5gHrBP79G9,51,['Pop'],female,0
+Los Alonsitos,Los Alonsitos,spotify:artist:1sObDTvhRtaW8yjty7sT7H,37,"['Chamame', 'Folklore']",NA,0
+Jorge Fandermole,Jorge Fandermole,spotify:artist:4l6qncc7ne4yU7z9i1Mtet,36,"['Folklore', 'Rock']",male,0
+Mercedes Sosa,Mercedes Sosa,spotify:artist:2HvyR5FsU37QMqVzIbGwl7,57,"['Folklore', 'Rock']",female,0
+Brian Taylor,Brian Taylor,spotify:artist:21dDxmfnJOLAHZ41gyXqIL,1,"['Trap', 'HipHop', 'Rap']",male,4
+MANU OLIVA,MANU OLIVA,spotify:artist:48nIO59mzn0UWSrh73T43N,36,"['Trap', 'HipHop', 'R&B', 'Rock', 'Rap', 'Alternative']",male,4
+Baltasar Comotto,Baltasar Comotto,spotify:artist:0C9GmkE2ni3bXFaJbHw01b,30,"['Rock', 'Alternative']",male,5
+QuixSmell,QuixSmell,spotify:artist:0MrBxgZbiw0uUO3NUqWFKp,6,['Trap'],male,4
+TAILS,TAILS,spotify:artist:0LCbbe7pXn19Ecz0jLJkl2,43,['Trap'],male,4
+ARTIX!,ARTIX!,spotify:artist:2d7Oro82tVznMBYXDoGiHy,23,['Trap'],male,4
+Poncho,Poncho,spotify:artist:4ADdzb8h9qQTE8XPmSxY8r,34,"['Pop', 'Electronica', 'Alternative']",NA,3
+Odino Faccia,Odino Faccia,spotify:artist:6hFoJyBrrgb02Ajs1UKIe2,23,['Pop'],NA,0
+XXL Irione,XXL Irione,spotify:artist:4xqLeiTEE5VmPu5nQFWjHY,32,['HipHop'],male,7
+Junior P,Junior P,spotify:artist:6AqDuHffz5nfWgsZFp9pb9,2,['Reggae'],NA,7
+Joan Sprei,Joan Sprei,spotify:artist:0QyJKIHzo2iUJFwSg5YfhW,9,"['Pop', 'Rock', 'Alternative']",male,7
+Andrés Calamaro,Andrés Calamaro,spotify:artist:3tAICgiSR5PfYY4B8qsoAU,68,"['Pop', 'Tango', 'Rock', 'Reggae', 'Alternative']",male,0
+Jimmy Y Su Combo Negro,Jimmy Y Su Combo Negro,spotify:artist:2Kos2hpYxoC9itiKmODwNY,37,['Cumbia'],NA,4
+La Mona Jimenez,La Mona Jimenez,spotify:artist:64DFKvGarD5nmkfaIiiakf,51,['Cumbia'],male,8
+Axel Martinez,Axel Martinez,spotify:artist:2t1ZsbDZvUzguvptvRZvpn,16,['Cumbia'],male,4
+Tomy DJ,Tomy DJ,spotify:artist:6e7knXUrhWcp85TTN6za9z,59,"['Pop', 'Cumbia']",male,4
+Matt Lasong,Matt Lasong,spotify:artist:3ooeOAsZUBeK0cHNpIclu2,20,['Cumbia'],NA,4
+Alejandro Lerner,Alejandro Lerner,spotify:artist:6ESkuwldylZr39AIAPC63J,57,"['Pop', 'Rock']",male,0
+Ivan Noble,Ivan Noble,spotify:artist:2MfTaq5E3ClttaUjoBdI6p,45,"['Pop', 'Rock', 'Alternative']",male,3
+El Retutu,El Retutu,spotify:artist:3WSePpVeFAwNAI4vQc19rG,48,['Trap'],male,4
+Karen Méndez,Karen Méndez,spotify:artist:0txXDZCdXBzha20sgN1GRk,50,"['Pop', 'Rap']",female,4
+0-600,0-600,spotify:artist:07Hm9w6ksRaggaDBpN8RRd,36,"['Trap', 'HipHop']",NA,4
+Coqeéin Montana,Coqeéin Montana,spotify:artist:4StQh17zinsbJ4r5ekmPj7,49,"['Trap', 'HipHop']",male,4
+Fianru,Fianru,spotify:artist:6RAj8Czs5jmwbbXU7r2SmW,36,['Rap'],male,4
+Contra Las Cuerdas,Contra Las Cuerdas,spotify:artist:48HhU4LgR1aVU5ci8tuf4x,8,"['Rap', 'Alternative']",NA,4
+Valeria Bertuccelli,Valeria Bertuccelli,spotify:artist:1Kz4kgtxJWKTmi4w2ZnDEN,37,"['Pop', 'Rock', 'Reggae', 'Alternative']",female,3
+Santiago Motorizado,Santiago Motorizado,spotify:artist:1ldpEB62bhHdKBLnaYYLvs,37,['Alternative'],male,12
+Las manos de Filippi,Las manos de Filippi,spotify:artist:53Ik4pv6iE2gZ7Xc4BKlFJ,35,"['Rock', 'Metal', 'Alternative']",NA,3
+Mati Zapata,Mati Zapata,spotify:artist:5DheECcZFmCsUMX5U354A1,6,['Reggae'],male,3
+Kevin Johansen,Kevin Johansen,spotify:artist:7qjoG7bwhAjSd7nJTcjgAk,55,"['Pop', 'Cumbia', 'Rock', 'Alternative']",male,3
+Fito Paez,Fito Paez,spotify:artist:1bZNv4q3OxYq7mmnLha7Tu,64,"['Pop', 'Tango', 'Rock', 'Alternative']",male,0
+Fernando Ruiz Diaz,Fernando Ruiz Diaz,spotify:artist:4DqWhVhkmy4QC5d32i591c,30,"['Pop', 'Tango', 'Rock', 'Metal']",male,3
+Luis Salinas,Luis Salinas,spotify:artist:6lfuGeSEIAZl1WlXN3lSjk,36,"['Jazz', 'Tango', 'Folklore', 'Rock']",male,0
+Luis Alberto Spinetta,Luis Alberto Spinetta,spotify:artist:1MuQ2m2tg7naeRGAOxYZer,57,"['Jazz', 'Tango', 'Rock', 'Punk', 'Alternative']",male,0
+Pablo Mainetti,Pablo Mainetti,spotify:artist:15lQ51CRGD5wu2f8Pmw9sZ,13,['Tango'],male,0
+Leopoldo Federico,Leopoldo Federico,spotify:artist:3RibY876FBPC7kuqm4YqzJ,22,['Tango'],male,1
+Astor Piazzolla,Astor Piazzolla,spotify:artist:7dsugSamBB7enWE2IrlbFg,48,['Tango'],male,1
+Rodrigo Puente,Rodrigo Puente,spotify:artist:71ywCmB4SgVeQnjyKhgx5u,13,"['Pop', 'Cumbia']",male,4
+Alex Hoyer,Alex Hoyer,spotify:artist:45ztMs8dTg6GRQ41yY4xtr,43,['Pop'],male,4
+Said,Said,spotify:artist:4IXpKvMb4jsNyMKlXBtWSR,31,['Trap'],male,4
+Dabow,Dabow,spotify:artist:6GQx1heM2wyI3iHpAC5P8X,23,['Trap'],male,4
+Enlace Styla,Enlace Styla,spotify:artist:75Coyh7oHNwQcgKiGUhDp0,3,"['HipHop', 'Rap']",NA,4
+Ideal,Ideal,spotify:artist:07omkIhgrCUOLXq4xW6p5g,0,"['HipHop', 'Rap']",NA,4
+Los Nocheros,Los Nocheros,spotify:artist:2ydE5oBt6cwsDxH1TpIFmO,54,"['Folklore', 'Rock']",NA,0
+Chaqueño Palavecino,Chaqueño Palavecino,spotify:artist:1GlOpg3dPUft550esb82K3,56,"['Cumbia', 'Folklore']",male,0
+Coti,Coti,spotify:artist:1OUDQLymoysITxprkd0Qvj,62,"['Pop', 'Rock']",male,0
+Los Auténticos Decadentes,Los Auténticos Decadentes,spotify:artist:3HrbmsYpKjWH1lzhad7alj,67,"['Rock', 'Alternative']",NA,3
+La Delio Valdez,La Delio Valdez,spotify:artist:3tzacGOmngxUV8W8lU9h3Q,59,['Cumbia'],NA,0
+Valeria Lynch,Valeria Lynch,spotify:artist:60zawKIAJS16ul7OSY91wM,44,"['Jazz', 'Pop', 'Tango', 'Rock']",female,0
+Mariano Martinez,Mariano Martinez,spotify:artist:1CL1NnuyndaL52YgyPVL73,24,"['Tango', 'Rock']",male,0
+Jeebz,Jeebz,spotify:artist:5lXbNbyacKy56O5sDsDQHG,1,"['Trap', 'HipHop', 'Rap']",NA,4
+Pyura,Pyura,spotify:artist:77cMdN9JK8HlrCtHdPKSHi,22,"['Pop', 'Electronica', 'Alternative']",NA,3
+Gilda,Gilda,spotify:artist:6Q6qTNC2rAegcR5QjzcRgE,57,"['Cumbia', 'Rock']",female,0
+Emmanuel Horvilleur,Emmanuel Horvilleur,spotify:artist:3Pc0Gebx1aAAJlZh3zysmI,50,"['Pop', 'Rock', 'Rap', 'Alternative']",male,3
+ODD MAMI,ODD MAMI,spotify:artist:2Y6AtL4xQFvg8nroRM3ZV6,45,"['Pop', 'R&B']",female,4
+Dakillah,Dakillah,spotify:artist:4SzAEZqVVfHO0El8eDu9KJ,38,"['Trap', 'HipHop', 'Rap']",female,4
+Rosario Ortega,Rosario Ortega,spotify:artist:6AvVNBiwAW7CXZPACAo2OB,38,['Pop'],female,3
+Clara Cava,Clara Cava,spotify:artist:5bOm9wAui94GDhPOCKgmhY,43,"['R&B', 'Electronica', 'Alternative']",female,4
+Cítrico,Cítrico,spotify:artist:00CoCNLLdB7cWFgA8NG5q9,28,['Alternative'],male,3
+El Zar,El Zar,spotify:artist:1cj1ov4uZ0Htsx9PWDpNvi,51,"['Rock', 'Alternative']",NA,3
+Luciana Jury,Luciana Jury,spotify:artist:6lPYU9UIxc7E2cS0cSJ6Lt,27,['Folklore'],female,0
+Juan Quintero,Juan Quintero,spotify:artist:3No5HqLrMqJbmpJ1nUjUiM,27,['Folklore'],male,0
+Nadia Larcher,Nadia Larcher,spotify:artist:7qCEjoCmUjJ0F8ACB0WUX5,21,['Folklore'],female,0
+Carlos Aguirre,Carlos Aguirre,spotify:artist:42aKOZOUTiO5DmS1FF4nVN,27,['Folklore'],male,0
+Chango Spasiuk,Chango Spasiuk,spotify:artist:0qGRkfnUqWeG49vbCv6rMY,39,"['Chamame', 'Folklore']",male,5
+Ramona Galarza,Ramona Galarza,spotify:artist:6SgxxKwvGosbX2WvlVyCmm,30,"['Chamame', 'Folklore']",female,0
+Rafael Varela,Rafael Varela,spotify:artist:4U5EaR8hJD8J5Ov5L78KKa,10,['Tango'],male,0
+Guillermo Rubino,Guillermo Rubino,spotify:artist:0WySw2unsPSHsyKnaeIbro,1,['Tango'],male,0
+Julio Domínguez,Julio Domínguez,spotify:artist:7MMSYKX0JCWR0TE4Mbo7sk,1,"['Tango', 'Rock']",male,0
+Paula Pomeraniek,Paula Pomeraniek,spotify:artist:31dHfRj6P93GP3be6JsYIe,8,['Tango'],female,0
+Hernán Jacinto,Hernán Jacinto,spotify:artist:3waJSGCslQ87FHecJ3aRpl,23,['Jazz'],male,0
+Mariano Otero,Mariano Otero,spotify:artist:48Dbz6uh32ESOMasfSP1DV,10,['Jazz'],male,0
+Deborah Dixon,Deborah Dixon,spotify:artist:1aHdv3nIrpIqY0Ot84aUCl,36,"['Rock', 'Alternative']",female,7
+Pablo Márquez,Pablo Márquez,spotify:artist:7t8dXxk67LatGoCbXsMC1k,2,['Tango'],male,0
+Daniel Colombres,Daniel Colombres,spotify:artist:5UxNNk5mnz9zLq5nIrv3HO,1,['Rock'],male,0
+Enrique Cadícamo,Enrique Cadícamo,spotify:artist:4W9ZwGDEGNJpD4UPniDXZc,6,['Tango'],male,1
+Gato Barbieri,Gato Barbieri,spotify:artist:7dXBi98p0mN5JCpBnU0XEm,35,['Jazz'],male,0
+Luis Bacalov,Luis Bacalov,spotify:artist:4iy3JrFlBLHPvXqN1OcQS1,44,"['Tango', 'Folklore', 'Rock']",male,0
+Leo García,Leo García,spotify:artist:54YdJC33Ztc1CNIuodmyUb,38,['Alternative'],male,3
+Mimi Maura,Mimi Maura,spotify:artist:4VKHNaUBImLsxPOCdG5Mwl,44,"['Rock', 'Reggae', 'Alternative']",NA,7
+Pocho La Pantera,Pocho La Pantera,spotify:artist:2q6X99CH0WLrL5YFJVOhZc,27,"['Tango', 'Cumbia', 'Rock']",male,5
+Perotá Chingó,Perotá Chingó,spotify:artist:5cMTiWeaWidGI8hVoZY8Ox,51,"['Folklore', 'Alternative']",NA,3
+Lucho Gonzalez,Lucho Gonzalez,spotify:artist:33sboCc76D1i5TMxJZ9CrX,23,"['Jazz', 'Tango', 'Rock']",male,0
+Sol Mihanovich,Sol Mihanovich,spotify:artist:79BGPrOD4VVBStCNUiSVgf,5,"['Jazz', 'Pop', 'Rock']",female,0
+Vane Mihanovich,Vane Mihanovich,spotify:artist:5LvBye34bQCrxLLYWolBM0,4,"['Jazz', 'Pop', 'Rock']",male,0
+Horacio Fumero,Horacio Fumero,spotify:artist:5lAHWc2DhtCr5W1ELS4Sf7,20,['Jazz'],male,0
+Fernando Martínez,Fernando Martínez,spotify:artist:6dAA2x9S3ejO2shGKU2a9q,3,['Jazz'],male,0
+Diego Arnedo,Diego Arnedo,spotify:artist:4EL27iYJ5qyi75SKNcekCI,2,['Rock'],male,6
+Jacinto Piedra,Jacinto Piedra,spotify:artist:3gUs4foho2rbIjihCN0d2a,20,"['Chamame', 'Folklore']",male,6
+Rodolfo Garcia,Rodolfo Garcia,spotify:artist:2Qto84FlIG2TGAERd59hMh,10,"['Jazz', 'Rock']",male,6
+Amadeo Monges,Amadeo Monges,spotify:artist:7AGRJBPojSoIkGIILAfoe9,2,['Tango'],male,6
+Daniel Buira,Daniel Buira,spotify:artist:4LOOvONTOjDME2R1p1ucyL,1,['Rock'],male,6
+Luciano Pereyra,Luciano Pereyra,spotify:artist:6ZZ2DeepA3GpoGU4KwqSlU,63,"['Pop', 'Folklore']",male,0
+Los Tucu Tucu,Los Tucu Tucu,spotify:artist:793ACUr9nbTLP7KZUddXzU,35,"['Chamame', 'Folklore']",NA,6
+Charly García,Charly García,spotify:artist:3jO7X5KupvwmWTHGtHgcgo,63,"['Jazz', 'Pop', 'Tango', 'Rock', 'Punk', 'Alternative']",male,0
+Carlos Carabajal,Carlos Carabajal,spotify:artist:01R68b3QwneYjjQOrvtrtJ,24,"['Chamame', 'Folklore']",male,6
+Ica Novo,Ica Novo,spotify:artist:4kObiLMlQPb3jTLxhEpim4,7,"['Chamame', 'Folklore']",male,6
+Roberto Carabajal,Roberto Carabajal,spotify:artist:5Tw6enF7ZutIbWNTu3ZmVd,31,"['Tango', 'Folklore']",male,1
+Claudia Puyó,Claudia Puyó,spotify:artist:19TslKl8qhtMCbzoujrhv9,14,['Rock'],female,0
+Duo Coplanacu,Duo Coplanacu,spotify:artist:4PGCodvYkKFR1qPfeDlIPQ,41,['Folklore'],NA,6
+Taa Huayras,Taa Huayras,spotify:artist:56IDT1uYz4O3bNIXzqoymQ,2,"['Chamame', 'Folklore']",NA,6
+Hernán Langer,Hernán Langer,spotify:artist:5FTiRYlzsYspMsAx4dXks9,7,['Folklore'],male,0
+Claudia Brant,Claudia Brant,spotify:artist:10k5cHGYX3Ajunxd7oPYFm,31,['Pop'],female,0
+Sig Ragga,Sig Ragga,spotify:artist:7hBKLnKOnLXNBwJ1l6p24J,32,"['Reggae', 'Alternative']",NA,0
+Richard Nant,Richard Nant,spotify:artist:2TbC35HAukvJvVhhEhYXXH,4,['Jazz'],male,0
+Juan Falú,Juan Falú,spotify:artist:2NjcVfg5McVYV375Fm0rFH,26,['Folklore'],male,0
+Facundo Guevara,Facundo Guevara,spotify:artist:6964LUCtdUXz5FyLEeTgK4,17,"['Folklore', 'Rock']",NA,0
+Diego Rolón,Diego Rolón,spotify:artist:7zr3crIOjpigsdbwM55kK6,4,['Tango'],male,0
+Cristina Banegas,Cristina Banegas,spotify:artist:54QQawwkIQiBq4wbe43yLx,4,['Tango'],female,0
+Mariana Baraj,Mariana Baraj,spotify:artist:3kNByUYht34hI6ugWqMtCq,22,"['Pop', 'Folklore', 'Rock']",female,0
+Palo Pandolfo,Palo Pandolfo,spotify:artist:01wwxIe4Qgb0a4PCfzBjsf,27,"['Pop', 'Tango', 'Cumbia', 'Rock', 'Punk', 'Alternative']",male,3
+Karina Cohen,Karina Cohen,spotify:artist:5iAt4vIf5fUG1tFPpOSyUN,0,['Rock'],female,3
+Juan Salinas,Juan Salinas,spotify:artist:3LkShlQRHHeTS7Y6iyOeX8,7,"['Jazz', 'Tango', 'Folklore', 'Rock']",male,0
+Celeste Carballo,Celeste Carballo,spotify:artist:1FIaDvGsK56jO0K0BUs1iW,33,"['Pop', 'Tango', 'Rock', 'Punk']",female,0
+Patricia Sosa,Patricia Sosa,spotify:artist:4kyLueNyhG8PKhJagDDOJD,41,"['Pop', 'Tango', 'Rock']",female,0
+Hilda Lizarazu,Hilda Lizarazu,spotify:artist:1imu37uW2KnEiLMAKmQVgn,36,"['Pop', 'Rock']",female,3
+La Bruja Salguero,La Bruja Salguero,spotify:artist:1PvGlWWeeIvW3xeTjAZxda,26,['Folklore'],female,0
+Julia Zenko,Julia Zenko,spotify:artist:5zsw1AANYqHiLeJ9GGHjLP,25,"['Pop', 'Tango']",female,0
+Manuel Wirzt,Manuel Wirzt,spotify:artist:27kA8TnszsSYSZDikpz0Ra,38,"['Pop', 'Rock']",male,0
+Victor Carrión,Victor Carrión,spotify:artist:1gjDYTQtjIUuGBOLnwjz96,5,"['Jazz', 'Tango', 'Rock']",male,0
+Mariano Delgado,Mariano Delgado,spotify:artist:24isUheoITHraqgy9VRGhR,9,"['Jazz', 'Tango', 'Rock']",male,0
+Indio Solari,Indio Solari,spotify:artist:0nUGkxUncFeXt0Dr0hhrc4,58,"['Rock', 'Punk']",male,0
+Isabel De Sebastian,Isabel De Sebastian,spotify:artist:6rgRWv9QW0LOCwpJxYfKFh,9,['Jazz'],female,0
+Ulises Butrón,Ulises Butrón,spotify:artist:264oCh73no9KvChVyWZoCe,29,"['Pop', 'Rock']",male,0
+Los Tipitos,Los Tipitos,spotify:artist:1SykQGBiBwkQ1fcGpJ1BJt,52,"['Rock', 'Alternative']",NA,0
+Miguel Cantilo,Miguel Cantilo,spotify:artist:4MTd9MHb33LFgRKqWG0jZi,27,['Rock'],male,0
+Litto Nebbia,Litto Nebbia,spotify:artist:2SpMjzpc9CfI6WWtwdToiA,30,"['Jazz', 'Pop', 'Tango', 'Rock']",male,0
+Gustavo Cordera,Gustavo Cordera,spotify:artist:3dOfwznaY7FEKpF8aw1q9i,45,"['Rock', 'Alternative']",male,0
+Árbol,Árbol,spotify:artist:6OO01j5rLKCyPg4i3FuzIT,52,"['Rock', 'Punk', 'Alternative']",NA,0
+Los Piojos,Los Piojos,spotify:artist:0SnyKkoyBaB2fG8IJH4xmU,60,"['Rock', 'Alternative']",NA,7
+Liliana Vitale,Liliana Vitale,spotify:artist:3lXtbYD0IVuJUKEtqBFcvF,14,"['Jazz', 'Tango', 'Folklore', 'Rock']",female,0
+Veronica Condomi,Veronica Condomi,spotify:artist:0HRRgz3RdNIFJUaeo811Be,21,['Folklore'],female,0
+María Elena Walsh,María Elena Walsh,spotify:artist:5gMEZRCMq0gWA3kuCPukEk,47,"['Jazz', 'Tango', 'Rock']",female,0
+Fabiana Cantilo,Fabiana Cantilo,spotify:artist:5R6YR0pasdxlynyq0Abq7x,53,"['Pop', 'Rock', 'Alternative']",female,0
+Nacha Guevara,Nacha Guevara,spotify:artist:0439EWLqkNEatVwyJWb0Go,26,['Folklore'],female,1
+Javier Malosetti,Javier Malosetti,spotify:artist:0k0zJds09TLWzvBW9NoPqV,29,"['Jazz', 'Rock']",male,0
+Jorge Cumbo,Jorge Cumbo,spotify:artist:4y2x34fENU3IrjQKH245Q5,6,"['Tango', 'Rock']",male,0
+Eladia Blazquez,Eladia Blazquez,spotify:artist:0lHsA4VFPhU5bDBYPMskM8,23,['Tango'],female,0
+ALEJANDRO DOLINA,ALEJANDRO DOLINA,spotify:artist:03WEHTz1fWCH7iWsnDDtdQ,3,"['Jazz', 'Tango', 'Rock']",male,0
+Oscar Kreimer,Oscar Kreimer,spotify:artist:2inpugQjJeiYRp5NytloF7,0,"['Jazz', 'Tango', 'Rock']",NA,0
+Marcelo Torres,Marcelo Torres,spotify:artist:2BGnDjUoBoxXzkRdJR5xuL,1,"['Jazz', 'Tango', 'Rock']",male,0
+Jorge Araujo,Jorge Araujo,spotify:artist:72eRMBaSk9zLCC6lO2AETC,8,"['Jazz', 'Tango', 'Rock']",male,0
+Bernardo Baraj,Bernardo Baraj,spotify:artist:4q0z8gYHQaPTLo2Y3A4U90,9,"['Jazz', 'Tango', 'Folklore', 'Rock']",male,0
+Gauchos de Acero,Gauchos de Acero,spotify:artist:7ySjN46W89lvuVJSu1VZUl,8,"['Jazz', 'Tango', 'Rock']",NA,0
+Tangoloco (Daniel García Quinteto),Tangoloco (Daniel García Quinteto),spotify:artist:6kFy4Ql2YEcpaElKcnBGkj,9,['Tango'],NA,0
+Lisandro Aristimuño,Lisandro Aristimuño,spotify:artist:0ovfSEcDqepf0vqJc811zQ,49,"['Pop', 'Electronica', 'Rock', 'Alternative']",male,0
+Lidia Borda,Lidia Borda,spotify:artist:1SkyJrTK7wUmLxV9H7ekBt,23,['Tango'],female,0
+Manu Sija,Manu Sija,spotify:artist:0YJbC4MQ0KFv3bhFz8uUnx,14,['Folklore'],male,0
+Rocío Quiroz,Rocío Quiroz,spotify:artist:43PjjBbR7LawCx75hCbLmn,43,"['Pop', 'Cumbia']",female,0
+Natalie Perez,Natalie Perez,spotify:artist:1Y99HOeRzRc27my6NJE3rE,57,"['Pop', 'Cumbia']",female,0
+José Colangelo,José Colangelo,spotify:artist:2cBDNCWJR1YBWMGBxZDPgW,4,"['Jazz', 'Tango', 'Folklore']",male,0
+Federico Lechner,Federico Lechner,spotify:artist:5tEyp8bbcmlvlJHfGqzKui,9,"['Jazz', 'Tango', 'Folklore']",male,0
+Daniel Altamirano,Daniel Altamirano,spotify:artist:1aI3fe7Zgy101dUMankLRx,23,"['Chamame', 'Folklore']",male,6
+Ramón Navarro,Ramón Navarro,spotify:artist:3c9gEcnCgfUmMrkITo3hac,11,['Folklore'],male,0
+Demi Carabajal,Demi Carabajal,spotify:artist:5CQzGDENGT9jsefa285qId,28,['Folklore'],male,6
+Ernesto Guevara,Ernesto Guevara,spotify:artist:2mzr1rdYmrDeNUQd75hwRL,13,"['Folklore', 'Rock']",NA,6
+Vivi Pozzebón,Vivi Pozzebón,spotify:artist:57jK2jsGdm48Pk7j9pgipR,8,['Alternative'],female,6
+El Quintetito de Marcelo Véliz,El Quintetito de Marcelo Véliz,spotify:artist:7A76ngUiD83HJEb1xpGYjy,2,"['Folklore', 'Rock']",NA,6
+Walter Ríos,Walter Ríos,spotify:artist:5FCQvlbzr39o5QYf1ie5UD,16,"['Tango', 'Folklore', 'Rock']",male,0
+Horacio Banegas,Horacio Banegas,spotify:artist:7B4W35mskl1bpKV8l9WezH,32,"['Chamame', 'Folklore']",male,6
+Raul Porchetto,Raul Porchetto,spotify:artist:3WoxTj3fh8I58MpnwZyYyL,34,"['Pop', 'Rock']",male,0
+Natalia Pastorutti,Natalia Pastorutti,spotify:artist:3dQbT1d8rcXcVBcOR396Kt,36,['Pop'],female,0
+Jorge Rojas,Jorge Rojas,spotify:artist:45SolwUehJs6vFkuAfqMf6,47,['Folklore'],male,0
+Sixto Palavecino,Sixto Palavecino,spotify:artist:7J3PlfvQyxabanXsQQtJf0,27,"['Chamame', 'Folklore']",male,0
+Sandro,Sandro,spotify:artist:5srsgtoePlsp0eQIXmta1O,52,"['Pop', 'Rock']",male,8
+Nito Mestre,Nito Mestre,spotify:artist:46JHFFEjLKbXhMQsU5vSGm,29,['Rock'],male,0
+María Rosa Yorio,María Rosa Yorio,spotify:artist:2GrKE2j3FFdSw8eAtrZqmq,17,['Rock'],female,0
+Gustavo Santaolalla,Gustavo Santaolalla,spotify:artist:4W3fa7tiXGVXl3KilbACqt,62,"['Pop', 'Tango', 'Folklore', 'Rock']",male,0
+D-Mente,D-Mente,spotify:artist:5FhptIji4QaSFq9NupXBv7,25,"['Rock', 'Metal']",NA,0
+Los Fabulosos Cadillacs,Los Fabulosos Cadillacs,spotify:artist:2FS22haX3FYbyOsUAkuYqZ,66,"['Rock', 'Alternative']",NA,0
+Edelmiro Molinari,Edelmiro Molinari,spotify:artist:1vNIIIbjhp0ZqFHwtsZV3e,6,['Rock'],male,9
+Ramiro Gallo,Ramiro Gallo,spotify:artist:6dHeDHdhGXNzuG7hWjJM5A,13,['Tango'],male,0
+Andrés Beeuwsaert,Andrés Beeuwsaert,spotify:artist:3fnzS4PnRLWeLgaRuktFIu,10,"['Jazz', 'Pop', 'Rock', 'Alternative']",male,0
+Marcelo Corvalan,Marcelo Corvalan,spotify:artist:0xJqaIySgCaJQFtxA0C8X4,3,"['Rock', 'Punk', 'Rap', 'Metal']",male,0
+Lito Epumer,Lito Epumer,spotify:artist:0cQctgT93nOOGdnLKya1pM,6,"['Jazz', 'Folklore', 'Rock']",male,0
+Suna Rocha,Suna Rocha,spotify:artist:3SGdv7Nnxz36kYLYcSWuJf,21,['Folklore'],female,0
+Oscar Moro,Oscar Moro,spotify:artist:6mYJ5mevBWjr0iKe0BuXtv,3,"['Jazz', 'Rock']",male,0
+Néstor Marconi,Néstor Marconi,spotify:artist:0ZWO3TxKWBb6QvvGEDe38H,16,['Tango'],male,1
+Balbina Ramos,Balbina Ramos,spotify:artist:2Eqg76yCE6NyGS9XymOv75,3,"['Jazz', 'Pop', 'Tango', 'Rock', 'Alternative']",female,0
+Piñon Fijo,Piñon Fijo,spotify:artist:6PRgcvz1LpSPCsJD7dvzBE,33,"['Jazz', 'Pop', 'Tango', 'Rock', 'Alternative']",male,0
+Skay Beilinson,Skay Beilinson,spotify:artist:4K8Mrjr9IvA8QU0Vjj4BED,46,"['Rock', 'Punk', 'Metal', 'Alternative']",male,7
+Conociendo Rusia,Conociendo Rusia,spotify:artist:79R7PUc6T6j09G8mJzNml2,57,"['Pop', 'Rock', 'Alternative']",NA,0
+Nayla Lebón,Nayla Lebón,spotify:artist:3z5hUEzZZdic4OwyuR04ck,11,['Rock'],female,0
+Diego Torres,Diego Torres,spotify:artist:0LALueHEQunQ2d61fXGeZh,63,"['Pop', 'Rock']",male,0
+Eruca Sativa,Eruca Sativa,spotify:artist:2RPNbhguRnI9uqahGYcUc6,40,"['Folklore', 'Rock', 'Metal', 'Alternative']",NA,0
+Polifemo,Polifemo,spotify:artist:5kt7SkycNsq8vbKoFb3QxO,21,['Rock'],NA,0
+Silvina Garre,Silvina Garre,spotify:artist:6q9n20PmMRLtZc1xCgq0r3,34,"['Pop', 'Rock']",female,0
+Los Tekis,Los Tekis,spotify:artist:0iutktJLkNNtErs8c3EoF6,46,"['Cumbia', 'Folklore']",NA,0
+Facundo Saravia,Facundo Saravia,spotify:artist:7c8SVvHiXiEY6f3H7M6BcW,29,['Folklore'],male,14
+Gustavo Cerati,Gustavo Cerati,spotify:artist:1QOmebWGB6FdFtW7Bo3F0W,68,"['Pop', 'HipHop', 'Electronica', 'Folklore', 'Rock', 'Alternative']",male,3
+Ariel Ramírez,Ariel Ramírez,spotify:artist:2dTieljE0C4ydCdUPIPLRW,42,"['Folklore', 'Rock']",male,0
+Chango Farias Gomez,Chango Farias Gomez,spotify:artist:4uk8EjGWEOC5OgpG3MRTCS,19,"['Folklore', 'Rock']",male,0
+Jaime Torres,Jaime Torres,spotify:artist:6JogLFS7BAeUUE7DBgOOVb,26,"['Folklore', 'Rock']",male,0
+Ruben Lobo,Ruben Lobo,spotify:artist:4p5UgXz2mMS1iUN2dcE331,11,"['Chamame', 'Folklore']",male,0
+Oscar Giunta,Oscar Giunta,spotify:artist:26CnXYQlwCWtgIaYpiix6P,14,['Jazz'],male,0
+Popi Spatocco,Popi Spatocco,spotify:artist:1OClVljQxHgGRdLn2P6DyO,12,"['Folklore', 'Rock']",male,0
+Marcelo Chiodi,Marcelo Chiodi,spotify:artist:6BvPypThcJR8MH0ohwwyBq,10,"['Jazz', 'Tango', 'Chamame']",male,0
+Carlos López Puccio,Carlos López Puccio,spotify:artist:3uy6dfOCidSnDmWkqV8FRp,8,"['Folklore', 'Rock']",male,10
+Carlos Franzetti,Carlos Franzetti,spotify:artist:7uZe9PKEDBcgMePywrHt8d,8,['Jazz'],male,0
+Guillermo Vadala,Guillermo Vadala,spotify:artist:16Zrj1Fc0tOeRmdBGftuhD,17,['Jazz'],male,0
+Domingo Cura,Domingo Cura,spotify:artist:0PyBsZlcv8KxT5BsBFnmwG,18,"['Tango', 'Folklore']",male,0
+Los Fronterizos,Los Fronterizos,spotify:artist:3JY4oF6rBQ45FSVUJtXixb,33,"['Chamame', 'Folklore']",NA,16
+Dúo Nuevo Cuyo,Dúo Nuevo Cuyo,spotify:artist:6KR1dWZ3UsJUio6LLkuTR2,14,"['Folklore', 'Rock']",NA,0
+Maria Graña,Maria Graña,spotify:artist:1Yr19zGBA3JmVYOcE4JwRG,23,['Tango'],female,0
+Luna Monti,Luna Monti,spotify:artist:5RkjP5JxGRSX834GatSoCt,14,['Folklore'],female,0
+Nacha Roldán,Nacha Roldán,spotify:artist:5ecl4cSr8UkV7VAgBuQmYh,13,"['Folklore', 'Rock']",female,0
+La Chilinga,La Chilinga,spotify:artist:7J2YL38BFK6fxvA6p6NNfx,37,['Folklore'],NA,6
+Alberto Rojo,Alberto Rojo,spotify:artist:178VA738PauCWm1ZjjSaD2,18,['Folklore'],male,0
+Coqui Sosa,Coqui Sosa,spotify:artist:4EVLp3DfgfKHi1atOxc7Wb,10,"['Folklore', 'Rock']",male,0
+Jorge Giuliano,Jorge Giuliano,spotify:artist:4ohvKWdqkkcnCiWo6qBcRk,16,"['Folklore', 'Rock']",male,0
+Javier Casalla,Javier Casalla,spotify:artist:2LzLXJNPrHvw62NE5vKIHo,34,"['Pop', 'Tango', 'Folklore', 'Rock']",male,0
+Sof Tot,Sof Tot,spotify:artist:0QLkVX5UDeJyKxSA8z8mtj,9,['Electronica'],female,5
+Muray,Muray,spotify:artist:4at5t9fkW0HFE6OWPvAI9j,4,['Trap'],male,4
+Agapornis,Agapornis,spotify:artist:27Yc5RzJf27tJfqezJnHY1,54,"['Pop', 'Cumbia']",NA,0
+Kris Alaniz,Kris Alaniz,spotify:artist:2BBJWIcxT5ermErEg2LbWB,13,['HipHop'],female,5
+Picnic,Picnic,spotify:artist:7GswG3FAeOtdj7lbSSu4Qr,9,"['Pop', 'Rock', 'Alternative']",NA,7
+Poseidotica,Poseidotica,spotify:artist:35c7I7m05XIsgtiCq1o99U,13,"['Pop', 'Electronica', 'Rock', 'Alternative']",NA,7
+Isla de los Estados,Isla de los Estados,spotify:artist:1lCe34SkMDohDtxVgyL8lK,16,['Electronica'],NA,7
+Il Carlo,Il Carlo,spotify:artist:0fv2685TCe5p3NzyhvgJCY,1,['Cumbia'],male,7
+Agus Cassano,Agus Cassano,spotify:artist:5Jmui4kpdCfcyz8KFSpHRY,10,"['Pop', 'Rock', 'Alternative']",female,7
+Vilma Palma e Vampiros,Vilma Palma e Vampiros,spotify:artist:5VQCk9RiLwri99OgOT34kq,62,"['Pop', 'Rock', 'Alternative']",NA,7
+Andy Chango,Andy Chango,spotify:artist:6gRaeWdE7T2FCClI72x4Ln,20,"['Pop', 'Rock']",male,0
+Ciro Fogliatta,Ciro Fogliatta,spotify:artist:5bPCAiEmMvXK12rK6mVh6k,7,['Rock'],male,0
+Poli y Prietto,Poli y Prietto,spotify:artist:6T7P1dGrdFKk84GJzAOgiL,27,['Pop'],NA,0
+Los Abuelos De La Nada,Los Abuelos De La Nada,spotify:artist:5R3NywPPOyhLfdvutgg0me,61,"['Rock', 'Punk', 'Alternative']",NA,0
+Daniel Melingo,Daniel Melingo,spotify:artist:08X5fKnU2tkjH4IeLnl8vt,20,"['Jazz', 'Tango', 'Rock', 'Reggae']",male,0
+Palito Ortega,Palito Ortega,spotify:artist:4jCduxx9HzFKS0RrRAtVXD,50,"['Pop', 'Rock']",male,8
+Raúl Lavié,Raúl Lavié,spotify:artist:2GFIX098sqpvCSY9ZQHI4D,28,['Tango'],male,0
+Carli Jiménez,Carli Jiménez,spotify:artist:5rGUuPEIFYMVmocNdihpUe,24,['Cumbia'],male,8
+Javier Calamaro,Javier Calamaro,spotify:artist:1zqYQ7L6ESgIV03vRAC8Nc,0,"['Pop', 'Tango', 'Rock']",male,0
+Banda XXI,Banda XXI,spotify:artist:1HHj74UqXjKHUjf4tav0zU,2,['Pop'],NA,8
+Damian Cordoba,Damian Cordoba,spotify:artist:4haveXmEihPeMsRLKsaqQ5,2,"['Rock', 'Alternative']",male,3
+La Konga,La Konga,spotify:artist:0XORjaOkimtutsShblypI7,21,['Pop'],NA,8
+Slim Dee,Slim Dee,spotify:artist:7jiMD3vf8pQSfYOqsftWVg,12,['HipHop'],male,8
+Nene Bellako,Nene Bellako,spotify:artist:23VHwtnLwwlIY6867yLKxF,0,['Cumbia'],NA,4
+Manu Rg,Manu Rg,spotify:artist:4BYjb5lZPyqyEJgSCkxXuH,40,['Cumbia'],male,4
+Carlos Mellino,Carlos Mellino,spotify:artist:4POuvOTYZeAgJ0yP8E0j79,20,['Rock'],male,0
+Nacho Nacif,Nacho Nacif,spotify:artist:3ZQ41cUBIlokZkViPuam4F,2,"['Pop', 'Rock']",male,0
+Cacho Castaña,Cacho Castaña,spotify:artist:3lwRbCTt1qmo0QgXUai8ao,47,"['Tango', 'Rock']",male,0
+Anabella Cartolano,Anabella Cartolano,spotify:artist:08DbRq8mfXjAQPIyhR070C,17,['Alternative'],female,12
+Facundo Barrionuevo,Facundo Barrionuevo,spotify:artist:79p3OrS2zGmMcfYrNOEOak,4,['Alternative'],male,12
+Nina Suárez,Nina Suárez,spotify:artist:1NQmLvlEcg6hE8CQ0r31GV,15,['Alternative'],female,12
+Jorge Serrano,Jorge Serrano,spotify:artist:0MKZAy5tWkpbK7elkCZRLF,50,"['Rock', 'Alternative']",male,3
+Ulises Conti,Ulises Conti,spotify:artist:2GbKQKL9D1dkfoSMeWM7vV,18,['Alternative'],male,12
+Kumbia Queers,Kumbia Queers,spotify:artist:5YyaDaOco3I0zoLtGxDM5K,31,"['Cumbia', 'Punk', 'Rap']",NA,7
+Todos Tus Muertos,Todos Tus Muertos,spotify:artist:4Pi85oI4dmppSqROLj7rgy,43,"['Rock', 'Punk', 'Metal', 'Reggae', 'Alternative']",NA,3
+Rocio Igarzabal,Rocio Igarzabal,spotify:artist:7HzX50l6Oi0gFLTkdHJcOZ,25,['Pop'],female,3
+Sol Pereyra,Sol Pereyra,spotify:artist:6nmZ0P2weepXhXvox51G1A,35,"['Pop', 'Alternative']",female,3
+Mala Fama,Mala Fama,spotify:artist:1AvkrI2S7knrbaZxydvc9B,44,['Cumbia'],NA,0
+Daniel Piazzolla Octet,Daniel Piazzolla Octet,spotify:artist:2enk2JDiMeliIGhAaIIYBU,5,"['Pop', 'Tango', 'Rock', 'Alternative']",NA,0
+Hernan Salinas,Hernan Salinas,spotify:artist:2W5cwkDmgEmBBMw9mI31Du,0,"['Pop', 'Tango', 'Rock', 'Alternative']",male,0
+Divina Gloria,Divina Gloria,spotify:artist:4R6X8AfgS6zLLB1T32o2b5,4,['Pop'],female,0
+Spinetta Jade,Spinetta Jade,spotify:artist:3WxVICwFDAWMTWH8sELmRe,39,"['Rock', 'Alternative']",NA,0
+Atilio Bertagni,Atilio Bertagni,spotify:artist:5k20ZoFDfPecgcA77HhUjZ,0,['Tango'],NA,0
+César Angeleri,César Angeleri,spotify:artist:0dXS98DkHEA9K2H1YjKiTQ,9,['Tango'],male,0
+Fernando Suárez Paz,Fernando Suárez Paz,spotify:artist:0iAXfgocPlqCBCJF0ePtWe,21,['Tango'],male,1
+Marcela Roggeri,Marcela Roggeri,spotify:artist:7eHNjAADUow33FO8ZXTnja,20,['Tango'],female,1
+Horacio Malvicino,Horacio Malvicino,spotify:artist:3xevpuwJnWpMqAG1OQ6tyw,11,['Jazz'],male,1
+Jaime Gosis,Jaime Gosis,spotify:artist:2zrOtvSZABUlEK1BKXB2pY,4,['Tango'],NA,1
+Antonio Agri,Antonio Agri,spotify:artist:4WZMrqz4osPATbgxXk8Ybq,8,['Tango'],male,0
+Oscar Lopez Ruiz,Oscar Lopez Ruiz,spotify:artist:56Aircc0D2IkPge7hrZuAZ,4,['Tango'],male,1
+Osvaldo Manzi,Osvaldo Manzi,spotify:artist:7fHTuS9UpTt3OrSadZT0jE,1,['Tango'],male,1
+Hector de Rosas,Hector de Rosas,spotify:artist:0ON4VPRzGR8VO2H1E67L30,0,['Tango'],male,1
+Maria De La Fuente,Maria De La Fuente,spotify:artist:3Az9vW4q8VtWHqEvUM0zLm,1,['Tango'],female,1
+Elvino Vardaro,Elvino Vardaro,spotify:artist:2AoHpFcyVBqzVSWcJZt5Gj,3,['Tango'],male,1
+José Bragato,José Bragato,spotify:artist:4BRgpiaW3Bzof2rAjdNytN,0,['Tango'],male,1
+Jorge Sobral,Jorge Sobral,spotify:artist:3RdDFV21hY3jng6cRWV0ai,10,['Tango'],male,1
+Nelly Vazquez,Nelly Vazquez,spotify:artist:252RFCMkHlkKpHGN3gNB1D,2,['Tango'],female,1
+Trio Luminar,Trio Luminar,spotify:artist:5D9gNtrqcJjw9g6L6uivcN,0,['Tango'],NA,1
+Ernesto Sábato,Ernesto Sábato,spotify:artist:1RhzFKc0pwYboeFXmFb2sH,5,['Folklore'],male,0
+Roberto Goyeneche,Roberto Goyeneche,spotify:artist:3tkyefEX4NNjb0AILRLq2A,41,"['Tango', 'Rock']",male,1
+Daniel Binelli,Daniel Binelli,spotify:artist:3pI9A9672brzUyGUtkaGqh,21,['Tango'],male,1
+Carlos Nozzi,Carlos Nozzi,spotify:artist:1YXMZPdfSoD4VhXO2FpbVw,0,['Tango'],NA,1
+Gerardo Gandini,Gerardo Gandini,spotify:artist:5BvrtZLtPiMJR57CpfRYQN,3,['Clasico'],male,0
+Pablo Ziegler,Pablo Ziegler,spotify:artist:3T5pmAbfrkFjPg1D2sCzDY,21,['Tango'],male,1
+Alfredo Alcón,Alfredo Alcón,spotify:artist:5TV6Czh1RrFQlDfYP5IDhZ,0,['Tango'],male,1
+Jorge Morel,Jorge Morel,spotify:artist:3PCmED1ckvLHpYTJ8VuX7N,23,['Tango'],male,1
+Victor Villadangos,Victor Villadangos,spotify:artist:4GOS7bvnz94dzQVeDgghaF,34,['Tango'],male,1
+SWF-Rundfunkorchester,SWF-Rundfunkorchester,spotify:artist:607tmMMhM6asSx6AWcjgy7,2,['Tango'],NA,1
+Lalo Schifrin,Lalo Schifrin,spotify:artist:39iHRO9MH9To3gjW7wqaW1,42,['Rock'],male,1
+Antonio Rios,Antonio Rios,spotify:artist:7s652lD4v77szrPEfgMTBi,51,['Cumbia'],male,0
+Rodolfo Mederos,Rodolfo Mederos,spotify:artist:6eas1NblWrY95XvCm0V3zC,22,"['Jazz', 'Tango']",male,1
+Jorge Luis Borges,Jorge Luis Borges,spotify:artist:7cC7jkVtiRu4JDIrG1X51P,21,['Tango'],male,1
+Lito Cruz,Lito Cruz,spotify:artist:63NylTJACZNFLX8T6XUJI1,19,['Tango'],male,1
+Héctor Console,Héctor Console,spotify:artist:1WhJevvVMI2nQxyp2gYQTU,22,"['Jazz', 'Tango']",male,1
+Orquesta Estable del Teatro Colón,Orquesta Estable del Teatro Colón,spotify:artist:5gAHakiwLZCyLvIWwgWUjJ,2,['Tango'],NA,1
+José Carli,José Carli,spotify:artist:0WR3tGW87hKZ0hi1mj1Rhk,1,['Tango'],male,1
+Roberto Yanes,Roberto Yanes,spotify:artist:36gGhh6LVf87HeDHnSQ0BD,19,['Tango'],male,0
+Daniel Riolobos,Daniel Riolobos,spotify:artist:0DNtRB9Ove4aRbaBMwy9VI,20,['Tango'],male,1
+Gustavo Beytelmann,Gustavo Beytelmann,spotify:artist:2PH8EDFFaImOaGSe0yXVVu,7,['Tango'],male,1
+Norberto Capelli,Norberto Capelli,spotify:artist:7rJOI7I6aatzsPLNjYZ5gF,0,['Tango'],male,1
+Kali Sandoval,Kali Sandoval,spotify:artist:6GLA950o5qHRNVfQYhZLGq,1,['Trap'],female,4
+théos,théos,spotify:artist:3zyJ0KYR7Zxowqq4T4QKru,42,['Trap'],male,4
+Pimpinela,Pimpinela,spotify:artist:7E7CVSqFdLyh0K4AE9uTMo,59,['Pop'],NA,0
+Juanjo Dominguez,Juanjo Dominguez,spotify:artist:62JdZQLVhEnorpnkE2VdPo,22,"['Tango', 'Folklore']",male,0
+Horacio Guarany,Horacio Guarany,spotify:artist:7exkSLWDTlXJYcmBhWp9cl,46,['Folklore'],male,6
+Rodrigo Tapari,Rodrigo Tapari,spotify:artist:1wkImvL5XLLhrNcmX7sVt4,55,['Cumbia'],male,0
+Sol Bassa,Sol Bassa,spotify:artist:1cttIh2Jh0yR5nxfBmRF6O,13,"['Rock', 'Alternative']",female,3
+Andrea Prodan,Andrea Prodan,spotify:artist:0dvmNwYnG0qt2yVtW9P1UU,14,"['Rock', 'Punk', 'Reggae']",male,3
+Afrosound Choir,Afrosound Choir,spotify:artist:34vV8RZzWL7Tr4J01SHUSY,22,"['Rock', 'Alternative']",NA,3
+Ulises Bueno,Ulises Bueno,spotify:artist:2UqRkW2wfEkZmyvKyTTv2W,58,['Rock'],male,3
+Los Caligaris,Los Caligaris,spotify:artist:13wFTN72PGSUxzEHJP5Ljs,63,"['Rock', 'Alternative']",NA,3
+Babasónicos,Babasónicos,spotify:artist:2F9pvj94b52wGKs0OqiNi2,68,"['Pop', 'Electronica', 'Rock', 'Alternative']",NA,3
+Kapanga,Kapanga,spotify:artist:2MLiASzGQHVMyORIApRGsp,48,"['Rock', 'Reggae', 'Alternative']",NA,3
+Joaquín Levinton,Joaquín Levinton,spotify:artist:40YfcUtQrNSRJty5K9O3eI,13,"['Pop', 'Rock']",male,3
+Juanchi Baleiron,Juanchi Baleiron,spotify:artist:4CivXQqYkJ5ur1gzzQ9jx0,16,"['Pop', 'Rock', 'Reggae']",male,0
+Turf,Turf,spotify:artist:0Zncosr79q01riJYbSBNA1,53,"['Rock', 'Alternative']",NA,3
+Gastón Bernardou,Gastón Bernardou,spotify:artist:6bQNFS784yjIWSGmRdQlhw,0,"['Pop', 'Cumbia', 'Rock', 'Punk', 'Reggae']",NA,3
+Zort,Zort,spotify:artist:3hjVUCo820MvbrZ1Y987XT,0,['Electronica'],NA,3
+Alberto Castillo,Alberto Castillo,spotify:artist:14KUc7zg3OndrAMbCNxPBD,37,['Tango'],male,1
+Taty Almeida,Taty Almeida,spotify:artist:1lDrk9P7ZO7k5hLtJGeDIC,18,['Cumbia'],female,0
+Ale Sergi,Ale Sergi,spotify:artist:6oKLWbs4OqvmeXnREk0flZ,35,['Pop'],male,0
+Claudio Marciello,Claudio Marciello,spotify:artist:4gHjWV2oalYMkHYfBCt3Lr,21,"['Tango', 'Folklore', 'Rock', 'Metal']",male,3
+Attaque 77,Attaque 77,spotify:artist:5rI6C5mJm6GYXbGHhpHTu9,56,"['Rock', 'Punk', 'Alternative']",NA,6
+Marya,Marya,spotify:artist:5bUQYOK1hZeaxSMRiPm6fo,2,"['Jazz', 'Pop', 'Tango', 'Rock']",NA,0
+Rubén Juárez,Rubén Juárez,spotify:artist:4idyrAA6wZyU9umXHFoM9p,29,['Tango'],male,1
+Lo' Pibitos,Lo' Pibitos,spotify:artist:7f4QZ3v32jtmstrh7VHfJL,43,"['Rap', 'Alternative']",NA,3
+Lucas & The Woods,Lucas & The Woods,spotify:artist:4OIDWn0ASVx73rysnf6pqA,25,['Alternative'],NA,3
+Daniel Agostini,Daniel Agostini,spotify:artist:3NSJOyQdSXncJloHqhwlQB,54,['Cumbia'],male,0
+Los Chakales,Los Chakales,spotify:artist:643YpbScVr0u07i276NRiP,33,['Cumbia'],NA,0
+Bandalos Chinos,Bandalos Chinos,spotify:artist:0wn2qDKzeFlhjRUtJAwJjp,59,"['Rock', 'Alternative']",NA,3
+Chiara Parravicini,Chiara Parravicini,spotify:artist:7CAbOypVuQA9Rk7359TMas,26,['Alternative'],female,3
+Usted Señalemelo,Usted Señalemelo,spotify:artist:1a1v0OJC5GqtsLwzoqJm7j,50,"['Pop', 'Electronica', 'Rock', 'Alternative']",NA,3
+Meteoros,Meteoros,spotify:artist:0i9C2rVWJ2UtTV6ZAixxmB,27,['Pop'],NA,3
+Kid Munni,Kid Munni,spotify:artist:2HBcNkdZk8JzGkqlc7RsIL,30,['Trap'],NA,4
+El príncipe idiota,El príncipe idiota,spotify:artist:5xEgsOYkENDU9TRoKMWW3u,29,"['Rock', 'Alternative']",NA,3
+Acus,Acus,spotify:artist:39DDfcoTv0v0HoZY1ZoPWp,19,['R&B'],non-binary,3
+Isla de Caras,Isla de Caras,spotify:artist:0GUxqzAYRCveTfqBLhojnF,41,['Alternative'],NA,4
+El Chacal & Los Alpes Floreados,El Chacal & Los Alpes Floreados,spotify:artist:6vtp1NouNva4jvDI2IqQey,22,['Alternative'],NA,3
+Gabo Ferro,Gabo Ferro,spotify:artist:085q57OvE341Q8n77AE9RT,38,"['Rock', 'Alternative']",male,0
+Emilia Wingeyer,Emilia Wingeyer,spotify:artist:7mYQKYwFRmr4MLDbpJdwaM,0,['Folklore'],female,0
+Quique Sinesi,Quique Sinesi,spotify:artist:3ugxBGVKHKCdUzIvzTUQze,21,"['Jazz', 'Tango', 'Folklore']",male,1
+Silvina López,Silvina López,spotify:artist:0LBa93wnHVvgipmc8jjk0m,10,['Folklore'],female,0
+Chancha Via Circuito,Chancha Via Circuito,spotify:artist:6E8vZ5lkpXbXlkgHhbVJSl,45,"['Cumbia', 'Folklore']",male,5
+Agustín Guerrero,Agustín Guerrero,spotify:artist:5I59QojHd5nU2WGUVnfB8m,2,['Tango'],male,1
+Ramiro Flores,Ramiro Flores,spotify:artist:59YTycBxhexu6zRUAQas1t,21,['Jazz'],male,0
+Aca Seca Trio,Aca Seca Trio,spotify:artist:6nvkqGQVDZLm0y1TxubrFA,30,"['Folklore', 'Rock']",NA,0
+Rodrigo Dominguez,Rodrigo Dominguez,spotify:artist:3j30jmYK2pIEgaw3ZTLyL2,2,"['Jazz', 'Folklore', 'Rock']",male,0
+Sergio Verdinelli,Sergio Verdinelli,spotify:artist:4ujhVf7VBbCNR8HaOnmg8x,6,"['Jazz', 'Folklore', 'Rock']",male,0
+"Gustavo ""Cuchi"" Leguizamon","Gustavo ""Cuchi"" Leguizamon",spotify:artist:3VKqXPG7o5b1JZ9vQSbdAH,4,['Tango'],male,0
+Roberto Chanel,Roberto Chanel,spotify:artist:1Newv0kwOisVM6rtV7iiWL,22,['Tango'],male,2
+Jorge Vidal,Jorge Vidal,spotify:artist:1UJLNPqfYGcW8KHxOgPqZj,20,['Tango'],male,2
+Charlo,Charlo,spotify:artist:3Ry0Bx0jq7Z6nbzTfcsvkL,21,['Tango'],male,2
+Edmundo Rivero,Edmundo Rivero,spotify:artist:6ULt24uY5oov72S2fY1qoi,34,['Tango'],male,1
+Floreal Ruiz,Floreal Ruiz,spotify:artist:5MKgOzGl9pBQ1wgcWL88hJ,24,['Tango'],male,1
+Alberto Echagüe,Alberto Echagüe,spotify:artist:659t7L9mu8Kfk0JquBRXFM,27,['Tango'],male,2
+Raul Iriarte,Raul Iriarte,spotify:artist:0BVutgpayh84Z50y8GyhaJ,20,['Tango'],male,1
+Carlos Gardel,Carlos Gardel,spotify:artist:05Q9xndTxhXhD5trpmTtfU,48,['Tango'],male,1
+Carlos Dante,Carlos Dante,spotify:artist:5GFa1oIEY4uabHh6L54t8d,30,['Tango'],male,2
+Alberto Marino,Alberto Marino,spotify:artist:1gk2rAR139bIdjgbDSyvT5,24,['Tango'],male,1
+Orquesta Tipica Porteña,Orquesta Tipica Porteña,spotify:artist:2BtyDKqqekgiDmcEWB1ccz,26,"['Tango', 'Rock']",NA,1
+Nestor Astarita,Nestor Astarita,spotify:artist:45y1rWlUfzQmyR3RLCHF3x,6,['Jazz'],male,0
+Hugo Lobo,Hugo Lobo,spotify:artist:50UQHipbWWMFQiT6DZYvHN,30,['Reggae'],male,7
+Ernesto Romeo,Ernesto Romeo,spotify:artist:65uLXI2bJ9yseni5g0ajfU,16,"['Rock', 'Reggae', 'Alternative']",male,7
+BOOM BOOM KID,BOOM BOOM KID,spotify:artist:3Zy9epYPdkzL0IYzCvLGhp,1,['Cumbia'],NA,7
+Actitud Maria Marta,Actitud Maria Marta,spotify:artist:7bRRdkXGiJNwJaYgekPGRn,10,"['Rock', 'Reggae', 'Alternative']",NA,7
+Ainda,Ainda,spotify:artist:3eZXi1et2XpXPD7PoUDDzE,50,['Alternative'],NA,3
+Ernesto Snajer,Ernesto Snajer,spotify:artist:2lsW2v88mmr3SCDpKFlUao,29,"['Tango', 'Folklore']",male,0
+Diego Schissi,Diego Schissi,spotify:artist:0UyEKAZHgqGAVk610fpW1l,8,['Jazz'],male,0
+Mariano Loiacono,Mariano Loiacono,spotify:artist:2nJSd6dTLpgAj6yXRqoDw3,3,['Jazz'],male,0
+Juan Carlos Caceres,Juan Carlos Caceres,spotify:artist:3JuAkCibNlIcgHixqvJnaW,25,['Tango'],male,6
+Cuti Carabajal,Cuti Carabajal,spotify:artist:2wxP22uu9RzqeHT13xmHKu,21,"['Chamame', 'Folklore']",male,6
+Roxana Carabajal,Roxana Carabajal,spotify:artist:3XliglxGifK0IJjHPxo5MP,28,['Folklore'],female,6
+Terceto Murillo,Terceto Murillo,spotify:artist:1OJY1HPpYUvhp3ZGX6RiKT,0,['Tango'],NA,1
+Pablo Agri,Pablo Agri,spotify:artist:3XZ8Tmt0YduUosPCLXQlNd,6,['Tango'],male,1
+Graciela Carabajal,Graciela Carabajal,spotify:artist:0PvlzV1yEIsuAV8iSEXRe4,14,"['Tango', 'Folklore']",female,1
+Ariel Puchetta,Ariel Puchetta,spotify:artist:6R3Xug1WmXHR8bzEodNSRK,0,"['Tango', 'Folklore']",male,1
+Miguel Zavaleta,Miguel Zavaleta,spotify:artist:2xmzx57bFAkRyqbPuF4cZl,9,"['Jazz', 'Pop', 'Rock']",male,0
+Gringui Herrera,Gringui Herrera,spotify:artist:5KWHvlzAXeR860x5byWIz9,6,['Rock'],male,10
+Luis Borda,Luis Borda,spotify:artist:0Go2UvTYJFdzwk6HZXo9SR,9,['Tango'],male,0
+César Franov,César Franov,spotify:artist:6JGU0dmyxaoWlXRZtBYIhZ,4,"['Jazz', 'Rock']",male,0
+Juan Carlos Ingaramo,Juan Carlos Ingaramo,spotify:artist:6VY7Sm3RPOc6JnpNMG8AGU,1,"['Jazz', 'Pop', 'Tango', 'Rock']",male,0
+Ricardo Lew,Ricardo Lew,spotify:artist:32DXCPnu4gvhRa86TviIkH,7,['Jazz'],male,0
+Norberto Minichillo,Norberto Minichillo,spotify:artist:6DRX4g7ChffT6cZqWKqlJp,0,"['Jazz', 'Pop', 'Tango', 'Rock']",male,0
+Alan Plachta,Alan Plachta,spotify:artist:0LIpCAgTqGSTqtSUrcWOny,1,['Jazz'],male,0
+Guillermo Klein,Guillermo Klein,spotify:artist:6TV13Hya75hVUbLTvX1Jh3,13,['Jazz'],male,0
+Diego Urcola,Diego Urcola,spotify:artist:3yscB4e5TBjZUHd2uKdgER,20,['Jazz'],male,0
+Oscar Feldman,Oscar Feldman,spotify:artist:5MtiE94nZ8vlzcPjnvMkes,0,['Jazz'],male,0
+Silvia Iriondo,Silvia Iriondo,spotify:artist:6RlNuHRDeVSq9y9VBzgkw7,18,['Folklore'],female,0
+Ricardo Moyano,Ricardo Moyano,spotify:artist:4QbhKBmJSQNxyrc1QyjWqQ,9,['Folklore'],male,0
+Jorge Cardoso,Jorge Cardoso,spotify:artist:5UFAV2zLKjMLpCbHGdGPfO,19,['Folklore'],male,0
+Florencia Bernales,Florencia Bernales,spotify:artist:4Gok5DvYiwtY2TI2ioLDtb,6,['Folklore'],female,0
+Raul Carnota,Raul Carnota,spotify:artist:1jQDZYNIE9vOQTYFyk7a41,0,"['Jazz', 'Tango', 'Folklore']",male,0
+Mónica Abraham,Mónica Abraham,spotify:artist:7h7OOifiiMnu024OYqMbJT,5,['Folklore'],female,0
+Edgardo Cardozo,Edgardo Cardozo,spotify:artist:6XPnV6YclmmE4DpD5mxYKV,21,['Folklore'],male,0
+Santiago Vázquez,Santiago Vázquez,spotify:artist:6A8O2qoQS9tiuKth4pqnXi,20,['Folklore'],male,0
+Fernando Gallimany,Fernando Gallimany,spotify:artist:2zKgkpglmW2x49qCHvi0eJ,0,['Tango'],male,0
+Onda Vaga,Onda Vaga,spotify:artist:3cBb4A9AZeZhcq781P3wCZ,48,"['Rock', 'Alternative']",NA,3
+Goy Ogalde,Goy Ogalde,spotify:artist:170R5MHc1kaj5wjpe9r0V4,24,"['Folklore', 'Rock', 'Punk', 'Reggae']",NA,3
+La Fuerza Suave,La Fuerza Suave,spotify:artist:2uoikK8SZM0veqVYsHo1qI,3,"['Pop', 'Tango', 'Cumbia', 'Rock', 'Punk', 'Alternative']",NA,3
+Goy Karamelo,Goy Karamelo,spotify:artist:6ivDKC9j7KCZ6vYb9syvcC,11,"['Folklore', 'Rock', 'Punk', 'Reggae']",NA,3
+Justo Lamas,Justo Lamas,spotify:artist:3nApi3p2CRCGg6RBVm2KS2,2,"['Jazz', 'Tango', 'Folklore', 'Rock']",male,0
+Ratones Paranoicos,Ratones Paranoicos,spotify:artist:5fVtUielMhdztOA34ArB6c,51,"['Rock', 'Punk', 'Alternative']",NA,0
+Luciano Napolitano,Luciano Napolitano,spotify:artist:1vZDXx2kfTUHnjHy8XchFU,19,"['Rock', 'Metal']",male,9
+Oscar Mediavilla,Oscar Mediavilla,spotify:artist:4MGAArcxYhHjxrARGASYuF,1,['Rock'],male,0
+Gady Pampillón,Gady Pampillón,spotify:artist:7rcviU03E3Ure9BMWG4DeB,3,['Rock'],male,9
+Kashmir Orquesta,Kashmir Orquesta,spotify:artist:655zc6SaolsLw5Fd9WAcbo,5,['Rock'],NA,3
+Bruno Arias,Bruno Arias,spotify:artist:59OheJsvimLlXWvuL9j7Df,32,['Folklore'],male,0
+Los Fundamentalistas del Aire Acondicionado,Los Fundamentalistas del Aire Acondicionado,spotify:artist:1SKA2QwV2fwGgoMlx16FXO,57,"['Rock', 'Punk']",NA,0
+Nico Cota,Nico Cota,spotify:artist:3R7H5BnszTX4pYrBXOkmeR,15,['Rock'],male,0
+Emanero,Emanero,spotify:artist:2BTS8Np1YzPQuXjgdlqsBB,57,"['Trap', 'HipHop', 'Rap']",male,5
+Adrián Abonizio,Adrián Abonizio,spotify:artist:3sAyn0ZXCaDZkIL9A3wVKY,7,"['Pop', 'Rock']",male,0
+Leopoldo Deza,Leopoldo Deza,spotify:artist:2CEbctwisZvRB5OaLVJIVo,2,"['Jazz', 'Pop', 'Tango', 'Rock']",male,0
+Facundo Cabral,Facundo Cabral,spotify:artist:1vCCUwNiIwC41lEu7EuBmx,44,"['Folklore', 'Rock']",male,0
+Ariel Minimal,Ariel Minimal,spotify:artist:6QEXv1g4G63n5WjMhUGIA0,13,"['Jazz', 'Pop', 'Rock', 'Punk']",male,13
+Los Músicos del Centro,Los Músicos del Centro,spotify:artist:1NZh8HG0QvTRep7j8eMgw5,7,"['Jazz', 'Pop', 'Tango', 'Rock']",NA,0
+Los Nuñez,Los Nuñez,spotify:artist:7FnBSeoCJiZDp4x37Yv5RN,13,['Folklore'],NA,0
+Gustavo Giannini,Gustavo Giannini,spotify:artist:5fp9DVDJ2m2SMt7cAv6m33,0,"['Jazz', 'Rock']",male,0
+Lalo De Los Santos,Lalo De Los Santos,spotify:artist:0oFtXR8mGkIZUWq7fWDCDb,4,['Rock'],male,0
+Jorge González,Jorge González,spotify:artist:1yebGfaci7Kf2rCIkyLRAQ,3,"['Jazz', 'Pop', 'Tango', 'Rock']",male,0
+Guadalupe Raventos,Guadalupe Raventos,spotify:artist:1KGnsWxPxY8bMrM3c7VZGk,1,"['Jazz', 'Pop', 'Tango', 'Rock']",female,0
+Alejandro Picciano,Alejandro Picciano,spotify:artist:1IciQzATaOVaYL79WlexPi,0,"['Jazz', 'Pop', 'Tango', 'Rock']",male,0
+Ricardo Soule,Ricardo Soule,spotify:artist:7CZEgK9uHbpW0RdfbWRIQC,12,['Rock'],male,0
+Andrés Ruiz,Andrés Ruiz,spotify:artist:4LXSWBTtXbZGhJ5aqzUZhB,5,"['Jazz', 'Pop', 'Tango', 'Rock']",male,0
+Gonzalo Aloras,Gonzalo Aloras,spotify:artist:68ylNUXfCMZfmd9bBx8Knh,19,"['Pop', 'Rock']",male,0
+Hugo Diz,Hugo Diz,spotify:artist:1TaPzg8J4MHYLIPw9oAEAj,0,['Tango'],male,0
+Rodolfo Alchourrón,Rodolfo Alchourrón,spotify:artist:5qdByjZTAuYQgpw3gCTaM1,2,"['Jazz', 'Pop', 'Tango', 'Rock']",male,0
+Dino Saluzzi,Dino Saluzzi,spotify:artist:0XsuWf5f3kRzml20heorPz,25,"['Jazz', 'Tango']",male,1
+Mirtha Defilpo,Mirtha Defilpo,spotify:artist:5jN2wYqhUCltMC9RnxavSa,5,"['Jazz', 'Pop', 'Tango', 'Rock']",female,0
+Chivo Borraro,Chivo Borraro,spotify:artist:1TuFeddzdF12Gh1UO0LZ89,3,"['Jazz', 'Tango']",male,0
+Quintino Cinalli,Quintino Cinalli,spotify:artist:46VejkVhYPLpD9FIhfHt4O,4,"['Jazz', 'Rock']",male,0
+Alfredo Lichter,Alfredo Lichter,spotify:artist:2YlIkIkGFS6DQbYT8FYTg1,0,"['Jazz', 'Pop', 'Tango', 'Rock']",male,0
+Tito Reyes,Tito Reyes,spotify:artist:3GW0BlXsUmzMe2dQPo8Yyr,3,['Tango'],male,0
+Alejandro Del Prado,Alejandro Del Prado,spotify:artist:3iBsdKMbWLCe0jrWxPfUoZ,8,['Rock'],male,0
+Marcelo Peralta,Marcelo Peralta,spotify:artist:4JDJ1LVjQA8I76Bx3XSN9Y,8,"['Jazz', 'Pop', 'Tango', 'Rock']",male,0
+Vocal Melopea,Vocal Melopea,spotify:artist:1miIHWzGJKjvrA0QL2FCvM,0,"['Jazz', 'Pop', 'Tango', 'Rock']",NA,0
+Inés Estévez,Inés Estévez,spotify:artist:4mX2xgo5jq2XKiwFJKWjMf,0,"['Jazz', 'Pop', 'Tango', 'Rock']",female,0
+Dúo Salteño,Dúo Salteño,spotify:artist:5SAeZRhgmJhgq196BR1Mna,29,['Folklore'],NA,0
+Mario Fiocca,Mario Fiocca,spotify:artist:51Lai9ogCR4bGofJJmg2LR,0,"['Jazz', 'Pop', 'Tango', 'Rock']",male,0
+Gustavo Bergalli,Gustavo Bergalli,spotify:artist:3DqfWDH5maQ3VOCfqDE6tS,2,['Jazz'],male,0
+Cuarteto Zupay,Cuarteto Zupay,spotify:artist:05uOsFLijt0mUTxSD7OaLw,24,['Folklore'],NA,0
+Huinca,Huinca,spotify:artist:4c6hvFl5G5lPhMu0KRayky,4,['Metal'],NA,0
+"Cacho Lafalce, Bernardo Baraj, Cacho Arce, Domingo Cura & Chino Rossi","Cacho Lafalce, Bernardo Baraj, Cacho Arce, Domingo Cura & Chino Rossi",spotify:artist:0EHM6eKxZALAiJP6Flgok0,0,"['Jazz', 'Pop', 'Tango', 'Rock']",male,0
+La Perra Que Los Parió,La Perra Que Los Parió,spotify:artist:3sVVMPMbALoko1Iub9ADj7,30,"['Rock', 'Reggae', 'Alternative']",NA,3
+Los Reyes del Falsete,Los Reyes del Falsete,spotify:artist:3fSY3Q7ElfLbI1cR3RyOXd,20,['Alternative'],NA,0
+José Francisco Ingaramo,José Francisco Ingaramo,spotify:artist:0iCX7U9HkEa5mBfCcLxChE,0,"['Jazz', 'Pop', 'Tango', 'Rock']",male,0
+Charo Bogarín,Charo Bogarín,spotify:artist:5jfggAaZZ37qreOA6VzvJA,5,"['Rock', 'Alternative']",female,0
+Emme,Emme,spotify:artist:5FgVbD73IGd9orGZK888A8,27,['Rock'],female,0
+Leda Valladares,Leda Valladares,spotify:artist:32frwpljz9gxJhNZRfkZ34,19,"['Jazz', 'Tango', 'Rock']",female,0
+Mariano Lopez,Mariano Lopez,spotify:artist:5defwXHFW3smFGwOHJHalB,46,"['Pop', 'Rock', 'Alternative']",NA,0
+Eduardo Bergallo,Eduardo Bergallo,spotify:artist:0iO7GoHspdzqLANoFLZz78,31,"['Pop', 'Rock', 'Alternative']",male,0
+Gabriel Sivak,Gabriel Sivak,spotify:artist:0muejclvBRGSfZ5wg2RV2M,2,['Tango'],male,1
+Fernando Viani,Fernando Viani,spotify:artist:3rGPUve0f6F0dOLpo6KW6C,14,['Tango'],male,1
+Luis Gaeta,Luis Gaeta,spotify:artist:7IEFNbKf534MI8qvKenx5L,1,['Tango'],male,1
+Gabriel Castagna,Gabriel Castagna,spotify:artist:0lF53kr1siie3JEuHkzLJZ,4,['Tango'],male,1
+Dora De Marinis,Dora De Marinis,spotify:artist:2du6Lrcmg9PFaocsTa8ou5,4,['Tango'],female,1
+ALBERTO GINASTERA,ALBERTO GINASTERA,spotify:artist:7s8gk58HmkAOZJklgAvWWg,0,['Tango'],male,1
+Juan Sebastian Delgado,Juan Sebastian Delgado,spotify:artist:0XHk7PtuOa6O6wTLnM3lwW,0,['Tango'],male,1
+Ruben Lopez Furst,Ruben Lopez Furst,spotify:artist:2U16v6XmFw7LIeoXwfTIsX,1,['Jazz'],male,0
+Ignacio López,Ignacio López,spotify:artist:3m0D0iq8opkJzGKbw5j07O,1,"['Tango', 'Rock']",NA,0
+AnToN KuRT,AnToN KuRT,spotify:artist:3AYmaEv6i9ja3nlRK4D5lP,0,"['Jazz', 'Tango', 'Rock']",male,0
+Scorpio,Scorpio,spotify:artist:39D2GyTHYcgVTHRsimOQEu,0,"['Jazz', 'Tango', 'Rock']",NA,0
+Marcelo Baraj,Marcelo Baraj,spotify:artist:6ysdMcll7TRlUherAOSPZs,0,"['HipHop', 'Rock']",male,0
+Juan Bayon,Juan Bayon,spotify:artist:5XVYQv0ALitPD7iqbGLaCm,2,"['Jazz', 'Folklore', 'Rock']",male,0
+Rubén Goldín,Rubén Goldín,spotify:artist:4LcVOgiAzJlIZJk5gFa4yu,25,['Rock'],male,0
+Juan Darthes,Juan Darthes,spotify:artist:5hsnsRgj4XU9rwoSeFQ6sC,5,['Pop'],NA,0
+Fena Della Maggiora,Fena Della Maggiora,spotify:artist:144QYimrD81FcpLv3WBPno,15,"['Pop', 'Rock']",male,0
+Vandera,Vandera,spotify:artist:7IxhhJ4I8RdyL9CIkdMnA0,8,"['Pop', 'Rock']",male,0
+Rolando Goldman,Rolando Goldman,spotify:artist:7iZgS3tD434vSPAR2QAmcz,5,['Tango'],male,0
+Ariel Argañaraz,Ariel Argañaraz,spotify:artist:3IOI9xrhwibocZTdQN1lVQ,3,['Tango'],male,0
+Paula Pomeraniec,Paula Pomeraniec,spotify:artist:6d4xFw6B3fc0B7WOC4i6EP,2,['Tango'],female,0
+Juan Canosa,Juan Canosa,spotify:artist:2dSFZB48yrIdK7NtkuNql8,2,['Jazz'],male,0
+Esteban Morgado,Esteban Morgado,spotify:artist:1pL3N36WdUgF8sdmLG8OMl,22,['Tango'],male,0
+Damian Bolotin,Damian Bolotin,spotify:artist:6K2DK1fVzvbY5oSx3xPajp,10,['Tango'],male,0
+Leo Genovese,Leo Genovese,spotify:artist:6oTt7SbO878MuvMRjHmTmk,19,['Jazz'],male,0
+Sofia Rei,Sofia Rei,spotify:artist:6jIvSVTvBMdlsCWqTQJKbJ,9,['Folklore'],female,0
+Daniel Barenboim,Daniel Barenboim,spotify:artist:78sEozQOEJxzXegUuqRSgH,61,"['Jazz', 'Tango']",male,1
+Oscar Alem,Oscar Alem,spotify:artist:6AYyHYnVjO4Qd4j0TFIGTg,11,['Tango'],male,0
+Hilda Herrera,Hilda Herrera,spotify:artist:0qzpjA8ZRuHJnJJN6OsePI,11,['Folklore'],NA,0
+Ernesto Baffa,Ernesto Baffa,spotify:artist:1Bl1x1lp1MD3FElVMbIaI9,6,['Tango'],male,1
+Fernando Rabih,Fernando Rabih,spotify:artist:51PGQ1TfMvqoUVeMCRRuc4,1,['Folklore'],male,0
+Federico Mizrahi,Federico Mizrahi,spotify:artist:0RcujGrIDwI6n6f9PfWhFt,7,"['Jazz', 'Rock']",male,0
+Marcelo Gomez,Marcelo Gomez,spotify:artist:4m5JMfDN9cWhUlwmRdVqXq,7,['Folklore'],male,6
+Arias Cáceres,Arias Cáceres,spotify:artist:2zPIAsiuapY0hgt7UgEb2q,0,['Folklore'],male,6
+Alambre Gonzalez,Alambre Gonzalez,spotify:artist:3oLANiNTf5qyrciZmnPyYU,15,['Rock'],male,9
+Susy Shock,Susy Shock,spotify:artist:7cSEm0IEhlSHyPx0rXC6oY,16,"['Alternative', 'Tango']",other,7
+Dancing Mood,Dancing Mood,spotify:artist:70XauTb6oEJbXxFoH6wY9F,43,"['Jazz', 'Rock', 'Reggae', 'Alternative']",NA,7
+Bam Bam Miranda,Bam Bam Miranda,spotify:artist:1CFUZzuQO6nb6pJpoEuNAi,1,['Alternative'],male,6
+Fede Flores,Fede Flores,spotify:artist:6bZVo4d2ZYRD3K2GCBylQh,0,['Alternative'],male,6
+Liliana Zavala,Liliana Zavala,spotify:artist:318joJnkZbXBwp9t8DGqyx,4,['Alternative'],female,6
+Alfredo Abalos,Alfredo Abalos,spotify:artist:3vsjdss4ZqYIq9u5fD9HPz,29,"['Chamame', 'Folklore']",male,0
+Luis Gurevich,Luis Gurevich,spotify:artist:3JldJgANj6SKm7p06QkTwA,4,['Rock'],male,0
+Miguel Mateos - Zas,Miguel Mateos - Zas,spotify:artist:3YG18nhGaJkR1F6VpcnSG6,54,"['Rock', 'Alternative']",NA,0
+Literal,Literal,spotify:artist:0Ec1MqHP5MENR7rK3DtO3G,37,['Rock'],NA,0
+Juan Luqui,Juan Luqui,spotify:artist:6lt8CZydFV47oahQc38LL5,7,"['Pop', 'Tango', 'Folklore', 'Rock']",male,0
+Anibal Kerpel,Anibal Kerpel,spotify:artist:1tkoCroEpHe2UexqTAd8Wh,29,"['Pop', 'Tango', 'Folklore', 'Rock']",male,0
+Barbarita Palacios,Barbarita Palacios,spotify:artist:1gq0ImfjG4vhi885kD3gB8,10,['Folklore'],female,0
+Paulina Fain,Paulina Fain,spotify:artist:58Ts8sUwRBLaxKV3fJHrIc,1,['Tango'],female,0
+Ariel Ardit,Ariel Ardit,spotify:artist:62WLKvGxUiIjMITbNetyR6,25,['Tango'],male,0
+Víctor Lavallén,Víctor Lavallén,spotify:artist:0VXsP4n9Psxs7o4O5MW49j,6,['Tango'],male,0
+Juan Pablo Di Leone,Juan Pablo Di Leone,spotify:artist:6oDkfDNI4obD3rvv8WRpU9,14,['Jazz'],male,0
+Loli Molina,Loli Molina,spotify:artist:4mStQ3gsuRt6YDkloBov32,41,['Alternative'],female,5
+Santiago Segret,Santiago Segret,spotify:artist:2IyVU9Yy24qYEotlhyfgUx,26,['Folklore'],male,0
+Armando Alonso,Armando Alonso,spotify:artist:63V3FL6VN6LeTK3js2dSp1,7,"['Jazz', 'Folklore', 'Rock']",male,0
+Facundo Ramirez,Facundo Ramirez,spotify:artist:6cguYHPhvpHSVXV45RbiNZ,6,['Folklore'],male,0
+Martha Argerich,Martha Argerich,spotify:artist:66MvLAvLznk5UOvASVGjk4,53,['Tango'],female,1
+Andrés Goldstein,Andrés Goldstein,spotify:artist:0XGifvCubDQY0xQQlKjpkw,3,['Tango'],male,1
+Orquesta Sinfónica Nacional de la República Argentina,Orquesta Sinfónica Nacional de la República Argentina,spotify:artist:1AzNvdUP2oFAEXuNwSXtnd,2,['Tango'],NA,1
+Osvaldo Acedo,Osvaldo Acedo,spotify:artist:0SslGuOfVYtEI5eHtJeRyk,0,['Tango'],male,1
+Francisco de Caro,Francisco de Caro,spotify:artist:4WNOjVbHZTXAEiHCECBb8k,0,['Tango'],male,1
+Sebastian Llapur,Sebastian Llapur,spotify:artist:1TELtuCpDL3sbZnxXQApD0,34,"['Cumbia', 'Folklore']",male,0
+Maxi Pardo,Maxi Pardo,spotify:artist:6APnEf5cyECCCClxfH7ESE,8,"['Cumbia', 'Folklore']",male,0
+Yamila Cafrune,Yamila Cafrune,spotify:artist:21tGjsSQbt1AoCzi6OwHoV,22,['Folklore'],female,14
+Capri,Capri,spotify:artist:0ncK4aJkxd0iHvEbcpbEzk,15,['Alternative'],male,3
+Leandro Fresco,Leandro Fresco,spotify:artist:0gJgTQEVl62dN80lQbOBK5,19,"['Pop', 'Electronica', 'Rock']",male,3
+Gustavo Lamas,Gustavo Lamas,spotify:artist:2il1USD5GwzBWuQmzwYQxt,6,['Pop'],male,3
+Emisor,Emisor,spotify:artist:0fAu9hukoNSpIUXXfhKOuE,6,"['Rock', 'Alternative']",male,3
+Christian Powditch,Christian Powditch,spotify:artist:1U3rp433q1YrSoSEEtATR3,7,['Alternative'],male,3
+Daniel Montenegro,Daniel Montenegro,spotify:artist:6gA1k3JrCTseKH6q4cmhFQ,5,"['Pop', 'HipHop', 'Electronica', 'Folklore', 'Rock', 'Alternative']",male,3
+Daniel Melero,Daniel Melero,spotify:artist:5ohM2ZA35IpUZNIAiK4RoY,41,"['Pop', 'Electronica', 'Rock', 'Alternative']",male,3
+Félix Luna,Félix Luna,spotify:artist:6aV7Q0EnQo7ssGbs6rlY6T,2,"['Folklore', 'Rock']",male,0
+Lolita Torres,Lolita Torres,spotify:artist:0fhBxe30C0J8XkxJyTFGsY,9,"['Folklore', 'Rock']",female,0
+Damián Sanchez,Damián Sanchez,spotify:artist:2k8Lkl84JJBSV8wfNiifEq,13,"['Folklore', 'Rock']",male,0
+Rubén Dubrovsky,Rubén Dubrovsky,spotify:artist:6B7trGq3EXDP4QZyqfeSoE,4,"['Folklore', 'Rock']",male,1
+Grupo Vocal Argentino,Grupo Vocal Argentino,spotify:artist:5cXfFsNEAbnAyDBb84sZ9J,7,"['Folklore', 'Rock']",NA,0
+Alfredo Remus,Alfredo Remus,spotify:artist:61rgv0cssjbKKpkESSnup3,2,"['Jazz', 'Tango', 'Folklore']",male,0
+Manuel Fraga,Manuel Fraga,spotify:artist:1AR4weKRSJg1NswV2HUjm8,5,['Jazz'],male,0
+Pablo Motta,Pablo Motta,spotify:artist:0N4l2NjzDYy8061amZ1dv6,8,['Jazz'],male,0
+Paula Almerares,Paula Almerares,spotify:artist:6fjWFtyOvhk4CnI2icoLSX,0,"['Folklore', 'Rock']",female,10
+Víctor Torres,Víctor Torres,spotify:artist:5l59cyohKeqVm2EhQC4wGX,4,"['Folklore', 'Rock']",male,10
+Rodrigo Montero,Rodrigo Montero,spotify:artist:5ooUw1zjSo6JPi8HBOoJ00,0,"['Chamame', 'Folklore']",male,16
+Gerardo López,Gerardo López,spotify:artist:4gRi5DgoE3Y2COdANmCNPq,13,"['Chamame', 'Folklore']",male,16
+Fernando Xamena,Fernando Xamena,spotify:artist:3c6lM6Yd69PsWqzN6GwjFU,3,"['Chamame', 'Folklore']",male,16
+Jorge Calandrelli,Jorge Calandrelli,spotify:artist:3cjxn6Z8XrhJuuEcxxQHmm,8,['Tango'],male,1
+Sexteto Mayor,Sexteto Mayor,spotify:artist:6Wvfeq2vPFsjNGxFmcz1nq,24,['Tango'],NA,0
+Jorge Falcón,Jorge Falcón,spotify:artist:4A8BXQviabJAmX51XaXcLN,31,['Tango'],male,2
+Magdalena Fleitas,Magdalena Fleitas,spotify:artist:7vUHOeU5ADsenylCCvlaQV,46,['Rock'],female,0
+Cristóbal Repetto,Cristóbal Repetto,spotify:artist:6zKR0k2DsuT25NEav424Pa,2,"['Pop', 'Tango', 'Folklore', 'Rock']",male,0
+Uji,Uji,spotify:artist:3BQDgh6CjxVXMhy00YEx3G,33,['Electronica'],male,5
+Come & C,Come & C,spotify:artist:21spCy1ye5CTUhJofVHu0s,12,"['Pop', 'Cumbia']",NA,0
+El Polaco,El Polaco,spotify:artist:3ucYybVr1mTuB04HtoBDCc,54,"['Pop', 'Cumbia']",male,0
+Klan,Klan,spotify:artist:7flslx3D22tWYKvoChQX8o,28,"['Trap', 'HipHop', 'Rap']",NA,5
+Ramiro Jota,Ramiro Jota,spotify:artist:643hBnrVfRzLm6Kz9YYfga,32,"['HipHop', 'Cumbia', 'Punk', 'Rap']",male,5
+Santiago Córdoba,Santiago Córdoba,spotify:artist:3gM7EGFBBygflICkOPdl0k,6,"['Pop', 'Electronica', 'Rock', 'Alternative']",male,12
+Marina Fages,Marina Fages,spotify:artist:1jBRvUY23iEpMeGCKZ2RO3,24,"['Electronica', 'Alternative']",female,5
+Carca,Carca,spotify:artist:2IepsVr1DGAWIy15lh6sxC,23,"['Pop', 'Electronica', 'Rock', 'Alternative']",male,7
+Claudio Gabis,Claudio Gabis,spotify:artist:1XSVGwcOBIdSrcGp4gRSgL,14,"['Jazz', 'R&B', 'Rock']",male,0
+Ariel Rot,Ariel Rot,spotify:artist:5kXK8waG1JeBQ8b5leWNSu,36,"['Pop', 'Rock']",male,0
+Pappo,Pappo,spotify:artist:1db5TWniHR7iqwXer7AiQ2,50,"['Rock', 'Metal', 'Alternative']",male,9
+Alfredo Toth,Alfredo Toth,spotify:artist:6jY5tvGdUYfG9E1GXlnTGp,4,['Rock'],male,9
+El Kuelgue,El Kuelgue,spotify:artist:6jRUKVZllu1wtgXHbqvUmT,54,"['Rock', 'Reggae', 'Alternative']",NA,0
+Connie Isla,Connie Isla,spotify:artist:3rRWzsERkCNBl27Nih029a,39,['Pop'],female,0
+Manuel Moretti,Manuel Moretti,spotify:artist:2OHC8FLow0MAt62MoMRzZk,27,"['Pop', 'Rock']",male,0
+Chocolate Fogo,Chocolate Fogo,spotify:artist:0MMbInVw5PpAi2TAvbDtLP,8,"['Rock', 'Punk', 'Alternative']",NA,0
+Lucia Galan,Lucia Galan,spotify:artist:5WX8pBPYya8duzqxGktzIh,25,"['Pop', 'Rock']",female,8
+Violeta Rivas,Violeta Rivas,spotify:artist:37wvb2slf0x1R2W9xIUsWw,24,"['Pop', 'Rock']",female,8
+Libertad Lamarque,Libertad Lamarque,spotify:artist:4obTALkglm8PARkVVik9KZ,27,['Tango'],female,8
+King Clave,King Clave,spotify:artist:71FVpPyLHxYTn3CfUOJq7f,45,"['Pop', 'Rock']",male,8
+El Simbolo,El Simbolo,spotify:artist:276SjaOhqPfWqk3eDTDrz3,47,['Pop'],NA,8
+Fernando Samalea,Fernando Samalea,spotify:artist:4ttOol0gPD8eTWKuAYK0PP,7,"['Tango', 'Rock']",male,3
+Estela Raval,Estela Raval,spotify:artist:5iBkOOIEEgRYqoPEtl3TWM,28,['Folklore'],female,0
+Ligia Piro,Ligia Piro,spotify:artist:2qE3UfT4wnrBpmJ2lbtB9q,26,['Jazz'],female,0
+María Martha Serra Lima,María Martha Serra Lima,spotify:artist:03vv0WEv8o8eeVgeXBVHdP,39,['Pop'],female,8
+Maria Volonte,Maria Volonte,spotify:artist:5C1ZBqt6NoORyfsT05X9EJ,8,['Tango'],female,0
+Chico Novarro,Chico Novarro,spotify:artist:53EZ5ABP35N5oPGYTvjwU7,29,"['Jazz', 'Pop', 'Tango', 'Cumbia', 'Rock']",male,15
+Cacho Tirao,Cacho Tirao,spotify:artist:78tiXC9u3a6PyQHB94GBnV,25,['Tango'],male,0
+Los Guarros,Los Guarros,spotify:artist:6QcCAqoq8aSa6fi5uAYled,14,['Rock'],NA,0
+La Barra,La Barra,spotify:artist:0QIeOzcA4xi1RMwXWPdl14,50,['Pop'],NA,8
+Magui Olave,Magui Olave,spotify:artist:1kfrmHoRbXekpUf2iM6zBE,42,"['Rock', 'Alternative']",NA,3
+Brian Lanzelotta,Brian Lanzelotta,spotify:artist:6SV6TCY7KVVWmAhnX5WnS3,33,"['Pop', 'Cumbia']",NA,8
+Agos Nisi,Agos Nisi,spotify:artist:2PaIU0s55Sglwuq0zMLRFM,0,"['Pop', 'Rock']",female,0
+Maria José Demare,Maria José Demare,spotify:artist:52bh3UorKsTwG9Rl8iDiJ8,4,"['Tango', 'Rock']",female,0
+Juan Ramon,Juan Ramon,spotify:artist:6Ff5ifsGeDGD8nwShPI0Gw,13,"['Tango', 'Rock']",male,0
+Alberto Cortez,Alberto Cortez,spotify:artist:0Iww53p8UY2oYtQhfzsSY9,47,"['Pop', 'Folklore']",male,0
+Lola Arias,Lola Arias,spotify:artist:53eB0ZnT2mF21xdu9JPDVs,4,['Alternative'],female,12
+Rosario Bléfari,Rosario Bléfari,spotify:artist:048Ps9xL1nU6dsliRDJi3y,28,"['Rock', 'Alternative']",female,7
+Sara Hebe,Sara Hebe,spotify:artist:4pFUriuYqqAmBCvqF9o6LW,46,"['HipHop', 'Cumbia', 'Punk', 'Rap']",female,5
+Potra,Potra,spotify:artist:2qP9rlQySpfxXYrHZ8IkAO,15,['Pop'],NA,3
+Cristian Zárate,Cristian Zárate,spotify:artist:3DxNxcSmNfdPAmxTNcPGCd,10,['Tango'],male,1
+Leonardo Suarez Paz,Leonardo Suarez Paz,spotify:artist:0xloWULNg6JINYMYocvL0f,0,['Tango'],male,1
+Osvaldo Requena,Osvaldo Requena,spotify:artist:0u4Ts2jzqhhQxgnIgLB9E0,1,['Tango'],male,1
+Angel Villoldo,Angel Villoldo,spotify:artist:58zqZbO02GoqvH117YPH5D,5,['Tango'],male,1
+Carlos Guastavino,Carlos Guastavino,spotify:artist:5tsUYkQxnLGOzfj31dWmvL,23,['Tango'],male,1
+Juan Lauga,Juan Lauga,spotify:artist:6P20S9msop8UKKqOwZJNHF,0,['Tango'],male,1
+Saul Cosentino,Saul Cosentino,spotify:artist:5By5B7dqOWnPsZvhbk6LJ3,2,['Jazz'],male,0
+Luis Gianneo,Luis Gianneo,spotify:artist:6GbjnWeQqrEb6FvCY76V7W,2,['Tango'],male,1
+Eduardo Falú,Eduardo Falú,spotify:artist:3GmAEo2lOqrVb7BrHvUS5M,26,['Folklore'],male,0
+Francisco Fiorentino,Francisco Fiorentino,spotify:artist:0chC6Ta4I8hpmaZ28GUdMT,26,['Tango'],male,1
+Roberto Rufino,Roberto Rufino,spotify:artist:77lIcMj8n8EME52oE0pcxN,23,['Tango'],male,2
+Aldo Calderón,Aldo Calderón,spotify:artist:0kvB65iiRFMo0m4KHSvBas,2,['Tango'],male,1
+Jorge Casal,Jorge Casal,spotify:artist:6L7O04OiT9fGaG5jdfY5ox,7,['Tango'],male,1
+Raul Beron,Raul Beron,spotify:artist:5MUxvhkKJ6F52OtoV3i93A,16,['Tango'],male,1
+Roberto Grela,Roberto Grela,spotify:artist:4NkIT9ejpKX3c6zfz3VzrT,20,['Tango'],male,1
+Amadeo Mandarino,Amadeo Mandarino,spotify:artist:05KONw4k9cdArmCSNtLFpd,1,['Tango'],male,1
+Rodolfo Biagi,Rodolfo Biagi,spotify:artist:50BzmPPHNTQjeLW5JvrZJs,30,['Tango'],male,2
+Carlos Di Sarli,Carlos Di Sarli,spotify:artist:0gAbrqBahiaTF69TmVb9fQ,36,['Tango'],male,2
+Osvaldo Fresedo,Osvaldo Fresedo,spotify:artist:30tf3CsLuv3h4nR6n7ianI,25,['Tango'],male,2
+Alfredo Gobbi,Alfredo Gobbi,spotify:artist:62ABL5pqowZJin1fkheWo7,22,['Tango'],male,2
+Julio De Caro,Julio De Caro,spotify:artist:5sH2omybKmPkkDYHzpyseu,22,['Tango'],male,2
+Alfredo De Angelis,Alfredo De Angelis,spotify:artist:1T5fdN2r38UO5jz6cb4tHD,38,['Tango'],male,2
+Roberto Firpo,Roberto Firpo,spotify:artist:57r4BX1GO0yZfvh0hoE4nT,19,['Tango'],male,2
+Ricardo Tanturi,Ricardo Tanturi,spotify:artist:2qMnZ26W08LGkJx2WfM6DK,28,['Tango'],male,1
+Horacio Salgán,Horacio Salgán,spotify:artist:2Bh9iQTtKB9vzl6iLtwZ9W,21,['Tango'],male,1
+Antonio Carrizo,Antonio Carrizo,spotify:artist:7rDJMckKZVBWV6U3eA9Ap4,1,"['Tango', 'Rock']",male,1
+Atilio Stampone y su Orquesta Tipica,Atilio Stampone y su Orquesta Tipica,spotify:artist:7BaxhBweRJpcPzkowkOquu,25,"['Tango', 'Rock']",NA,1
+Sexteto Tango,Sexteto Tango,spotify:artist:0XRtBMgyBDVmBKAR2mqmR4,11,['Tango'],NA,1
+Púrpura Pansa,Púrpura Pansa,spotify:artist:3S0p6wFjHGXLJ5QUaeYJc6,3,['Tango'],NA,1
+Osvaldo Pugliese,Osvaldo Pugliese,spotify:artist:2HO9rAU2R7CRnmhx0ytN41,37,['Tango'],male,2
+Camerata Bariloche,Camerata Bariloche,spotify:artist:3vWOBUq3oL2UyI0FlKYDic,7,['Tango'],NA,1
+Hugo Romero,Hugo Romero,spotify:artist:0K3OMNOb1H2pis6fioh2qY,0,['Tango'],male,1
+Ernesto Jodos,Ernesto Jodos,spotify:artist:7CMEUsgU1PmgGWgJbxXEKb,6,['Jazz'],male,0
+Maximo Diego Pujol,Maximo Diego Pujol,spotify:artist:7vaQnHl1Lilh5EtrWX36YP,29,['Tango'],male,1
+Carlos Moscardini,Carlos Moscardini,spotify:artist:0yTPyCny2T9VZmIrPvfIQD,26,['Tango'],male,1
+Sergio Natali,Sergio Natali,spotify:artist:4D6fUZqicWz4qFFdoWaN6Q,1,['Tango'],male,1
+Pepe Ferrer,Pepe Ferrer,spotify:artist:5g2q3dfpl3Zz53gQnY7h7K,0,['Tango'],male,1
+Marcelo Coronel,Marcelo Coronel,spotify:artist:2Y1jeDSIJbFlhRIUUYn3Qw,2,['Tango'],male,1
+Julio Santillan,Julio Santillan,spotify:artist:6LXk56Uhs9RBXSn1CcQdhw,0,"['Jazz', 'Pop', 'Rock']",male,1
+Mariano Mores,Mariano Mores,spotify:artist:7Erj4RY7uctPQKcfSUMe3x,30,['Tango'],male,2
+Julian Plaza,Julian Plaza,spotify:artist:0TnzChxXy6cEruUOswhF2f,4,['Tango'],male,1
+Pedro Laurenz,Pedro Laurenz,spotify:artist:5UGl3tpHti3d06IXlMoZx2,27,['Tango'],male,2
+Narciso Saúl,Narciso Saúl,spotify:artist:43M9G0oN7c2agT8pYkUIii,9,"['Pop', 'Folklore', 'Rock']",male,1
+Hector Ayala,Hector Ayala,spotify:artist:7CJPDyyeZ2Qets8c2i39cx,17,['Tango'],male,1
+Walter Heinze,Walter Heinze,spotify:artist:2kK7cTKDllW6NFtFlPi2p9,9,['Tango'],male,1
+Orquesta Filarmonica De Buenos Aires,Orquesta Filarmonica De Buenos Aires,spotify:artist:6y8opLXKsuQsUpbsdjKGgz,0,['Rock'],NA,1
+Demian Chorovicz,Demian Chorovicz,spotify:artist:13brZH2hCfStTQIVXLxrYK,10,['Cumbia'],male,0
+Ubaldo De Lio,Ubaldo De Lio,spotify:artist:44B4fZoPUd9dk4vtLAQnBC,11,['Tango'],male,1
+Carlos Pesce,Carlos Pesce,spotify:artist:3Z3BWlR90ODdf0xOXmqefO,0,['Tango'],male,1
+Antonio Polito,Antonio Polito,spotify:artist:0IdBaFIypYTGX5vcLSq9gU,0,['Tango'],male,2
+Juan José Mosalini,Juan José Mosalini,spotify:artist:6GW5iZCGywgT40khnKoES6,8,['Tango'],male,1
+Sebastian Piana,Sebastian Piana,spotify:artist:0oTwcgd222TeuB2a6EZP9H,3,['Tango'],male,1
+Fede Gareis,Fede Gareis,spotify:artist:3PzTxYLLpGyRX9U9aPbgHB,0,"['Tango', 'Folklore']",male,0
+Nini Flores,Nini Flores,spotify:artist:2L6mboWstcbFLClRW0ckjL,7,"['Tango', 'Folklore']",male,0
+Julio Pane,Julio Pane,spotify:artist:4LfXtXfhAtyH6Htp0x0mUV,10,['Tango'],male,0
+Lola Ponce,Lola Ponce,spotify:artist:6GjbWWx5Zmmwc5lSF8095y,28,"['Pop', 'Rock']",female,0
+Lorelei Taron,Lorelei Taron,spotify:artist:4BgKgow0sYMYbeCwch19Bo,41,"['Pop', 'Rock']",female,0
+Jambao,Jambao,spotify:artist:37zUz0gjTaNCWTOymnuWGG,52,['Cumbia'],NA,3
+Oscar Belondi,Oscar Belondi,spotify:artist:5tHwSexlHs2HGihqfOoWNM,28,['Cumbia'],male,0
+La Repandilla,La Repandilla,spotify:artist:4TeM4orWQq9H1Wj2intCub,48,['Cumbia'],NA,0
+Santiago Moraes,Santiago Moraes,spotify:artist:2pfLPT9ZTkPrLd8ZJiDBld,16,['Alternative'],male,3
+Celina Varela,Celina Varela,spotify:artist:2LWkZ1ShsBKQJvEhQ0BGuk,0,"['Rock', 'Punk', 'Reggae']",female,3
+Ciro y los Persas,Ciro y los Persas,spotify:artist:2Eo4Yaukt9d6dnZrY5hQKi,60,"['Rock', 'Alternative']",NA,3
+Piti Fernández,Piti Fernández,spotify:artist:4PJtMqmJX54aKaztYQfFYb,41,"['Rock', 'Reggae']",male,3
+"Javier ""La Pepa"" Brizuela","Javier ""La Pepa"" Brizuela",spotify:artist:1WuV3Ckw4mdPZnXwUvUoel,9,"['Rock', 'Alternative']",male,3
+"Martín ""Mono"" Fabio","Martín ""Mono"" Fabio",spotify:artist:6AFfpDrjHzltnml4HygkvC,11,"['Rock', 'Alternative']",male,3
+El Otro Yo,El Otro Yo,spotify:artist:3iSYxEandRd7lJSmxWHXkk,32,"['Rock', 'Punk', 'Alternative']",NA,3
+Romina Cohn,Romina Cohn,spotify:artist:2IZzBDyzXaUQ7pu9gbmXI8,5,['Electronica'],female,3
+Altocamet,Altocamet,spotify:artist:0ZqTqI2yIMAtxEfDi0ZODe,10,['Alternative'],NA,3
+Bruno Galindo,Bruno Galindo,spotify:artist:6h9pNPHH7lzji2orGktjdN,18,"['Pop', 'Electronica', 'Rock', 'Alternative']",NA,3
+Walter Meza,Walter Meza,spotify:artist:5wSEBJTNePVQJyveXptJxE,5,['Metal'],male,3
+Juliana Gattas,Juliana Gattas,spotify:artist:4beHLf0L7m2eBwhyifF9Kn,29,"['Pop', 'Rock']",female,3
+Milrayos,Milrayos,spotify:artist:1UsjNWRCoTx3Y2beFtFyq2,4,['Pop'],NA,0
+Vitillo Ábalos,Vitillo Ábalos,spotify:artist:3yl80HDvTxgxH6DvodRilJ,3,"['Rock', 'Punk', 'Alternative']",male,6
+Julian Kartun,Julian Kartun,spotify:artist:04f2OyzgBLH7Wh4m57OPv8,36,"['Rap', 'Alternative']",male,3
+Pablo Vidal,Pablo Vidal,spotify:artist:7FKeMwquuGvtbBmSIHCYcC,10,['Jazz'],male,3
+De La Rivera,De La Rivera,spotify:artist:4U48zETkokPB76fnXQiO2b,22,['Alternative'],NA,0
+Silvina Moreno,Silvina Moreno,spotify:artist:2wMN1UAgISJA8yQusQL18G,38,"['Jazz', 'Pop', 'Rock', 'Alternative']",female,3
+Nolberto Al k la,Nolberto Al k la,spotify:artist:0y2UIyqXN4KctxsMLgSMhm,41,['Cumbia'],NA,8
+Tei Shi,Tei Shi,spotify:artist:1xcMOgFUM1IYZE22YjCvsL,48,"['Pop', 'R&B', 'Alternative']",female,3
+Daniela Spalla,Daniela Spalla,spotify:artist:2VSRhqonKsL7KRAIk8SMmt,57,"['Jazz', 'Pop', 'Rock', 'Alternative']",female,3
+FLORIAN,FLORIAN,spotify:artist:6C3bLjpIfVoapHjMfpYAy2,26,['Alternative'],male,3
+Delfina Campos,Delfina Campos,spotify:artist:4d0lC4AT0DwcybhN6SSB0G,31,"['Rock', 'Alternative']",female,4
+Galean,Galean,spotify:artist:3usCwS0jcb6SFJe3ZPiFA8,7,['Electronica'],male,3
+Mariano Godoy,Mariano Godoy,spotify:artist:7gpYDxVfirNyKXORQncECR,25,['Alternative'],male,3
+Francisca y Los Exploradores,Francisca y Los Exploradores,spotify:artist:2axDF0woEL8GYIoW93gPPf,32,"['Rock', 'Alternative']",NA,3
+Jazmin Esquivel,Jazmin Esquivel,spotify:artist:0fIYDdq51EapT0JErprhvm,0,['Alternative'],female,3
+Julio Franchi,Julio Franchi,spotify:artist:3TeDjB8WPQ9bfPY1rThZAt,7,['Alternative'],male,3
+Juan Carlos Tolosa,Juan Carlos Tolosa,spotify:artist:7vVE1WJaN5F1C7IsO1OQN0,10,"['Rock', 'Alternative']",male,0
+Alejandro Manzoni,Alejandro Manzoni,spotify:artist:1Nr4ZefadwBH0cQrjnHMtE,0,"['Jazz', 'Tango', 'Folklore']",male,1
+Guadalupe Gómez,Guadalupe Gómez,spotify:artist:06HmXqT0IRQfut1o11YDHd,5,"['Jazz', 'Tango', 'Folklore']",female,1
+Alejandro Franov,Alejandro Franov,spotify:artist:2ocOLQWZUMc8Q1BjjGyvjz,6,"['Jazz', 'Tango', 'Folklore']",male,1
+Miriam García,Miriam García,spotify:artist:2mOHlObkV2dhspvDzllGOS,19,"['Cumbia', 'Folklore']",female,5
+Kaleema,Kaleema,spotify:artist:7o5v2sjfFaMOgUKtfMQRWW,26,"['Cumbia', 'Folklore']",female,5
+Frikstailers,Frikstailers,spotify:artist:3kGiP6mQDtEZG5UD7mAlBH,18,['Cumbia'],NA,5
+Thornato,Thornato,spotify:artist:6ghG9s4GfKVwxKtSdCtgwP,40,['Cumbia'],male,5
+King Coya,King Coya,spotify:artist:0HrREC22dh7WCLLtf5Tewy,25,"['Cumbia', 'Folklore']",male,5
+El Remolón,El Remolón,spotify:artist:2ubr2Ri0ue6a0XHFWLJyaR,28,['Cumbia'],male,5
+SidiRum,SidiRum,spotify:artist:6aCzyU3S7tQc31Cv09EcYu,30,['Folklore'],NA,5
+Barrio Lindo,Barrio Lindo,spotify:artist:6AHDMBhI1OTokvO5DkBB9p,32,['Folklore'],male,5
+Fauna,Fauna,spotify:artist:3FH2vhSAC0MVydlM1db1tv,21,['Cumbia'],NA,5
+Wenceslada,Wenceslada,spotify:artist:6ocPxR8KkxBQmMB41CqeKU,12,"['Cumbia', 'Folklore']",female,5
+Princesa,Princesa,spotify:artist:72hn6ql4BrmF1BOuwaqnWT,8,"['Trap', 'Pop']",NA,4
+Fémina,Fémina,spotify:artist:6Saxi5uCjuMzIGcqqvTumR,44,"['Folklore', 'Rap', 'Alternative']",NA,5
+Hermetics,Hermetics,spotify:artist:4FOl3ytTF0JV9hh9rsv03u,13,"['Cumbia', 'Folklore']",male,5
+LUVI TORRES,LUVI TORRES,spotify:artist:0U6e4AWJDteC3blrD46avQ,19,"['Cumbia', 'Folklore']",female,5
+Paloma del Cerro,Paloma del Cerro,spotify:artist:6jCZSq4NyG2Ry0LyKHqClp,36,['Folklore'],female,5
+Gus Goncalves,Gus Goncalves,spotify:artist:32ZS8Tpe0xWuLP3LZE8a4C,3,['Folklore'],male,5
+Shaman Herrera,Shaman Herrera,spotify:artist:6v6Zd9sNdAHCHBrrIs58So,11,"['Folklore', 'Rock']",male,5
+Matías Méndez,Matías Méndez,spotify:artist:4Z4xMf2xHuZ6iXpw6Wkhxg,5,['R&B'],male,3
+Pedro Rossi,Pedro Rossi,spotify:artist:56lOMVymgFR7ay0cyhoodZ,1,['Jazz'],male,0
+Martín Pantyrer,Martín Pantyrer,spotify:artist:756n9N9pvvZAhqG43CuweV,1,['Jazz'],male,0
+Jeronimo Carmona,Jeronimo Carmona,spotify:artist:1aWDZz3CHFBlXquod6WKvd,4,['Jazz'],male,0
+Ezequiel Cantero,Ezequiel Cantero,spotify:artist:5hALmrTt4xrYMbXi78Mgui,1,['Jazz'],male,0
+Angel Dominguez,Angel Dominguez,spotify:artist:5GoP3TFHNQoim3g2esHMJX,0,['Tango'],male,2
+Agustín Bardi,Agustín Bardi,spotify:artist:0x7NI5V4gHhF9BMLoS09Fr,2,['Tango'],male,1
+Vicente Salerno,Vicente Salerno,spotify:artist:1wHeN5PrCuo3InrSB4kLU3,2,['Tango'],male,2
+Argentino Galván,Argentino Galván,spotify:artist:68SMOaC2bdct1lmGTPZP03,1,['Tango'],male,2
+Oscar Serpa,Oscar Serpa,spotify:artist:502zYKCS19z1ymcrxuLV7o,7,['Tango'],male,2
+Manuel Sucher,Manuel Sucher,spotify:artist:3Gz1w85TNSQo5dB9nv9tr9,0,['Tango'],male,2
+Juan Caldarella,Juan Caldarella,spotify:artist:6gH7gDUJpp5cLhAy3II2xJ,3,['Tango'],male,2
+Rodolfo Sciammarella,Rodolfo Sciammarella,spotify:artist:6TYaVYGMC8tAIQ55KA2HF0,2,['Tango'],male,2
+Oscar Castagniaro,Oscar Castagniaro,spotify:artist:0whH2vqEIW5Va2Tc6eYcmt,0,['Tango'],male,2
+Luciano Leocata,Luciano Leocata,spotify:artist:1SHJoLQBPPxy0MnmDf9huh,2,['Tango'],male,2
+Emilio Balcarce,Emilio Balcarce,spotify:artist:1nvkbZ9dDFxecWmgSYmziL,2,['Tango'],male,2
+Ismael Spitalnik,Ismael Spitalnik,spotify:artist:19LMOF6MJQwxjO04cbLuqc,0,['Tango'],male,2
+Osvaldo Ruggiero,Osvaldo Ruggiero,spotify:artist:0jGY7PS8wfg5EoK1bxhAfP,11,['Tango'],male,2
+Nelly Omar,Nelly Omar,spotify:artist:6IyGH3tMgXudiE41XE6Y8f,24,['Tango'],female,2
+Anibal Troilo,Anibal Troilo,spotify:artist:3RgXFYe2ymEIIZ4YAEnSsE,0,['Tango'],male,1
+Jose Basso,Jose Basso,spotify:artist:1WO3dbf5srE7BLNkvZhWxm,16,['Tango'],male,1
+Osvaldo Ramos,Osvaldo Ramos,spotify:artist:38RiYamOa7EzLpxRpZGDlB,3,['Tango'],male,2
+Angel Vargas,Angel Vargas,spotify:artist:6aFniNaSJ0Pye4B2nqLxCJ,4,['Tango'],male,2
+Miguel Calo,Miguel Calo,spotify:artist:74tkWjgprwTUFyWLQcSsG2,33,['Tango'],male,1
+Quinteto Pirincho,Quinteto Pirincho,spotify:artist:2uelMFoEx5ngneQvQ99kzc,0,['Tango'],NA,1
+Adolfo Carabelli,Adolfo Carabelli,spotify:artist:6qkvtGC8RSNYi1OL50QeMk,11,"['Jazz', 'Tango']",male,2
+Guillermo Barbieri,Guillermo Barbieri,spotify:artist:0wwrK7Mpp9j2jsHqEklA1U,1,['Tango'],male,1
+Jose Ricardo,Jose Ricardo,spotify:artist:6NGmCwCHeDBYop8iUxuaHG,0,['Tango'],male,1
+Francisco Canaro,Francisco Canaro,spotify:artist:2maQMqxNnlRrBrS1oAsrX9,35,['Tango'],male,2
+Osmar Maderna,Osmar Maderna,spotify:artist:1uhe0qoW3jObTpGFTcIEc7,17,['Tango'],male,1
+Marcelo Álvarez,Marcelo Álvarez,spotify:artist:5c8mByQu4Mk7JBWhxgGtlX,13,['Clasico'],male,1
+Olga Alba Barreto,Olga Alba Barreto,spotify:artist:34H09XgpX8Y5lNq3Ab3DQj,0,['Tango'],NA,1
+Raul Garello,Raul Garello,spotify:artist:1VURQTVc0y9vdnSWMhWnYu,10,['Tango'],male,1
+Julio Martel,Julio Martel,spotify:artist:69iWLqJq6ejA24aUZieSZo,26,['Tango'],male,2
+Oscar Larroca,Oscar Larroca,spotify:artist:4TGsXIntcGStdQyNQCIniQ,29,['Tango'],male,2
+Buenos Aires Jazz Fusión,Buenos Aires Jazz Fusión,spotify:artist:5WkNpxBJwdpuRQ5dHtm6yV,0,['Jazz'],NA,0
+Roberto Diaz Velado,Roberto Diaz Velado,spotify:artist:0G4tRT4eRJ0nJp8AVsccMI,1,['Reggae'],male,7
+Pablo Molina,Pablo Molina,spotify:artist:1PoD7Jl0frSiDWXY5Qt0fB,32,['Reggae'],male,7
+Fernando Albareda,Fernando Albareda,spotify:artist:7i1IHNIYGFQTlmpl7J90qP,0,['Reggae'],male,7
+Micaela Chauque,Micaela Chauque,spotify:artist:6kXy0aOhcZi7ee7NIQmKFX,19,['Folklore'],female,7
+Americo Belloto,Americo Belloto,spotify:artist:4GXUQib0hca7HZuASToGmq,6,['Reggae'],male,7
+Juan Ignacio Sueyro,Juan Ignacio Sueyro,spotify:artist:39Ak02Gh3WgYNdvlovjqpJ,0,"['Tango', 'Folklore']",male,0
+Nicolás Enrich,Nicolás Enrich,spotify:artist:2o0lt2fIeC0GqqqEqEBje0,2,"['Tango', 'Folklore']",male,1
+Daniel Maza,Daniel Maza,spotify:artist:5TI8IZa6vgPAcb8wuMZfN7,26,['Jazz'],male,0
+Escalandrum,Escalandrum,spotify:artist:3QZEbpYuO36TVmqHEbxpkZ,19,['Jazz'],NA,0
+Tango Negro Trio,Tango Negro Trio,spotify:artist:7LryQ2tTP3oJ4sqKGb1XEC,17,['Tango'],NA,6
+Franco Ramirez,Franco Ramirez,spotify:artist:3wtmjgdgUKVK3tonnKSh9a,28,['Folklore'],male,6
+Facundo Gimenez,Facundo Gimenez,spotify:artist:4chtvevsOwC1gy8kHdNAeG,1,['Folklore'],male,6
+Juan Esteban Cuacci,Juan Esteban Cuacci,spotify:artist:2MAbPufKz41fz0iFvcFmGP,10,['Tango'],male,1
+Osvaldo Berlingieri,Osvaldo Berlingieri,spotify:artist:6ZCEriaoNM29iADfHMGNHX,1,['Tango'],male,1
+Guillermo Fernández,Guillermo Fernández,spotify:artist:6xfmmECT5pVOvnCeXt6saI,12,['Tango'],male,1
+Marcelo Nisinman,Marcelo Nisinman,spotify:artist:5tfniwIvolU1ekmwVaDgUT,3,['Tango'],male,1
+Christian Zárate,Christian Zárate,spotify:artist:0vStKEWgyh5Zde2cVW3Vkw,0,['Tango'],male,1
+Horacio Romo,Horacio Romo,spotify:artist:6ArcXkBCCZaU7y3Vlgd92E,4,"['Pop', 'Rock']",male,0
+Tito Losavio,Tito Losavio,spotify:artist:41H3YL5GbiPWJ3OluCZvn4,3,"['Pop', 'Rock']",male,10
+Zaida Saiace,Zaida Saiace,spotify:artist:6mRCTsGXWohbxRHA2P0kvQ,0,['Tango'],female,0
+Pablo Green,Pablo Green,spotify:artist:1WUyXFyGvDeRfUqvPYbdgY,0,"['Jazz', 'Rock']",male,0
+Gillespi,Gillespi,spotify:artist:0lTOO8myl6VcmOP43pbuVb,31,"['Jazz', 'Rock']",male,3
+Sergio Aranda,Sergio Aranda,spotify:artist:13hURQTnYpyln73wOwT0cV,0,"['Jazz', 'Pop', 'Tango', 'Rock']",male,0
+Fernando Gelbard,Fernando Gelbard,spotify:artist:2su6TFhMEfmKwuvKsnVsGK,2,"['Jazz', 'Tango', 'Folklore']",NA,0
+Pocho Lapouble,Pocho Lapouble,spotify:artist:2ROeRcXLXw8Ic9SEZOyw0T,1,['Jazz'],male,0
+Lucía Boffo,Lucía Boffo,spotify:artist:4okRwzOTkHW7n6373ZvZOV,8,['Jazz'],female,0
+Gustavo Musso,Gustavo Musso,spotify:artist:4OyrnRvPB0hgGlAE0LGr0i,1,['Jazz'],male,0
+Cecilia Zabala,Cecilia Zabala,spotify:artist:6eqOpzqZRWWVxv31nYX3Ku,5,['Folklore'],NA,0
+Liliana Rodriguez,Liliana Rodriguez,spotify:artist:5x91kr7sHnbGC8JaPT3ZSu,1,['Folklore'],female,0
+Javier Hinojosa,Javier Hinojosa,spotify:artist:2qffkq944KRDcs4st4tqmk,0,['Folklore'],male,0
+Lilián Saba,Lilián Saba,spotify:artist:2gAD59G4XLst9KbnHVD3Jo,10,"['Jazz', 'Tango', 'Chamame']",female,0
+Hernán Lucero,Hernán Lucero,spotify:artist:001b4VR8r9cFgS3vKTkTXs,9,['Folklore'],male,0
+Karamelo Santo,Karamelo Santo,spotify:artist:609ifGTYnL9iOfPI5KIzq1,36,"['Folklore', 'Rock', 'Punk', 'Alternative']",NA,3
+Lovorne,Lovorne,spotify:artist:1HJyorSX0NYIkc2Vp0U8y6,18,['Metal'],NA,9
+Vivencia,Vivencia,spotify:artist:65IXQZtLc1OfW8H9YxRFwY,22,['Rock'],NA,3
+Fede Toledo,Fede Toledo,spotify:artist:6piQwNfaoxQBj6katm77rF,6,['Folklore'],male,0
+"Miguel ""Maikel"" de luna campos","Miguel ""Maikel"" de luna campos",spotify:artist:7tfLCIPwrDXAqnG2kuQQ9M,8,"['Trap', 'HipHop', 'Rap']",male,5
+Leo Villagra,Leo Villagra,spotify:artist:3ycKrdRHFlTCN9kOGtFzJL,3,"['Jazz', 'Pop', 'Tango', 'Rock']",NA,0
+Waldo De Los Rios Y Su Orquesta,Waldo De Los Rios Y Su Orquesta,spotify:artist:150ZSy8q8QpfBMpRdbwMkN,14,"['Folklore', 'Rock']",male,0
+Florencia Ruiz,Florencia Ruiz,spotify:artist:2LpUM08iUKWPGOc1qoWMBt,9,"['Jazz', 'Pop', 'Rock', 'Punk']",female,13
+Sergio Mihanovich,Sergio Mihanovich,spotify:artist:2hPO6aP9HU0QsxpqYqNNCY,6,['Jazz'],male,0
+Ezequiel Dutil,Ezequiel Dutil,spotify:artist:4Uk7IbNNwUXxEuE1j4OUV5,0,"['Jazz', 'Pop', 'Tango', 'Rock']",male,0
+Rodrigo Reparaz,Rodrigo Reparaz,spotify:artist:7x9F455LEsi4uYT86T5u01,0,"['Jazz', 'Pop', 'Tango', 'Rock']",male,0
+Elena Roger,Elena Roger,spotify:artist:3i3ZiJGsP5tkz69ad7Mbie,30,['Rock'],female,0
+Chizzo Napoli,Chizzo Napoli,spotify:artist:2qmC2VNLa1YWpVBKKIoOSR,3,['Rock'],male,0
+Mery Granados,Mery Granados,spotify:artist:0aJgv15DVDKvr0yWb5BzP1,40,['Pop'],female,0
+Gabriel Pedernera,Gabriel Pedernera,spotify:artist:1I7I2jfVn3KvuAi49h01Gr,2,['Rock'],male,0
+Nicolás Pauls,Nicolás Pauls,spotify:artist:4MBkJeYHk9BrXweGoyuT94,3,"['Pop', 'Rock']",male,10
+Fernando,Fernando,spotify:artist:2Qw51ZLllblaJ5rG1n1uDz,14,"['Pop', 'Rock']",male,0
+Joaquín Mora,Joaquín Mora,spotify:artist:1egHMzg1ZA4mmy8tEkvWlu,1,['Tango'],male,0
+Eduardo Lagos,Eduardo Lagos,spotify:artist:5xQYGNmnIiV7verfzMo8Vo,12,['Tango'],male,0
+Victoria Diaz,Victoria Diaz,spotify:artist:0kEZzMtFu8S1Aw42xEh8Mc,1,['Tango'],NA,0
+Horacio Lavandera,Horacio Lavandera,spotify:artist:6InVsS0LwuWOaxHomvrb4i,6,"['Jazz', 'Tango']",male,1
+Jose Pascual,Jose Pascual,spotify:artist:30vzYEXtd0A2YavGMHvm6f,0,"['Jazz', 'Tango']",male,1
+José Maria Saluzzi,José Maria Saluzzi,spotify:artist:1RqTs0wVgedlrmrMWnfaVb,2,"['Jazz', 'Tango']",NA,1
+Osvaldo Avena,Osvaldo Avena,spotify:artist:5QCf4oRYqs4RTtfYa1lCvN,0,['Folklore'],male,0
+Jorge Navarro,Jorge Navarro,spotify:artist:0AcplqB50fO2m9SiFNIsSg,25,['Jazz'],male,0
+Amor Elefante,Amor Elefante,spotify:artist:5DboBy35CJ1kezDm1ebqbC,20,['Alternative'],NA,0
+Manuel Gomez Carrillo,Manuel Gomez Carrillo,spotify:artist:7IloQOZyD1o3maZVuraAuH,0,['Tango'],male,1
+Juan José Castro,Juan José Castro,spotify:artist:4KCKdpRgRq7yB8xY8TqJQf,1,['Clasico'],male,1
+Alberto Williams,Alberto Williams,spotify:artist:11kKasV6eRUQnuIouit02q,4,['Tango'],male,1
+Carlos López Buchardo,Carlos López Buchardo,spotify:artist:6zUBSpxpy1cnD780uW7eTL,1,['Clasico'],male,1
+Julián Aguirre,Julián Aguirre,spotify:artist:3X6vHZOesj37sEvr6BpIQl,5,['Tango'],male,1
+Juan Cruz De Urquiza,Juan Cruz De Urquiza,spotify:artist:0nRwYzrk9wrf5ZIsvPuxwl,7,['Jazz'],male,0
+Julian Vat,Julian Vat,spotify:artist:4M4t83Uxn91yBiGixmBPBK,1,['Tango'],male,0
+Julia Morgado,Julia Morgado,spotify:artist:5hwPkYXCRSJkuh97oenEU4,2,['Tango'],female,0
+CLAUDIO MORGADO,CLAUDIO MORGADO,spotify:artist:0w5aTgdGsNbaodNAg1kXpK,0,['Tango'],male,0
+Oscar Aleman & Su Quinteto De Swing,Oscar Aleman & Su Quinteto De Swing,spotify:artist:1U3c7Izz1GAbMooNi9FV0o,0,['Tango'],male,0
+Oscar Aleman Y Su Conjunto De Jazz,Oscar Aleman Y Su Conjunto De Jazz,spotify:artist:47PxlD6DGRFjHKrERgTiAc,0,['Tango'],male,0
+Demoliendo Tangos,Demoliendo Tangos,spotify:artist:3IzqOwnHfqRre1A7QVueAs,0,"['Jazz', 'Rock']",NA,0
+Mariana Kesselman,Mariana Kesselman,spotify:artist:13VXnxsHnlBRSFtBVb8Ziw,0,"['Jazz', 'Rock']",female,0
+Sergio Villar,Sergio Villar,spotify:artist:2SXScHCHeC3dciUTXDJ9xT,1,['Rock'],male,9
+Mariano Castro,Mariano Castro,spotify:artist:0zukmet3OBb7KkvJbT9yOi,10,"['Pop', 'Rock', 'Reggae']",NA,7
+Pety,Pety,spotify:artist:1KIAFzs3T8c4RanxT9GjZL,20,"['Jazz', 'Rock', 'Reggae', 'Alternative']",male,7
+Guillermo Bonetto,Guillermo Bonetto,spotify:artist:1rijasyRtILod4s1wmI78L,27,"['Pop', 'Rock', 'Reggae']",male,7
+La Viajerita,La Viajerita,spotify:artist:2uCZ1HqK1cBvrv0oKrUSm2,1,['Alternative'],NA,6
+Lula Bertoldi,Lula Bertoldi,spotify:artist:5WX7W5ESabcsJrPMHYkjNQ,22,"['Pop', 'Rock']",female,0
+Egle Martin,Egle Martin,spotify:artist:54N4iMgYNsDT04np5qQwlw,0,['Folklore'],female,3
+Sonia Alvarez,Sonia Alvarez,spotify:artist:4qeHReaMMuXAfrv9rFAPsj,20,['Folklore'],female,3
+Patricia Da Dalt,Patricia Da Dalt,spotify:artist:5i0PuTK0hlwf8ehyEENMFS,0,['Tango'],female,0
+Lucio Mantel,Lucio Mantel,spotify:artist:5kCJ9ht14oLO98WlBRfwyk,20,['Alternative'],male,3
+Hernan Hecht,Hernan Hecht,spotify:artist:7dl3J3Gs0ryFhyeRDypljB,13,"['Jazz', 'Folklore', 'Rock']",male,0
+Olga Joukova,Olga Joukova,spotify:artist:3WxLEa1Ord5nJ0T5IY3oNQ,0,['Tango'],NA,1
+Nelson Goerner,Nelson Goerner,spotify:artist:5aQIVZsK11PazWGaq0Fzu6,14,['Tango'],male,1
+Sergio Tiempo,Sergio Tiempo,spotify:artist:7kIK193iuLPugEvQGoirww,21,['Tango'],male,1
+Karin Lechner,Karin Lechner,spotify:artist:5J4H8Y348MUCgJnk0tmceZ,22,['Tango'],female,1
+Natalia Margulis,Natalia Margulis,spotify:artist:6YVWWUfQ6fDkHI4cxX9bdQ,0,['Tango'],female,1
+Anton Arensky,Anton Arensky,spotify:artist:2DLKrW0pn180nOIjUWlTjm,33,['Clasico'],male,1
+Paula Balassanian,Paula Balassanian,spotify:artist:2u6dVxxtGjR4nbAO7YHl7J,0,"['Cumbia', 'Folklore']",female,0
+Raúl Barboza,Raúl Barboza,spotify:artist:3e3vO59T2UZID97fDNr00q,0,['Chamame'],male,14
+Antonio Tarragó Ros,Antonio Tarragó Ros,spotify:artist:65jGZiPXVWGDlLhnICMfvI,29,"['Chamame', 'Folklore']",NA,14
+UN,UN,spotify:artist:2xtD7gxqb7f5OkGXfXtlWK,3,"['Pop', 'Electronica', 'Rock', 'Alternative']",NA,3
+Carlos Cutaia,Carlos Cutaia,spotify:artist:75eabwXeePVg6qHQe9G0KQ,11,"['Jazz', 'Rock']",male,3
+Andres Chazarreta,Andres Chazarreta,spotify:artist:1mXC0D1GSRrql8qGre7Ylb,2,['Tango'],male,1
+Atahualpa Yupanqui,Atahualpa Yupanqui,spotify:artist:6I2DJf8fZwixA0GTLAvR1b,42,"['Folklore', 'Rock']",male,1
+Benicio Díaz,Benicio Díaz,spotify:artist:15msrruAovf0B53MOjAzK0,0,"['Folklore', 'Rock']",male,1
+Martin Bruhn,Martin Bruhn,spotify:artist:7Dac3ptM3pvSiPzkRVJ548,9,"['Folklore', 'Rock']",male,1
+Jorge Anders,Jorge Anders,spotify:artist:0bpkpFRdNeOsNrZiw2icad,1,"['Jazz', 'Tango', 'Folklore']",male,0
+Javier Martinez Vallejos,Javier Martinez Vallejos,spotify:artist:7A0Hqf5PHDLbxCDmYaz1xI,10,['Jazz'],male,0
+Héctor Varela,Héctor Varela,spotify:artist:4rQT6OE5twoxtzH8mvVMBl,28,['Tango'],male,2
+Fernando Soler,Fernando Soler,spotify:artist:3gDOWj6jgaakYMnC0K20Rk,20,['Tango'],male,2
+Emilia Siede,Emilia Siede,spotify:artist:6RWlJiSPLshpRuQ6emBMpX,17,['Rock'],female,0
+Brenda Martin,Brenda Martin,spotify:artist:2btHrP9FC5pS6h5dsxQ1Fr,2,['Rock'],female,11
+Antonio Birabent,Antonio Birabent,spotify:artist:4RTZWynN9D2v9GHAvUQOWO,2,"['Pop', 'Rock']",male,11
+Leo Dan,Leo Dan,spotify:artist:6qhOH2mrlqUDod9sWA5kR2,67,"['Pop', 'Cumbia', 'Folklore', 'Rock']",male,6
+Bahiano,Bahiano,spotify:artist:3FXD2eQcHOiacO9qXENLUN,46,"['Rock', 'Reggae', 'Alternative']",male,0
+Matias Romero,Matias Romero,spotify:artist:0XzGdBJiEWFMx0a5GZbOsm,1,"['Pop', 'Electronica', 'Rock', 'Alternative']",male,12
+Walter Broide,Walter Broide,spotify:artist:1W8WySv9f5JKQhGO7XPIWp,2,"['Pop', 'Electronica', 'Rock', 'Alternative']",male,12
+Cobra Rod,Cobra Rod,spotify:artist:0hMoBHpcXtaYkzIVtdbSg5,3,"['Pop', 'Electronica', 'Rock', 'Alternative']",NA,12
+Angel Calvo,Angel Calvo,spotify:artist:1Pn9HEsHECjIIXi3lA5v8T,0,"['Rock', 'Punk', 'Alternative']",NA,12
+Benito Cerati,Benito Cerati,spotify:artist:13QnAhCICgwMtr6HPWoRbH,21,"['Pop', 'Electronica', 'Rock']",male,5
+La Renga,La Renga,spotify:artist:30fEdZPXgWfC4sNttcyB3C,61,"['Rock', 'Alternative']",NA,9
+Alejandro Medina,Alejandro Medina,spotify:artist:2MvoqSSTigBbfXWoSHGtgj,13,['Rock'],male,9
+Almafuerte,Almafuerte,spotify:artist:6qYd7xlmeeeDkPfx6mZ9PV,49,"['Rock', 'Metal', 'Alternative']",NA,9
+Omar Mollo,Omar Mollo,spotify:artist:3gvvM06RykBuIcFpWljUhD,26,"['Tango', 'Folklore', 'Rock']",male,9
+Adrián Otero,Adrián Otero,spotify:artist:0RZvJL3AicNni7cisqcIxC,24,['Rock'],male,9
+La Mississippi,La Mississippi,spotify:artist:2haNFSI2XvHycF4x0nhp2w,40,"['Rock', 'Metal', 'Alternative']",NA,3
+Viejas Locas,Viejas Locas,spotify:artist:7wTu5u7W3kc9Id5JAvSAFV,57,"['Rock', 'Alternative']",NA,9
+Divididos,Divididos,spotify:artist:6ZIgPKHzpcswB8zh7sRIhx,58,"['Rock', 'Alternative']",NA,3
+Ricardo Iorio,Ricardo Iorio,spotify:artist:0HNFg6mSgz7WLcN74CI3oT,38,"['Rock', 'Metal']",male,9
+Vitico,Vitico,spotify:artist:14erJRCwjfKO2FeyOGaUEQ,6,"['Rock', 'Metal']",male,9
+Juan Haymes,Juan Haymes,spotify:artist:1uNPpjJfJCrCY99aozbMBR,4,"['Rock', 'Metal']",male,9
+Moris,Moris,spotify:artist:1QXuO8QIYgJMYyO0bFsdXi,21,['Rock'],male,11
+Sr. Flavio,Sr. Flavio,spotify:artist:2XTAHDg8VYD5yxwOpvaS5p,15,"['Rock', 'Metal', 'Reggae']",male,9
+Mex Urtizberea,Mex Urtizberea,spotify:artist:2iPrKTKzQOV6F6PZOS8lMI,23,['Rock'],NA,0
+Alfredo Casero,Alfredo Casero,spotify:artist:26Omu9H1XR7cBoEYrMD9gF,26,['Rock'],male,0
+Fede Vigevani,Fede Vigevani,spotify:artist:3CuloJ8QY3IiCwna8Q6SOr,38,['Pop'],male,0
+Dios Loko,Dios Loko,spotify:artist:35JvXrBTEt6f9h0lFvNsw7,0,"['Pop', 'Rock']",NA,0
+The Sacados,The Sacados,spotify:artist:2EHTJRsQ8QNtw4sMrSYMKO,10,['Pop'],NA,8
+Alejandro Terán,Alejandro Terán,spotify:artist:6mDcxeuact0GzApRDotQlK,4,"['Tango', 'Rock']",male,3
+Miguel Angel Tallarita,Miguel Angel Tallarita,spotify:artist:2QE5d0FMSgNAxn7iNQHdXc,0,"['Tango', 'Rock']",male,3
+Paz Martínez,Paz Martínez,spotify:artist:4b02cKcLB7pHqXYfeGR9iK,33,"['Pop', 'Rock']",male,8
+Daniel Castro,Daniel Castro,spotify:artist:58WcPGsEIdjXByfgWhf88i,7,"['Jazz', 'Pop', 'Tango', 'Cumbia', 'Rock']",male,15
+Mauricio Marcelli,Mauricio Marcelli,spotify:artist:13xPFTo0v121TMohHUHCVo,1,['Tango'],male,1
+Jorge Labanca,Jorge Labanca,spotify:artist:3MU9vrL9u0e1b77kGuL1WP,0,['Tango'],male,0
+Lucio Demare,Lucio Demare,spotify:artist:3E2zkgPu6SUNZb35jvmzdt,25,['Tango'],male,1
+fede herrera,fede herrera,spotify:artist:0QjKTF5Tgmx5mxlMSSHZJn,34,"['Rock', 'Alternative']",male,3
+Los Charros,Los Charros,spotify:artist:1poWksyUHxANlcdBLPhsV9,54,['Cumbia'],NA,8
+JAF,JAF,spotify:artist:3KsdiCqV04TOBhPWmk7u90,38,"['Rock', 'Metal']",male,0
+Lucas González Yancamil,Lucas González Yancamil,spotify:artist:4vdPEHdvAwyHPZwxBGhd2p,0,"['Tango', 'Rock']",male,0
+Diosque,Diosque,spotify:artist:3Ib6KIEhkT9Funk4mqF4Lh,28,['Alternative'],male,5
+DEFENSA,DEFENSA,spotify:artist:6FkVttiTT84WehLzoTrMEy,13,['R&B'],NA,5
+Esteban Falabella,Esteban Falabella,spotify:artist:2AigB0pQvp9Ca2qWdw0rwQ,4,['Tango'],male,1
+José Luis Colzani,José Luis Colzani,spotify:artist:0uMx26uDyO3rnc0TO4y3Fe,0,['Tango'],male,1
+Carlos María Solare,Carlos María Solare,spotify:artist:4zBxENnepGD3YlC2KMjUBT,0,['Tango'],male,1
+Mario Raskin,Mario Raskin,spotify:artist:6dWIz2QGDso2RYWeDlEhqo,9,['Tango'],male,1
+Barbara Kusa,Barbara Kusa,spotify:artist:74ScpuNCRkEfKPjB5LVuNv,4,['Tango'],female,1
+María Isabel Siewers,María Isabel Siewers,spotify:artist:21vXRfMudUeth9OiAsU4uT,7,['Tango'],female,1
+Désirée Halac,Désirée Halac,spotify:artist:0nJko0Ooq3YzkBxiqma7MH,2,['Tango'],female,1
+Mario Clavell,Mario Clavell,spotify:artist:29PGZbh1KgaoqukrkJuv3C,8,['Jazz'],male,0
+Fernando De Madariaga,Fernando De Madariaga,spotify:artist:17vmK9m31u5yEUWYrGB4vp,29,['Pop'],male,0
+Carlos Rossi,Carlos Rossi,spotify:artist:76MDm3GNyh5dkXVfr57Sn9,3,['Jazz'],male,0
+Beatríz Suarez Paz,Beatríz Suarez Paz,spotify:artist:1uw59duZ7uzlY3UMTo85LQ,0,['Jazz'],female,0
+Hector Pilatti,Hector Pilatti,spotify:artist:7bLagKvKKDlBJ2dZ4F3xCD,0,['Rock'],male,1
+Luciana Corral,Luciana Corral,spotify:artist:74pF9HHVF6kl1u7WRvGjHy,0,['Jazz'],female,0
+Donna Caroll,Donna Caroll,spotify:artist:3yY1oX84dJUlw19LK5wb4v,0,['Jazz'],female,0
+Cecilia Suarez Paz,Cecilia Suarez Paz,spotify:artist:6YedKIYkVZIUyxwpOVSwjv,0,['Jazz'],female,0
+Patricia Barone,Patricia Barone,spotify:artist:7pmVXdhcBTzX2tVO3XX9zl,1,['Tango'],female,0
+Galo García,Galo García,spotify:artist:0eBDc5CnRCdFJs44bPShKo,2,['Tango'],male,0
+Héctor Negro,Héctor Negro,spotify:artist:3zytcOqfLcd3ClHhrjrxNU,0,['Jazz'],male,0
+Hamlet Lima Quintana,Hamlet Lima Quintana,spotify:artist:3qcR9RLfUjeLiheHmuueul,4,['Jazz'],male,0
+Gloria Diaz,Gloria Diaz,spotify:artist:11vplVii8pmiT1qblHJPuW,6,['Tango'],female,1
+Carlos Garcia,Carlos Garcia,spotify:artist:685XBGoHznr4Ps7cxCSzLZ,22,['Tango'],male,1
+Osvaldo Ribo,Osvaldo Ribo,spotify:artist:2s9fNWJav83LAaZ2PijOrq,0,['Tango'],male,1
+Miguel Montero,Miguel Montero,spotify:artist:4GrcYV9Tyformhut7lR9HV,20,['Tango'],male,2
+Teofilo Ibañez,Teofilo Ibañez,spotify:artist:1zRBPElCEJ6YuN9WU7qurw,6,['Tango'],male,2
+Alberto Amor,Alberto Amor,spotify:artist:7n6gCMGwtfeWM8yTPaoiYO,12,['Tango'],male,2
+Hugo Duval,Hugo Duval,spotify:artist:1rhYmCGduPN1nPRGNU5uRF,1,['Tango'],male,2
+Carlos Heredia,Carlos Heredia,spotify:artist:1rjFvWedn6rcTgfcyJlE6P,7,['Tango'],male,2
+Jorge Ortiz,Jorge Ortiz,spotify:artist:0u8FXqe4959sjoLUgQeKJB,17,['Tango'],male,2
+Alberto Lago,Alberto Lago,spotify:artist:5q6nBSIZWzrhkan1slsBC0,4,['Tango'],male,2
+Carlos Acuña,Carlos Acuña,spotify:artist:6hC3tI1R7sHgplEYPviFZY,13,['Tango'],male,2
+Carlos Almagro,Carlos Almagro,spotify:artist:4NnBoZbhKs4iIpTRDZcAhc,2,['Tango'],NA,2
+Reinaldo Yiso,Reinaldo Yiso,spotify:artist:1xsdGbdYjjMQiSvDJ8eaaf,2,['Tango'],male,2
+Héctor Stamponi,Héctor Stamponi,spotify:artist:1gxirTv781flbkCMLUaJFs,7,['Tango'],male,0
+Oscar Rubens,Oscar Rubens,spotify:artist:1XCtwjcKMRXzj0F7IThPdg,2,['Tango'],male,2
+Enrique Delfino,Enrique Delfino,spotify:artist:6iQFyVAbbLjzs21v0uVO16,2,['Tango'],male,2
+Carlos Bahr,Carlos Bahr,spotify:artist:2pGImFq0uh2YcopAyIcAlM,2,['Tango'],male,2
+Enrique Munne,Enrique Munne,spotify:artist:6Vnefgbss04uxwyMyb8oYj,10,['Tango'],male,0
+José María Suñé,José María Suñé,spotify:artist:2IlZH76IZwmQdW6DkX0vns,0,['Tango'],male,2
+Andres Falgas,Andres Falgas,spotify:artist:0xq84BBDX8aOGXSu4rOSaf,12,['Tango'],male,2
+Mario Pomar,Mario Pomar,spotify:artist:1DrhDSTotX0eZ8JBb2zG1W,5,['Tango'],male,2
+Alberto Podestá,Alberto Podestá,spotify:artist:6NaKJLakKOpxelAHi5MIaz,31,['Tango'],male,2
+Argentino Ledesma,Argentino Ledesma,spotify:artist:1mhrMqIzessJ8r38RW873s,23,['Tango'],male,2
+Roberto Florio,Roberto Florio,spotify:artist:4MTTjcx5TlMpHYrM8gDk36,11,['Tango'],male,2
+Fernando Diaz,Fernando Diaz,spotify:artist:75oSRxVbikihXrNZHlAGAU,14,['Tango'],male,2
+Ernesto Fama,Ernesto Fama,spotify:artist:0nRShN4m4GvQv1O4igorb6,16,['Tango'],male,2
+Rodolfo Galé,Rodolfo Galé,spotify:artist:2UpfX8nTk3srz60LrxjeXb,0,['Tango'],male,2
+Horacio Cásares,Horacio Cásares,spotify:artist:4vlLWlxC3Fc8I9JWrIuxeW,6,['Tango'],male,2
+Juan Carlos Thorry,Juan Carlos Thorry,spotify:artist:38yvzctumhO73RIf3cQ0oY,0,['Tango'],male,2
+Roberto Ray,Roberto Ray,spotify:artist:3BABTpsASueNEO8nCQc1sp,10,['Tango'],male,2
+Armando Garrido,Armando Garrido,spotify:artist:1DzuknPhhooUFAKIj5oyHq,0,['Tango'],male,2
+Héctor Pacheco,Héctor Pacheco,spotify:artist:0aAH7Q5ZlBMpZ1RZUMic2Y,10,['Tango'],male,2
+Hugo Marcel,Hugo Marcel,spotify:artist:1ZxwKLkmX22OSt1KFvNWF4,1,['Tango'],male,2
+Agustin Magaldi,Agustin Magaldi,spotify:artist:2OvqTRWSLCJ9X0MwqvLBBB,21,['Tango'],male,2
+Carlos Mayel,Carlos Mayel,spotify:artist:3vTXdR6M5OESm3oKSZx7pI,0,['Tango'],male,2
+Ricardo Ruiz,Ricardo Ruiz,spotify:artist:2xLqH2wmZlXGsqOcAVloeJ,11,['Tango'],male,2
+Jorge Maciel,Jorge Maciel,spotify:artist:0aPjXjbggXuansgeLZH6K5,27,['Tango'],male,2
+Alfredo Del Río,Alfredo Del Río,spotify:artist:7r49fNVRRrHXEJfzPK1xgJ,3,['Tango'],male,2
+Tito Landó,Tito Landó,spotify:artist:0WEZ6QOB3jIUc17ACDmqmB,2,['Tango'],male,2
+Carlos Almada,Carlos Almada,spotify:artist:2yvuzzqD0ugP1ZFqfGF5rj,0,['Tango'],male,2
+Luis Diaz,Luis Diaz,spotify:artist:5UDg2LXGDTsV8ddrVkw5qu,0,['Tango'],male,2
+Pedro Lauga,Pedro Lauga,spotify:artist:3DQ79hsHjzjpohYHnt7AIh,0,['Tango'],male,2
+Héctor Farrel,Héctor Farrel,spotify:artist:38yPKJXSXIVpKwwh1xPBGk,6,['Tango'],male,2
+Roberto Medina,Roberto Medina,spotify:artist:6gMhhYILbtEIT25798f3DK,0,['Tango'],male,2
+Orlando Verri,Orlando Verri,spotify:artist:432Nwj27diskiROeSg5QNO,0,['Tango'],male,2
+Roberto Quiroga,Roberto Quiroga,spotify:artist:4oo5SrlsFK8afaUrBmgxrt,0,['Tango'],male,2
+Agustín Volpe,Agustín Volpe,spotify:artist:725Uto8WzPnI0EzXd3ygQy,0,['Tango'],NA,2
+Felix Gutierrez,Felix Gutierrez,spotify:artist:7kjVCqC1wv528djpFfTfUy,2,['Tango'],male,2
+Lalo Martel,Lalo Martel,spotify:artist:4GWZtgG0hSR5IxkuZ2VoXx,16,['Tango'],male,2
+Juan Carlos Godoy,Juan Carlos Godoy,spotify:artist:4GeamjMPVkQRRb9eNz5hNp,25,['Tango'],male,2
+Principe Azul,Principe Azul,spotify:artist:6sZdVPMj367OgSzLSmYs6W,0,['Tango'],male,2
+Dorita Davis,Dorita Davis,spotify:artist:2g0KT5CBLKxz6rfsG8P9HY,0,['Tango'],female,2
+Carlos Vivan,Carlos Vivan,spotify:artist:1ja4cfeUN8uEUOBxKStuX7,3,['Tango'],male,2
+Roberto Diaz,Roberto Diaz,spotify:artist:1jPGifLx9Oq6lV7cLdohUj,0,['Tango'],male,2
+Alberto Diale,Alberto Diale,spotify:artist:1qAq5axfV434rKmwJCS07J,0,['Tango'],male,2
+Edgardo Donato,Edgardo Donato,spotify:artist:7oWmtaVcPDShJyXTGiiJH4,27,['Tango'],male,2
+Enrique Campos,Enrique Campos,spotify:artist:4qL4uotxXj9aVOBrjagloc,23,['Tango'],male,1
+Roberto Videla,Roberto Videla,spotify:artist:23gAjXcAt3Lm6XmAbGUehV,2,['Tango'],male,1
+Dante Amicarelli,Dante Amicarelli,spotify:artist:6D7YPXowOdPLiz53hIAwcx,1,"['Jazz', 'Tango']",male,1
+Eduardo Arolas,Eduardo Arolas,spotify:artist:772w0Qxhu4Ehe7Hhm0pLQF,12,['Tango'],male,2
+Mario Demarco,Mario Demarco,spotify:artist:6ydDC8FnufYz1IAOhHCQ9c,1,['Tango'],male,2
+Rafael del Bagno,Rafael del Bagno,spotify:artist:52Gg1Sb0FEdoKSrMfp86lR,2,['Tango'],male,2
+Ernesto Rossi,Ernesto Rossi,spotify:artist:5JRBopHZI60pk0sj5ADwKx,0,['Tango'],male,2
+Carlos Lazzari,Carlos Lazzari,spotify:artist:16WWc7shSyvnTUaL3cuHP2,0,['Tango'],male,2
+Enrique Alessio,Enrique Alessio,spotify:artist:53qjNNhcdl4ByZq4GRLlv6,1,['Tango'],male,2
+Armando Baliotti,Armando Baliotti,spotify:artist:7oMuMM6pfVBcwpEkeNFXfW,1,['Tango'],male,2
+César Ginzo,César Ginzo,spotify:artist:7htWYqwmsGaVQ4nKtyFaVg,0,['Tango'],male,2
+Abel Aznar,Abel Aznar,spotify:artist:4I6o18r2yZX6x96EHq8xNv,1,['Tango'],male,2
+Adolfo Avilés,Adolfo Avilés,spotify:artist:2tuqSF8Qbga563zHTkLJC8,0,['Tango'],male,2
+Antonio Sureda,Antonio Sureda,spotify:artist:2CSYF9svPCFu39IzEcaiVP,0,['Tango'],male,2
+Francisco Pracánico,Francisco Pracánico,spotify:artist:2BHmQMnxovqQ0lxBYSU24U,1,['Tango'],male,2
+Vicente Demarco,Vicente Demarco,spotify:artist:3797fgQcD7INf9WPO0LD1X,1,['Tango'],male,2
+Juan Puey,Juan Puey,spotify:artist:3nuX50Yu7xVOUHsQPUsu02,0,['Tango'],male,2
+Pedro Maffia,Pedro Maffia,spotify:artist:19bGTYqDTRma9hN1Sixxqs,4,['Tango'],male,2
+Alfredo Belusi,Alfredo Belusi,spotify:artist:64Ni4gszhSPmQhN5zhzhKe,20,['Tango'],male,1
+Mario Alonso,Mario Alonso,spotify:artist:12UKKEtQXf31kDyU7XI1ul,5,['Tango'],male,2
+Alberto Moran,Alberto Moran,spotify:artist:4lvpIMYw8aODv8WAucdiDG,6,['Tango'],male,2
+Carlos Guido,Carlos Guido,spotify:artist:6akddH0vllKYlLQRLUOO4r,0,['Tango'],male,2
+Juan Carlos Cobos,Juan Carlos Cobos,spotify:artist:3dmmBZ1cMSkWXMSAU8W4Nl,2,['Tango'],male,2
+Patricia Lasala,Patricia Lasala,spotify:artist:4rehpfWTqkztPVJRiSWjtw,0,['Tango'],female,2
+Juan Carlos Zorzi,Juan Carlos Zorzi,spotify:artist:553dvTc6HebTrssqNv144k,0,['Tango'],male,1
+Elias Khayat,Elias Khayat,spotify:artist:2TnlM3slrnauJQIgb5V7Dw,0,['Tango'],male,1
+Andrés Spiller,Andrés Spiller,spotify:artist:0MLGuaTFuuTY6zmj0zCvBv,0,['Tango'],male,1
+Mónica Cosachov,Mónica Cosachov,spotify:artist:78bzPkjHHdyBXZMhJOACG7,2,['Tango'],female,1
+Enrique Norris,Enrique Norris,spotify:artist:6iDwhuz4HdwpPYeCj8BLQj,2,['Jazz'],NA,0
+Carlos Lastra,Carlos Lastra,spotify:artist:4znkFgopFhouIcNIuA4R1Y,0,['Jazz'],male,0
+Pablo Del Cerro,Pablo Del Cerro,spotify:artist:5ftTiLHN4OjUuSYwvxiYpQ,2,['Tango'],female,1
+Abel Fleury,Abel Fleury,spotify:artist:6o6XZp3quMGzKOsR2xuqYJ,8,['Folklore'],male,1
+Jose Luis Merlin,Jose Luis Merlin,spotify:artist:0xIHtmCYA99cFAAdYmz0hK,23,['Tango'],male,1
+Roberto Calvo,Roberto Calvo,spotify:artist:63Ymu5y0cQyTmv23LtT5I0,5,['Tango'],male,1
+Enrique Francini,Enrique Francini,spotify:artist:42ofZcQQnXuZkAwjBuVjFh,11,['Tango'],male,1
+Nestor Fabian,Nestor Fabian,spotify:artist:4z7F1pSyGnl72PJfzctCCz,2,['Tango'],male,2
+Hugo Del Carril,Hugo Del Carril,spotify:artist:42piYricuUve61p8O67daU,23,['Tango'],male,2
+Juan Carlos Casas,Juan Carlos Casas,spotify:artist:25ksT0SDxnuSq7giAlDqv1,8,['Tango'],male,2
+Carlos Bermúdez,Carlos Bermúdez,spotify:artist:3XYAVBNCbiK8Fnxv1wjQQd,9,['Tango'],male,2
+Martin Podesta,Martin Podesta,spotify:artist:1JUPChNpBZC8VsMYMpSBuC,9,['Tango'],male,2
+Juanjo Mosalini,Juanjo Mosalini,spotify:artist:34xiQVKcwRzzl6AjjFiiNX,12,['Tango'],male,1
+Karina,Karina,spotify:artist:1QZuAtDYNrk2QMogJulsyq,58,['Pop'],female,3
+Grupo Cali,Grupo Cali,spotify:artist:4R5IzlNSizG1oT8Gs4HH6k,45,['Cumbia'],NA,0
+Rudy,Rudy,spotify:artist:2em5rmbRdv6QPZZhU9zYVW,3,['Alternative'],female,3
+Manu Martínez,Manu Martínez,spotify:artist:37P2y0CGo3jIcG0QIIJQfS,26,"['Rock', 'Alternative']",male,3
+Chucky de Ípola,Chucky de Ípola,spotify:artist:4eSiaw1LHAoRyCSUrd9SvG,4,"['Rock', 'Reggae']",male,3
+María Fernanda Aldana,María Fernanda Aldana,spotify:artist:01zNB3m5VtB1vpQllADiLY,8,"['Rock', 'Punk']",female,3
+Ezequiel Araujo,Ezequiel Araujo,spotify:artist:2IaROUUX3a6Su8uRpfu8cf,3,"['Rock', 'Punk']",NA,3
+Sobrenadar,Sobrenadar,spotify:artist:5jLU38iTkXJNDjEddClnVK,10,['Electronica'],female,5
+Flavio Etcheto,Flavio Etcheto,spotify:artist:3eggN2lF4MlJJHGajbkJqB,2,"['Electronica', 'Rock']",male,3
+Flavius E.,Flavius E.,spotify:artist:6AKPRlinRlZlme2iHCnlyx,1,['Alternative'],male,3
+Carlos Shaw,Carlos Shaw,spotify:artist:5qLfac0gCgSMyFpuk2jzYi,10,['Electronica'],male,3
+Lucas Martí,Lucas Martí,spotify:artist:4SjBX6jitXDJ7VUfIqeXfP,27,"['Pop', 'Rock', 'Alternative']",male,3
+Willy Crook,Willy Crook,spotify:artist:0OdeZASgfypHefnghEjCAD,40,"['R&B', 'Rock', 'Alternative']",male,6
+Luis Sebastian,Luis Sebastian,spotify:artist:6TYdBum0bvnrJA48oN945Y,13,['Cumbia'],male,8
+Rayos Láser,Rayos Láser,spotify:artist:3WGilHlQrv83h1CbF18BEs,44,"['Rock', 'Alternative']",NA,3
+Hernán Ortiz,Hernán Ortiz,spotify:artist:1IZiuvqUNOsi9upo9Xi1ke,20,"['Rock', 'Alternative']",male,3
+Cigarra,Cigarra,spotify:artist:3S1wMIv2YD4f2xwjWvSLrA,2,"['Cumbia', 'Folklore']",NA,5
+Poirier,Poirier,spotify:artist:5IpvS5ea4bymk3HpP1jVU4,34,['Alternative'],male,5
+La Yegros,La Yegros,spotify:artist:4TkLUhcEmk9Wod6RcEVAi7,42,"['Cumbia', 'Folklore', 'Alternative']",female,5
+Lulacruza,Lulacruza,spotify:artist:4Tdm58O53huKPT2480fzjE,27,['Folklore'],NA,5
+Gaby Kerpel,Gaby Kerpel,spotify:artist:2cnT3zcI1uKvnT3n1JQnP4,11,['Folklore'],male,5
+Pol Nada,Pol Nada,spotify:artist:1Dts5QEWhfTgrZvDBEdNUH,28,['Folklore'],NA,5
+Lauphan,Lauphan,spotify:artist:3WCISvz5htT0JUmdjsHj1I,15,"['Folklore', 'Alternative']",NA,5
+Blitto,Blitto,spotify:artist:3DtIFsDMaYSiEqBB7YUsMw,0,['Pop'],male,5
+Guazú,Guazú,spotify:artist:0eW7AKarke8r1vuzD5x8vK,13,"['Cumbia', 'Folklore']",NA,5
+Fantasma,Fantasma,spotify:artist:2gvMCuF5KEeoKHxpqKcB5A,14,['Alternative'],NA,5
+Federico Estevez,Federico Estevez,spotify:artist:78wJyJntuNWAPG0FbN8k41,25,['Folklore'],male,5
+Jin Yerei,Jin Yerei,spotify:artist:5A2XGov21od4rPuy5U5GaW,29,['Folklore'],male,5
+Dat García,Dat García,spotify:artist:1AND4vmzzDNjlciR7kQMDR,0,['Cumbia'],female,5
+Barda,Barda,spotify:artist:7rs7LuOnKkLjxj3Lr8J90k,20,['Folklore'],female,5
+Fernando Lamas,Fernando Lamas,spotify:artist:669DCQFyDP7rQwzBxuAhNi,2,['Folklore'],male,5
+Lagartijeando,Lagartijeando,spotify:artist:30tn7aO5EFnlClql7gPpGw,36,"['Cumbia', 'Folklore']",male,5
+Lucila Dominguez,Lucila Dominguez,spotify:artist:0rFTI8c61h6GlSNtyhhvQm,1,['Folklore'],female,5
+Germán Cohen,Germán Cohen,spotify:artist:3oZQSLGzE5YqJcd2OFtOhd,20,"['Folklore', 'Rap', 'Alternative']",male,5
+Le Freak Selector Remix,Le Freak Selector Remix,spotify:artist:7hRwLWnE6MCfRKKHqaxeQA,1,['Folklore'],male,5
+Aylu,Aylu,spotify:artist:1MDwlFKprZOcAzi83BF1VG,3,['Folklore'],female,5
+Fútbol,Fútbol,spotify:artist:3F4LyTOlwym0YQmYBlbAAf,11,"['Punk', 'Alternative']",NA,5
+Germán Gómez,Germán Gómez,spotify:artist:5NrZwqCa1fWP7d2Aui6KDL,2,['Jazz'],male,0
+Fabián Martín,Fabián Martín,spotify:artist:25d8eJE58a25kJdSvBrVgx,0,['Jazz'],male,0
+Tomy Sainz,Tomy Sainz,spotify:artist:07mfD3Txop0KJIEHoQRFZZ,7,['Jazz'],male,0
+María Luisa Anido,María Luisa Anido,spotify:artist:43nTjYYkBzfuRTZZZcswQx,7,['Tango'],female,1
+Jorge Gomez Crespo,Jorge Gomez Crespo,spotify:artist:1ca0HI4CI39QHNeTUXTdyh,1,['Tango'],male,1
+Antonio Sinopoli,Antonio Sinopoli,spotify:artist:2evX2sheBnvdSm86YbrLEe,1,['Tango'],male,1
+Julio Martinez,Julio Martinez,spotify:artist:1wgF30FsiI6ZRL2hWDdgo0,2,['Tango'],male,1
+Vicente Spina,Vicente Spina,spotify:artist:7Cfh1HFSVm5PwYKgwQMrGo,1,['Tango'],male,2
+Cayetano Alberto Silva,Cayetano Alberto Silva,spotify:artist:0QvQ6oQ8Q4lv2L9HQ2xA8l,1,['Tango'],NA,1
+Pablo Despeyroux,Pablo Despeyroux,spotify:artist:5PIQKptSn7b9KGsMrK296N,28,['Tango'],NA,1
+Cátulo Castillo,Cátulo Castillo,spotify:artist:6E0PW48iIV7Aze5yKmQYdO,3,['Tango'],male,2
+Azucena Maizani,Azucena Maizani,spotify:artist:0B2RE6SzZ4QsCRkl1nMz1n,10,['Tango'],female,2
+Oscar Ferrari,Oscar Ferrari,spotify:artist:19L86mqeexMu7eTMRtkLOK,7,['Tango'],male,1
+Roberto Arrieta,Roberto Arrieta,spotify:artist:31cxtM1T6KnzwJtPogFFPy,5,['Tango'],male,1
+Oscar Bassil,Oscar Bassil,spotify:artist:5Aq804I8eJnvmGdb2LXOex,1,['Tango'],male,1
+Roberto Maida,Roberto Maida,spotify:artist:6OiarJpZWTn6cj4oTlsFY7,21,['Tango'],male,2
+Ada Falcón,Ada Falcón,spotify:artist:1bshphZh29CbPD7uyWxxk3,19,['Tango'],female,2
+Agustín Irusta,Agustín Irusta,spotify:artist:1QzkpIrrMhBwTa1eb7o9XD,20,['Tango'],male,2
+Guillermo Coral,Guillermo Coral,spotify:artist:74838HLaXN8NuHDMvLWSvr,1,['Tango'],male,2
+Juan Carlos Rolón,Juan Carlos Rolón,spotify:artist:60hXPmy0oIbJS7WMff4Qwt,5,['Tango'],male,2
+Tita Merello,Tita Merello,spotify:artist:7r4Bb7uhP2AhJ4qlRp2vgP,33,['Tango'],female,2
+Guillermo Rico,Guillermo Rico,spotify:artist:2JOchnHwV5V1qloXRgVpud,2,['Tango'],male,2
+Francisco Amor,Francisco Amor,spotify:artist:4fm9akHwCFjHjXglEsVWIV,3,['Tango'],male,2
+Isabel De Grana,Isabel De Grana,spotify:artist:0o7Dky9pH9z4b224MAYuMl,0,['Tango'],female,2
+Eduardo Adrian,Eduardo Adrian,spotify:artist:1pjwakZfVvdH6AQRDeajHJ,0,['Tango'],male,2
+Chola Luna,Chola Luna,spotify:artist:0LgjjqnWgxcUr286KxOYHm,0,['Tango'],female,2
+Antonio Buglione,Antonio Buglione,spotify:artist:6manifFmJM9Q8E2hpE3AGE,0,['Tango'],male,2
+Virginia Lago,Virginia Lago,spotify:artist:2KtLoZBIwE7htFdbCRC1x3,0,['Tango'],female,1
+Mercedes Simone,Mercedes Simone,spotify:artist:3MqKTtxz6LzNrRJugeYh8W,17,['Tango'],female,2
+Jorge Omar,Jorge Omar,spotify:artist:4QgsTb2rZLggRDc7CITcRa,17,['Tango'],male,2
+Amilcar Nadal,Amilcar Nadal,spotify:artist:7cN0yTuilvxUpDhMbhYH2d,25,['Reggae'],male,7
+Fabián Miodownik,Fabián Miodownik,spotify:artist:0id6cJE1cdObojEVJ8K5ym,20,['Jazz'],male,0
+Leo Sujatovich,Leo Sujatovich,spotify:artist:0hWjZCTpX1KV23BFzNcjan,7,"['Jazz', 'Tango', 'Rock']",male,1
+Sandra Luna,Sandra Luna,spotify:artist:3uKW50V1MTGnMro4uw8f5x,19,['Tango'],female,1
+Juan Carlos Cobian,Juan Carlos Cobian,spotify:artist:17YpYoOTu119Q8aFXjLbR3,1,['Tango'],male,1
+Pedro Datta,Pedro Datta,spotify:artist:7kLRu397STrWbg3Hqjq3d3,0,['Tango'],male,1
+Daniel Falasca,Daniel Falasca,spotify:artist:32OdpAWXjVkU1U8uTDhTha,0,['Tango'],male,1
+Vicente Greco,Vicente Greco,spotify:artist:7LpW8b0EBZV35cxLZ0iqNO,2,['Tango'],male,1
+Horacio Pozzo,Horacio Pozzo,spotify:artist:5ZlaFjUgzJk3WTNZi8p2Gi,0,['Tango'],male,0
+Jorge Lopez Ruiz,Jorge Lopez Ruiz,spotify:artist:62VClkKxpAq1dDSCJJBfSV,0,['Jazz'],male,0
+Nicolás Guerschberg,Nicolás Guerschberg,spotify:artist:1p0oaJozpQAZdKArCEr5eg,3,['Jazz'],male,3
+Sara Mamani,Sara Mamani,spotify:artist:0MbaYsHJ6jDTHjTaLMSabZ,0,"['Jazz', 'Tango', 'Chamame']",female,0
+Ángel Bonura,Ángel Bonura,spotify:artist:5NfsGYGcPhAf2ivRMWbKb3,0,"['Jazz', 'Tango', 'Chamame']",NA,0
+Mariana Bianchini,Mariana Bianchini,spotify:artist:7BtIqf6x9Ob30b5AVmGl29,2,['Folklore'],female,-1
+Dolores Solá,Dolores Solá,spotify:artist:0cBV35Lf9cSK66peOaGhSV,9,['Tango'],female,0
+Arbolito,Arbolito,spotify:artist:7pa4Z64S1qU90QytnRJgoJ,33,"['Folklore', 'Rock', 'Alternative']",NA,3
+Puel Kona,Puel Kona,spotify:artist:5S5gzDtLDnL23oShA5qsBX,8,"['Folklore', 'Rock', 'Punk', 'Alternative']",NA,3
+Kangrejoz,Kangrejoz,spotify:artist:60JIa0IuXUaT6JOyBOi9Eq,0,"['Folklore', 'Rock', 'Punk', 'Alternative']",NA,3
+Pablo Lezcano,Pablo Lezcano,spotify:artist:6BWt3y930OmYx0ArqKBWUe,0,['Cumbia'],male,3
+Orozco Barrientos,Orozco Barrientos,spotify:artist:1YcoSGwAo1mtrO0o3dWzwx,0,"['Folklore', 'Rock', 'Punk', 'Alternative']",NA,3
+La Contreras,La Contreras,spotify:artist:6piB6c6qlCZaylV1R4VWyC,4,"['Folklore', 'Rock', 'Punk', 'Alternative']",female,3
+Un Mono Azul,Un Mono Azul,spotify:artist:7irBbB1keSwBvL9epc6ufR,0,"['Folklore', 'Rock', 'Punk', 'Alternative']",NA,3
+Martín Vega,Martín Vega,spotify:artist:3t6rdVTl6R0YIlTBeVJZgy,0,"['Folklore', 'Rock', 'Punk', 'Alternative']",male,3
+Tomás Babjaczuk,Tomás Babjaczuk,spotify:artist:69YFg2dNQp6Hf4kJfHwT6q,0,"['Jazz', 'Pop', 'Tango', 'Rock']",male,0
+Seba Landro,Seba Landro,spotify:artist:3kpvybC2ueX5YUpvMjYiHa,0,['Rock'],male,13
+Marcos Cabezaz,Marcos Cabezaz,spotify:artist:6RWR240sWjsjPZcyowsK1d,0,"['Jazz', 'Pop', 'Rock', 'Punk']",male,13
+Carlos Villavicencio,Carlos Villavicencio,spotify:artist:5pA3cNazdG6WV7zLzvYsHD,0,"['Jazz', 'Pop', 'Rock', 'Punk']",male,13
+Flopa,Flopa,spotify:artist:4YTUVeo0e98siu66F21HFy,13,['Alternative'],NA,13
+Migue Granados,Migue Granados,spotify:artist:6RBQQmhPPL3eqIz2ktmlSK,13,['Pop'],male,0
+Soy Emilia,Soy Emilia,spotify:artist:09MCzRiOuz48BY0imXgFFM,28,['Alternative'],NA,0
+Violetta Arriaza,Violetta Arriaza,spotify:artist:2WET7xahye2vwzTTB7MH1U,24,['Pop'],female,0
+Daniela Herrero,Daniela Herrero,spotify:artist:4DnisEwhpsBmBcyGvxRske,34,"['Pop', 'Rock']",female,10
+Pablo Grinjot,Pablo Grinjot,spotify:artist:78Yi1a73zUNK79PWPv0P0o,4,['Alternative'],male,5
+Gaston Pauls,Gaston Pauls,spotify:artist:6TOGpotjLe5ZZGif2QmZxd,7,"['Pop', 'Rock']",male,10
+Javier Montalto,Javier Montalto,spotify:artist:3E9eoaWsjWb8cCo4RkTH4Y,9,"['Pop', 'Rock']",male,10
+Hugo Díaz,Hugo Díaz,spotify:artist:45sN1U4xtrQEyzIaOUmavp,26,['Tango'],male,0
+Fabián Panisello,Fabián Panisello,spotify:artist:4rFysJd2mQdTXwE5AhcOu2,0,"['Jazz', 'Tango']",male,1
+Osvaldo Golijov,Osvaldo Golijov,spotify:artist:4MFSQmb7Y47xW7JJmJboCv,20,['Clasico'],male,0
+Gabriel Senanes,Gabriel Senanes,spotify:artist:7524FF8maNGE4P1HRv2Fee,0,"['Pop', 'Clasico']",male,1
+Ernesto Acher,Ernesto Acher,spotify:artist:6KqDCb8JoJu8pwUIxOBEzz,3,['Jazz'],male,0
+Vic Bang,Vic Bang,spotify:artist:4oYRmpCHzfDX9eZaqw7CBN,3,['Alternative'],female,0
+Eduardo García de Zúñiga,Eduardo García de Zúñiga,spotify:artist:7gSqJRkvmaMKRsFPsCNzaN,0,['Clasico'],male,1
+Valentin Surif,Valentin Surif,spotify:artist:3LHNKwzjQKqZT8kZrzWvt4,2,['Tango'],male,1
+Sebastián de Urquiza,Sebastián de Urquiza,spotify:artist:4DRLMTbeWVmsygPUpld41C,2,['Jazz'],male,0
+Victoria Birchner,Victoria Birchner,spotify:artist:3WK96n89Ph8hEufWDG5DeS,10,"['Jazz', 'Tango', 'Folklore']",NA,0
+Las Pelotas,Las Pelotas,spotify:artist:1Qv4E1VgZOGnOYd99Kp5Bs,57,"['Rock', 'Reggae', 'Alternative']",NA,3
+Tomás Lebrero,Tomás Lebrero,spotify:artist:1CddtFbqu0fKwAAtiNpjWg,0,['Alternative'],male,3
+Percival Benedict Kahn,Percival Benedict Kahn,spotify:artist:46X8BqIzjOlp5zZCY5PHEw,0,['Clasico'],NA,1
+Daniel Diaz,Daniel Diaz,spotify:artist:3zJXQgBRAEZRZZjndoogd5,22,['Jazz'],male,14
+Huella Pampa,Huella Pampa,spotify:artist:6UaNnYTf2Bgq4GPbs4hchM,15,['Folklore'],NA,14
+Armando Laborde,Armando Laborde,spotify:artist:3ScBukIGX1LjUMmj6QQX5a,7,['Tango'],male,2
+Rodolfo Lesica,Rodolfo Lesica,spotify:artist:5GqxXL51IlX2CEC8xEcgHE,4,['Tango'],male,2
+Diego Solís,Diego Solís,spotify:artist:15sxvC9WNx2IfDVn8m8teh,3,['Tango'],male,2
+Enero Será Mío,Enero Será Mío,spotify:artist:3oye1CCUGz6RmGjCnBdsMf,0,"['Pop', 'Rock']",NA,11
+Martín Elizalde,Martín Elizalde,spotify:artist:1sXx30pQqKQimzJBDwhXPx,10,"['Pop', 'Rock']",male,11
+Nahuel Briones,Nahuel Briones,spotify:artist:29HD84lSe1rh2e6JuTE2xR,19,"['Rock', 'Alternative']",male,11
+Lolo Micucci,Lolo Micucci,spotify:artist:7LG3uPVfEWv8rvew2gJFGg,1,"['Pop', 'Rock']",male,11
+Pity Alvarez,Pity Alvarez,spotify:artist:3ZM2EFVMGSXyEqn3l3HA26,6,"['HipHop', 'Rock', 'Punk', 'Rap', 'Reggae']",male,11
+Deborah De Corral,Deborah De Corral,spotify:artist:0cEINGGZS5I0npSooTOQRZ,17,['Pop'],female,11
+Sebastian Kramer,Sebastian Kramer,spotify:artist:0dFMYi8FmnV1XeawJHagzd,0,['Pop'],male,11
+Super Ratones,Super Ratones,spotify:artist:1sLxv35Q6ahFKcfg1ZuqWq,25,"['Rock', 'Punk']",NA,0
+Carola Bony,Carola Bony,spotify:artist:7gAaTghewy1zb9tfRALUN9,2,"['Pop', 'Electronica', 'Rock']",female,11
+Tito Fargo,Tito Fargo,spotify:artist:1F1FoV8zFm1KHMQsEllORZ,0,"['Pop', 'Rock']",male,11
+Los Manseros Santiagueños,Los Manseros Santiagueños,spotify:artist:0IAWTLWnUIzKVQDTGoYJk2,52,"['Chamame', 'Folklore']",NA,6
+Nonpalidece,Nonpalidece,spotify:artist:0W1EfnztQTHuv03MuMzWPe,53,"['Rock', 'Reggae', 'Alternative']",NA,0
+Donald,Donald,spotify:artist:3M9CqiLGObWndTeSA2W73n,32,['Pop'],male,0
+Bestia Bebé,Bestia Bebé,spotify:artist:3j7kmtxJ0aptdHr9ZCnEkp,31,"['Rock', 'Punk', 'Alternative']",NA,12
+Audia Valdez,Audia Valdez,spotify:artist:44zQK5AXMlUsuii84X0JOg,8,"['Pop', 'Electronica', 'Rock']",female,5
+Willy Quiroga,Willy Quiroga,spotify:artist:2qQX5DzzT2p5Uhf5nVkTyE,12,['Rock'],male,3
+Facundo Soto,Facundo Soto,spotify:artist:7iHo4CLGchMwwtiCxfyGem,23,['Rock'],male,3
+Rodrigo Ríos,Rodrigo Ríos,spotify:artist:7sT2v4tHjNHexJhSvIkcNF,5,"['Jazz', 'Pop', 'Tango', 'Cumbia', 'Rock']",male,15
+Mariana Coronel,Mariana Coronel,spotify:artist:4fojRH9JDZwRN8EzZItv4q,23,"['Jazz', 'Pop', 'Tango', 'Cumbia', 'Rock']",female,15
+Horacio Quintana,Horacio Quintana,spotify:artist:3nRHrVXvO7NKh4dpxZ1OWM,15,['Tango'],male,1
+Juan Carlos Miranda,Juan Carlos Miranda,spotify:artist:4NfWqcXy4vuHUwLvQ2Pdu8,13,['Tango'],male,1
+Luciana Tagliapietra,Luciana Tagliapietra,spotify:artist:1Q3Ba3dBArHD2RV4SpROOk,9,['Alternative'],female,5
+Los Besos,Los Besos,spotify:artist:7nbOE0RhCrS1GrDEaVUVee,31,['Alternative'],NA,5
+La Chimera,La Chimera,spotify:artist:4maQEGSFcllqvwDplwdUGv,6,['Tango'],NA,1
+Eduardo Eguez,Eduardo Eguez,spotify:artist:6Z9dlbGREM1V0CMWdFx6ox,24,['Tango'],male,1
+Ramón Sixto Ríos,Ramón Sixto Ríos,spotify:artist:6LReoPjIRhqij34W47jidw,0,['Chamame'],male,2
+Francisco Lomuto,Francisco Lomuto,spotify:artist:6uustyleCEZFSEa11DgHgi,27,['Tango'],male,2
+Pedro Noda,Pedro Noda,spotify:artist:3Yynd7J1Cb0evqPgnBuY8o,1,['Tango'],male,2
+Jason Mowry,Jason Mowry,spotify:artist:6LxGBQoCwU1JNfQ0ZMWhX8,1,['Tango'],NA,2
+Horacio Lagos,Horacio Lagos,spotify:artist:5mu76bI6tCoctKak4nMH1V,14,['Tango'],male,2
+Lita Morales,Lita Morales,spotify:artist:2s48CL3aMAx0M059cx2F9A,10,['Tango'],female,2
+Antonio Maida,Antonio Maida,spotify:artist:5udOu7CuhlJ5wPeoCcAZRM,1,['Tango'],male,2
+Alberto Gomez,Alberto Gomez,spotify:artist:3957esRYhSNJy4MdpYn5VP,20,['Tango'],male,2
+Adolfo Rivas,Adolfo Rivas,spotify:artist:0dywodxx2SmQ5nmzUgLaht,0,['Tango'],male,2
+Roberto Morel,Roberto Morel,spotify:artist:6wBnDQolYUcmloT0WI7o5n,0,['Tango'],male,2
+Atilio Bruni y Su Orquesta,Atilio Bruni y Su Orquesta,spotify:artist:0fshe40qVebS0viBfKtlaD,0,['Tango'],male,2
+Orquesta Tipica Victor,Orquesta Tipica Victor,spotify:artist:3a80F6pRMshHZW2jH8McTA,25,['Tango'],NA,2
+Hugo Jordan,Hugo Jordan,spotify:artist:0ckxb5NGyPxygzbH5gXrc9,6,['Tango'],male,2
+Juan De Dios Filiberto,Juan De Dios Filiberto,spotify:artist:1cUlqu95TXcMcQUjdfzIgo,23,['Tango'],male,1
+Tomas Gubitsch,Tomas Gubitsch,spotify:artist:2eJfVLx1KsCtaIsT5U0NAw,13,['Tango'],NA,1
+Gerardo Jerez Le Cam,Gerardo Jerez Le Cam,spotify:artist:1zYMJwL9SMDF0QjsD5e79g,0,['Tango'],NA,1
+Violeta Castillo,Violeta Castillo,spotify:artist:2NtYHfTFxDUWZcQAxJBzhe,8,['Alternative'],female,5
+Zero Kill,Zero Kill,spotify:artist:79Ni1ePx75PABzezrpjmwV,11,"['Pop', 'Electronica', 'Rock', 'Alternative']",NA,5
+Astrosuka,Astrosuka,spotify:artist:5niEn5U8RaaLvCHmD9JKFE,1,['Electronica'],NA,5
+Dario Jalfin,Dario Jalfin,spotify:artist:1NPOzKHJjzklJ8cMmyuAh6,5,"['Pop', 'Rock', 'Alternative']",male,3
+Migue Garcia,Migue Garcia,spotify:artist:3Q0cAY0gD9oINGwFwRA625,6,['Rock'],male,3
+Lucy Patané,Lucy Patané,spotify:artist:0ocA2OjaXb4KyFX7zJE2Ld,23,['Alternative'],female,3
+Julieta Laso,Julieta Laso,spotify:artist:3mrFrZjfujaOttNRpDD4Vk,23,['Tango'],female,3
+Riddim Wise,Riddim Wise,spotify:artist:342L5QwFHvai7jhEeOfPtk,21,['Alternative'],NA,5
+El Gato Muñoz,El Gato Muñoz,spotify:artist:0bRZ3w6EsnBEUZgMsJyCTO,18,"['Cumbia', 'Folklore', 'Alternative']",NA,5
+Adrián Juárez,Adrián Juárez,spotify:artist:4my2lowPHAuV5YMla0kBD2,2,['Folklore'],male,5
+Juanito El Cantor,Juanito El Cantor,spotify:artist:0XOo1UrJtPQjLkILqMGusW,22,['Alternative'],male,0
+El Chavez,El Chavez,spotify:artist:78At4Kngmy7acsoeNPRHZN,14,['Alternative'],male,3
+Pablo Paz,Pablo Paz,spotify:artist:1JXqR4BbP8K0e5TrRsy1xy,4,['Folklore'],male,5
+Wen,Wen,spotify:artist:0rjsdg29fNA8UHulvYuhP1,0,['Folklore'],female,5
+Camanchaca,Camanchaca,spotify:artist:1WkG8BKt8T8Ot7tsxMjQqN,0,['Folklore'],NA,5
+Fabián Zylberman,Fabián Zylberman,spotify:artist:2iy2Nm1eh2WxzwezH0CVRY,0,['Jazz'],male,0
+Javier Cohen,Javier Cohen,spotify:artist:04XxVxTAdCKjwTlKyjApPp,1,['Jazz'],male,0
+Quique Condomí,Quique Condomí,spotify:artist:00lxVGoCuBm1dJX0QPZyJD,0,['Jazz'],male,0
+Hernan Ríos,Hernan Ríos,spotify:artist:0h0xEeJa6MntRaHxDfreHY,0,"['Folklore', 'Rock']",male,0
+Juan Parga,Juan Parga,spotify:artist:4dFdsaq6OSDuoO4AVpLyD0,0,['Tango'],male,1
+Fernando Ferandiere,Fernando Ferandiere,spotify:artist:1jw9mhpe0aIuf1Zc1GCA9Y,0,['Tango'],male,1
+Rosita Quiroga,Rosita Quiroga,spotify:artist:2NXDP8Xj6f3FCzLjkg0Ymw,4,['Tango'],female,2
+Armando Pontier,Armando Pontier,spotify:artist:1szZbhqQOu1TDHF4bqDeVM,20,['Tango'],male,1
+Domingo Lombardi,Domingo Lombardi,spotify:artist:5WHmXqz7OrlZzEaS8ta0E3,0,['Tango'],male,2
+José Gonzalez Castillo,José Gonzalez Castillo,spotify:artist:4oHopp05U0zeAslcCBZm1W,1,['Tango'],male,2
+Luis Brighenti,Luis Brighenti,spotify:artist:6DhrPJaf8hsK0FhoWkpoGK,0,['Tango'],male,2
+Cuarteto Guardia Vieja,Cuarteto Guardia Vieja,spotify:artist:54ZDvAQ5iZJLSOLJqu3QiA,14,['Tango'],NA,2
+Enrique Dizeo,Enrique Dizeo,spotify:artist:5em87S0fdnwKvZuQfEG8pJ,2,['Tango'],male,2
+Juan Carlos Cambón,Juan Carlos Cambón,spotify:artist:7hbAjlPzzra0hLgWomf1Sp,0,['Tango'],male,2
+BlackDali,BlackDali,spotify:artist:6fQBCAmdaMg4d9WYOMW58B,31,['Reggae'],male,7
+Mateo Sujatovich,Mateo Sujatovich,spotify:artist:4B1yCLTGYZvR7OZXPczCmb,3,"['Pop', 'Rock', 'Alternative']",male,1
+Juan Pablo Navarro,Juan Pablo Navarro,spotify:artist:3VetqlnXxXp0slQYyiLMwA,3,['Tango'],male,1
+Mariano Sivori,Mariano Sivori,spotify:artist:6eHAYfOiw6NhNkud4JKv9g,2,"['Jazz', 'Rock', 'Alternative']",male,3
+Pájaro de Fuego,Pájaro de Fuego,spotify:artist:6iS3tG6I1Zq8XzWTWfqzus,1,['Folklore'],NA,-1
+Victoria Morán,Victoria Morán,spotify:artist:6IptlypanXnLQv0rfKUrlB,5,['Jazz'],female,0
+Monkey Kids,Monkey Kids,spotify:artist:5hmh8L2CdiLAvcjdVbhJMk,0,['Rock'],NA,13
+Sergio Merce,Sergio Merce,spotify:artist:1yhOW29TA4aVtDeV37ihed,0,['Rock'],male,13
+Jordan Grigg,Jordan Grigg,spotify:artist:6Y5Fhde5ngMHeY9OhDQaFA,17,['Alternative'],NA,13
+Marcelo Delgado,Marcelo Delgado,spotify:artist:6dHuBokTMS4boezIRpqHka,0,"['Pop', 'Rock']",male,10
+Mavi Díaz,Mavi Díaz,spotify:artist:4vxmDBcHT1ibxYBYKirIaW,8,"['Pop', 'Folklore', 'Rock']",female,10
+Rodrigo Crespo,Rodrigo Crespo,spotify:artist:3hGJuiuX0TJVkyue5808np,1,"['Pop', 'Rock']",male,10
+Paula Maffia,Paula Maffia,spotify:artist:4soieU4IFUQEcYULczxzFa,26,['Alternative'],female,5
+Martín Reznik,Martín Reznik,spotify:artist:1G0rNs1tF3aJ8WdLTBUyLb,0,['Alternative'],male,5
+Pablo Dacal,Pablo Dacal,spotify:artist:2B4BCqQ745oxQY7Je6oEFU,16,['Alternative'],male,5
+Dante Anzolini,Dante Anzolini,spotify:artist:3ere3d5P9K69t3DUVARI4Z,1,['Clasico'],male,0
+Rafael Gintoli,Rafael Gintoli,spotify:artist:4VQumRfhLnn346SuTA0jNC,0,['Tango'],male,1
+Pedro Saenz,Pedro Saenz,spotify:artist:0MluzI9LpanQT9iraPdpl8,0,['Tango'],male,1
+Lía Cimaglia Espinosa,Lía Cimaglia Espinosa,spotify:artist:26mvh3HIDxQ7g0axPxoxxd,0,['Tango'],female,1
+Irma Urteaga,Irma Urteaga,spotify:artist:3lukHq55Q6zWOQkOL5lrtS,0,['Tango'],female,1
+Olga Barboaza,Olga Barboaza,spotify:artist:106IVZ6ZYHUm2cPMiy2tdv,0,['Jazz'],NA,14
+Jorge Caldara,Jorge Caldara,spotify:artist:0M3rzvtYVCYi9BAXGtEoBd,0,['Tango'],male,2
+Daiana Leonelli,Daiana Leonelli,spotify:artist:1phW938sv11jq0j5fZCRsr,16,['Alternative'],female,11
+Miau Trío,Miau Trío,spotify:artist:0WIn93XS8EmNaLPG3AZpeL,29,['Alternative'],NA,11
+Richard Coleman,Richard Coleman,spotify:artist:6Hngy3cPnHG2DO493ZxSya,22,"['Pop', 'Rock', 'Alternative']",male,0
+Tavo Kupinski,Tavo Kupinski,spotify:artist:0kVGhFz57CPHwGueXgLa7Q,0,"['Tango', 'Rock', 'Reggae']",NA,0
+Roque Narvaja,Roque Narvaja,spotify:artist:7962171njr0mXGlo7bNVWx,19,"['Pop', 'Rock']",male,0
+Jorge Maronna,Jorge Maronna,spotify:artist:1vk2uohBsRHxclHPBQZxJU,0,"['Rock', 'Punk']",male,0
+Florencia Paz,Florencia Paz,spotify:artist:7c5vya7UGr2OU2L9Q7ura8,5,['Folklore'],female,6
+Vox Dei,Vox Dei,spotify:artist:1sTOtMflHQ1ULtuozST5RR,36,"['Rock', 'Metal']",NA,3
+Ricardo Tapia,Ricardo Tapia,spotify:artist:3NONwjxJLj1yc4GjBdBeUY,4,"['Tango', 'Rock']",male,3
+Rodrigo Rabery,Rodrigo Rabery,spotify:artist:7boaEFcJzVCP49ht1FdXTp,3,"['Jazz', 'Pop', 'Tango', 'Cumbia', 'Rock']",male,15
+Carlos Galarce,Carlos Galarce,spotify:artist:1lRa5OBXnPtrorBeB5IaIq,0,['Tango'],male,2
+Terig Tucci y Su Orquesta,Terig Tucci y Su Orquesta,spotify:artist:1bWX8nCo0UjalZwjh5jr1Q,2,['Tango'],male,2
+Ignacio Corsini,Ignacio Corsini,spotify:artist:5LiOoJbxVSAMkBS2fUm3X2,24,['Tango'],male,2
+Carlos Lafuente,Carlos Lafuente,spotify:artist:1eNJZfAHoq5zu1sUukbhAe,3,['Tango'],male,2
+José Bohr,José Bohr,spotify:artist:3QXlUkPBEi2QDPzYLJxnw0,0,['Tango'],male,2
+Ortega del Cerro,Ortega del Cerro,spotify:artist:7GvjBIm24mo1EZf022vBTm,0,['Tango'],male,2
+Alberto Carol,Alberto Carol,spotify:artist:2jOJxc7y5sXnthiDbWwAZP,2,['Tango'],male,2
+Hector Palacios,Hector Palacios,spotify:artist:3JKxjZPgSVTZuSdxeYqPHV,1,['Tango'],male,2
+Alejandro Kauderer,Alejandro Kauderer,spotify:artist:23UdLCuyTrLGay2CGjF0PC,6,['Tango'],male,1
+Haien Qiu,Haien Qiu,spotify:artist:2vLHEnZolEk1eOoQ6ZjDZI,9,"['Pop', 'Electronica', 'Rock', 'Alternative']",female,5
+Sofja,Sofja,spotify:artist:6YPy534eIBgUC8aaUr5VcY,0,['Electronica'],NA,5
+Golpe Erótico,Golpe Erótico,spotify:artist:33MAc1FAR0VI8kaj51Hwa6,0,['Electronica'],NA,5
+María Ezquiaga,María Ezquiaga,spotify:artist:5v8omMFYuqXgJxEHPpw7qn,5,"['Electronica', 'Rock']",female,3
+Coni Cibils,Coni Cibils,spotify:artist:6VKYRDDhHcvnKnaUB1P5bA,0,"['Jazz', 'Rock']",female,3
+The Cherry Blues Project,The Cherry Blues Project,spotify:artist:2LGZDUWBTmKNHpQmmTWYrD,0,['Folklore'],NA,5
+Soema Montenegro,Soema Montenegro,spotify:artist:3k4DZyXoTNV3aU940gXJUO,8,"['Folklore', 'Alternative']",female,0
+Guillermo Beresñak,Guillermo Beresñak,spotify:artist:6nVfCc2kQYEbOAf5xEfN24,13,['Alternative'],male,0
+Faauna,Faauna,spotify:artist:4tloZXpk6kKF642jyyqdEZ,23,"['Cumbia', 'Electronica']",NA,3
+Javier Navascués,Javier Navascués,spotify:artist:4WmrxF63IePcZfWuJYdcA7,0,['Tango'],male,1
+Celedonio Flores,Celedonio Flores,spotify:artist:5LPk6kCwCVpyb6nzLGEWzs,9,['Tango'],male,2
+Luis Teisseire,Luis Teisseire,spotify:artist:23QWtGCd7I9yKyXEAYGUm9,0,['Tango'],male,2
+Gerónimo Gradito,Gerónimo Gradito,spotify:artist:4Uc4Y8ew5jHf4Id99BPNsj,0,['Tango'],male,2
+Francisco García Jiménez,Francisco García Jiménez,spotify:artist:6d8pUydOLBV2Prx6TzOsSe,0,['Tango'],male,2
+Juan Bautista Guido,Juan Bautista Guido,spotify:artist:3HxPIWdIyT0oGTNnVbGMBB,0,['Tango'],male,2
+Ciriaco Ortiz,Ciriaco Ortiz,spotify:artist:55p4ruxJzQ4HsPRk2N7IRH,2,['Tango'],male,2
+Florindo Sassone,Florindo Sassone,spotify:artist:3UxoLSuhPEXE81rnYRPkub,18,['Tango'],male,1
+Cirilo Fernandez,Cirilo Fernandez,spotify:artist:4Xr6dK5pdkdLA1KyLFaTrG,23,"['Jazz', 'Rock', 'Alternative']",male,3
+Lulo Isod,Lulo Isod,spotify:artist:5aY8pJBIffI6ozgszJTAhc,0,['Folklore'],NA,-1
+Julian Sanza,Julian Sanza,spotify:artist:6gMypO0MIeQU2x67phEDh8,15,['Rock'],male,13
+Mariano Malamud,Mariano Malamud,spotify:artist:2qZuRmiCs1RZXwEVZZsjk1,0,"['Pop', 'Rock']",male,10
+Graciela Oddone,Graciela Oddone,spotify:artist:7N39lSpHAAOXDywurZpYNA,10,"['Pop', 'Rock']",female,10
+Alicia Terzian,Alicia Terzian,spotify:artist:5tLgI2LGJaVMT4xbu2h6aq,0,['Tango'],female,1
+Nación Ekeko,Nación Ekeko,spotify:artist:5sNieaixWfKFosseXlWOym,34,['Folklore'],NA,11
+Emilio Kauderer,Emilio Kauderer,spotify:artist:3Ie0iKmYPXlTXUzCiGOmDq,29,['Tango'],NA,1
+Manu Caizza,Manu Caizza,spotify:artist:1uEfPM6w65JkYEzhKdZepV,0,"['Electronica', 'Rock']",male,3
+Rosal,Rosal,spotify:artist:4VvzpUNrZ5CAqRascoLb1O,22,['Alternative'],NA,3
+Sebastian Schon,Sebastian Schon,spotify:artist:0EovpzobmEqGoPa2ZUx334,4,"['Electronica', 'Rock']",male,3
+Rayador,Rayador,spotify:artist:7MzbDvCrvJTEiwiRYWTbVB,0,"['Cumbia', 'Electronica']",NA,3
+Un Tipo Sin Ritmo,Un Tipo Sin Ritmo,spotify:artist:0oR00liOtlTL1113Ig0QQO,0,"['Cumbia', 'Electronica']",NA,3
+Mariana Päraway,Mariana Päraway,spotify:artist:17FXNujFBCzgEHqMIULmja,16,"['Jazz', 'Pop', 'Rock', 'Alternative']",female,3
+An Espil,An Espil,spotify:artist:0GEBrC42d3MZT2LpDPh2qt,29,"['R&B', 'Alternative']",female,3
+Abril Olivera,Abril Olivera,spotify:artist:0syNXPcVZZpTvXcfoRaXLg,24,['R&B'],female,3
+Axel Mark,Axel Mark,spotify:artist:0BxJVdQrTrAKG3x3STcevC,6,"['Jazz', 'Rock', 'Alternative']",male,3
+Fernández 4,Fernández 4,spotify:artist:2tI0jqFT5qiFp6GASa6k8R,21,"['Jazz', 'Rock', 'Alternative']",NA,3
+Phunktastike,Phunktastike,spotify:artist:2wvha33qV126VY4l7kT3Ge,2,['Rock'],male,13
+Carlos Groisman,Carlos Groisman,spotify:artist:7H4zhh8TyFez7szEHk2uml,0,"['Pop', 'Rock']",male,10
+Aquiles Roggero,Aquiles Roggero,spotify:artist:6os0B7r6wlqLiGbgvtrKwi,0,['Tango'],male,0
+Daniel Tarrab,Daniel Tarrab,spotify:artist:6prBfbtbeg5w7oAH6jffjM,2,['Tango'],male,1
+Federico Jusid,Federico Jusid,spotify:artist:4Bjfwb6PiXwqru4DHOMwIq,31,['Tango'],male,1
+Dinastía,Dinastía,spotify:artist:3WwVo2fYI0tf6G32a0qQFF,5,"['Trap', 'HipHop']",male,4
+Guido Sava,Guido Sava,spotify:artist:6yI6LhM9bBTGMMunlrnGPB,0,['Rock'],male,13
+Orquesta Sinfónica Nacional Juvenil José de San Martín,Orquesta Sinfónica Nacional Juvenil José de San Martín,spotify:artist:5W7yGYyJRGTkEQMukp0wdt,0,"['Pop', 'Rock']",NA,10

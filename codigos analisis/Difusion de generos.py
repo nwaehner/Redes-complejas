@@ -196,4 +196,70 @@ for i in range(100):
     porcentajes.append(porcentaje_de_acierto)
 #%%
 print(f"El porcentaje de aciertos fue de {round(np.mean(porcentajes),2)} +- {round(np.std(porcentajes),2)}")
+# %%z
+
+# %% Intento agregarle lo del accuracy
+generos = ["Trap","Jazz", "Pop", "HipHop", "Clasico", "Indie",
+                        "R&B", "Tango", "Cumbia",
+                        "Chamame", "Electronica", "Folklore", "Rock", "Punk", "Rap", "Metal",
+                        "Reggae","Alternative"]
+
+G_testeo = copy.deepcopy(G)
+y_test = []
+nodos_de_testeo = []
+for genero in generos[3:4]:
+    vector = []
+    for i in G_testeo.nodes(data=True):
+        if len(i[1]["generos_musicales"]) != 0: #SI TIENE GENEROS, LE ASIGNO 1 O -1 SEGUN SEA EL GENERO CORRESPONDIENTE
+            probabilidad = random.random() 
+            if genero in i[1]["generos_musicales"]:
+                if probabilidad < 0.1:
+                    vector.append(0)
+                    y_test.append(1)
+                    i[1]["generos_musicales"] = []
+                    nodos_de_testeo.append(i[0])
+                else:
+                    vector.append(1)
+            else:
+                if probabilidad < 0.1:
+                    vector.append(0)
+                    y_test.append(-1)
+                    i[1]["generos_musicales"] = []
+                    nodos_de_testeo.append(i[0])
+                else:
+                    vector.append(1)
+        else: #SI NO TIENE GENEROS, LE ASIGNO 0.
+            vector.append(0)
+    W = nx.to_pandas_adjacency(G_testeo).to_numpy()
+    lista_grados = [i[1] for i in G_testeo.degree()]
+    D = np.diag(lista_grados)
+    inversa_D =  np.linalg.inv(D) 
+    matriz = np.dot(inversa_D,W)
+    for i in range(10):
+        vector_nuevo = np.matmul(matriz,vector) #Esto multiplica la matriz por el vector
+        for indice,elemento in enumerate(vector): ##Esto vuelve a setear los elementos que eran 1 a -1 a esos valores
+
+            if elemento == 1:
+                vector_nuevo[indice] = 1
+
+            elif elemento == -1:
+                vector_nuevo[indice] = -1
+        
+        vector = vector_nuevo
+# %%
+y_proba = []
+for nodo_testeo in nodos_de_testeo:
+    indice_testeo = list(G_testeo.nodes()).index(nodo_testeo)
+    y_proba.append(vector[indice_testeo])
+    
+# %%
+from sklearn.metrics import accuracy_score
+y_pred = []
+for i in y_proba:
+    if i>0:
+        y_pred.append(1)
+    else:
+        y_pred.append(-1)
+        
+print(accuracy_score(y_test, y_pred))
 # %%
