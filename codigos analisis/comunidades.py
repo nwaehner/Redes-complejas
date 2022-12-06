@@ -18,7 +18,7 @@ G_ig = ig.Graph.from_networkx(G)
 # %%
 infomap = G_ig.community_infomap() #Infomap   
 louvain = com.best_partition(G) #Louvain
-com_bt = G_ig.community_edge_betweenness(clusters = 18, directed = False, weights = None) #betweenness
+com_bt = G_ig.community_edge_betweenness(clusters = 17, directed = False, weights = None) #betweenness
 # %%
 def cluster_to_dict(cluster, g):
     dic = {}
@@ -74,7 +74,7 @@ plt.savefig("../imagenes del analisis/matriz de betweenness.png")
 plt.show()
 # %% dibujo la matriz de confusion
 fig, ax = plt.subplots(1,1, figsize=(8,8))
-matriz_confusion_reducida = matriz_confusion[0:8]
+matriz_confusion_reducida = matriz_confusion[0:6]
 img = ax.imshow(matriz_confusion_reducida,interpolation='none',cmap='RdPu')
 for (i, j), z in np.ndenumerate(matriz_confusion_reducida):
     ax.text(j, i, int(z), ha='center', va='center')
@@ -84,21 +84,24 @@ matriz_confusion_reducida.sort(axis=- 1, kind='stable', order=None)
 ax.set_xticklabels(generos_representativos, rotation = 90)
 ax.set_ylabel("Comunidades por cluster", fontsize=12)
 ax.set_xlabel("Géneros Musicales", fontsize=12)
-plt.savefig("../imagenes del analisis/matriz de betweenness reducida.png")
+#plt.savefig("../imagenes del analisis/matriz de betweenness reducida.png")
 plt.show()
 # %%
 pickle.dump(G, open(f'../red_filtrada/red_filtrada_comunidades_betwenness.gpickle', 'wb'))
 # %%
-# %%
+#%%------------------Wordcloud de los géneros musicales--------------------
 
 wc_atributos = {'height' : 800,
                 'width' : 1200,
-                'background_color' : 'white',
-                'max_words' : 20
+                'background_color' : 'black',
+                'max_words' : 17
                 } 
 labels = dic_betweenness.values()
-fig, axs = plt.subplots(nrows = 2, ncols = 4, figsize = (12,5), facecolor='None')
+fig, axs = plt.subplots(nrows = 6, ncols = 3, figsize = (18,22))
 for i, ax in enumerate(fig.axes):
+    if i == 17: # Si se grafica para todos los géneros
+        ax.axis("off")
+        break
     index = np.nonzero(labels==i)[0]      
     artistas_por_cluster = [artista for artista in dic_betweenness.keys() if dic_betweenness[artista] == i]
     g = []
@@ -110,20 +113,23 @@ for i, ax in enumerate(fig.axes):
     wc = WordCloud(**wc_atributos).generate_from_frequencies(dict_generos_del_cluster)
     ax.imshow(wc)
     ax.axis('off')
-    ax.set_title("Comunidad " + str(i), fontsize=20, color = "white")
+    ax.set_title("Comunidad " + str(i), fontsize=20, color = "black")
 
-plt.savefig("../imagenes del analisis/worcloud por genero.png")
-# %%
+plt.savefig("../imagenes del analisis/worcloud por genero completo.png")
+#%%----------------------------Wordcloud de los artistas--------------------
 
 wc_atributos = {'height' : 800,
                 'width' : 1200,
-                'background_color' : 'white',
+                'background_color' : 'black',
                 'max_words' : 15
                 } 
 labels = dic_betweenness.values()
-fig, axs = plt.subplots(nrows = 2, ncols = 4, figsize = (12,5), facecolor="None")
+fig, axs = plt.subplots(nrows = 6, ncols = 3, figsize = (18,22))
 
 for i, ax in enumerate(fig.axes):
+    if i == 17:
+        ax.axis("off")
+        break
     index = np.nonzero(labels==i)[0]      
     artistas_por_cluster = [artista for artista in dic_betweenness.keys() if dic_betweenness[artista] == i]
     g = []
@@ -135,8 +141,37 @@ for i, ax in enumerate(fig.axes):
     wc = WordCloud(**wc_atributos).generate_from_frequencies(dict_artistas_del_cluster)
     ax.imshow(wc)
     ax.axis('off')
-    ax.set_title("Comunidad " + str(i), fontsize=20, color = "white")
+    ax.set_title("Comunidad " + str(i), fontsize=20, color = "black")
 
-plt.savefig("../imagenes del analisis/worcloud por artista.png")
+plt.savefig("../imagenes del analisis/worcloud por artista completo.png")
 
-# %%
+#%%--------------------------Wordcloud de los años-------------------------
+
+#Pensamos quiza hacerlo por décadas en vez de por año, pero por tiempo no llegamos
+#Tampoco sabemos si un wordcloud es la mejor manera de presentar esto
+
+wc_atributos = {'height' : 800,
+                'width' : 1200,
+                'background_color' : 'black',
+                'max_words' : 17
+                } 
+labels = dic_betweenness.values()
+fig, axs = plt.subplots(nrows = 6, ncols = 3, figsize = (18,22))
+for i, ax in enumerate(fig.axes):
+    if i == 17: # Si se grafica para todos los géneros
+        ax.axis("off")
+        break
+    index = np.nonzero(labels==i)[0]      
+    artistas_por_cluster = [artista for artista in dic_betweenness.keys() if dic_betweenness[artista] == i]
+    g = []
+    for artista in artistas_por_cluster:
+        g.append(str(G.nodes()[artista]["fecha_aparicion"]))
+    dict_generos_del_cluster = {i:g.count(i) for i in set(g)}
+    grados_por_cluster = [G.degree(nodo) for nodo in artistas_por_cluster]
+    dict_artistas_del_cluster =dict(zip(artistas_por_cluster,grados_por_cluster))
+    wc = WordCloud(**wc_atributos).generate_from_frequencies(dict_generos_del_cluster)
+    ax.imshow(wc)
+    ax.axis('off')
+    ax.set_title("Comunidad " + str(i), fontsize=20, color = "black")
+
+#plt.savefig("../imagenes del analisis/worcloud por año.png")
