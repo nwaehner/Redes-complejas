@@ -8,21 +8,49 @@ import random
 import copy
 # import plfit
 from scipy.optimize import curve_fit
+from tqdm import tqdm
+import seaborn as sns
 
 # Cargamos el multigrafo
 with open("../red_filtrada/red_filtrada.gpickle", "rb") as f:
     G = pickle.load(f)
+
+
+#%% Agregamos pesos a los enlaces
+
+def crear_red_pesada(red):
+
+    G_pesada = nx.Graph()
+    enlaces_chequeados = []
+    lista_enlaces = list(red.edges())
+    for i,enlace_i in (enumerate(lista_enlaces)):
+        peso_enlace = 1
+        if enlace_i not in enlaces_chequeados:
+            for j in range(i+1,len(lista_enlaces)):
+                enlace_j = lista_enlaces[j]
+                if enlace_i == enlace_j:
+                    peso_enlace +=1
+        
+            enlaces_chequeados.append(enlace_i)
+            if enlace_i in G_pesada.edges():
+                G[enlace_i[0]][enlace_i[1]]["weight"] += 1
+            else:  
+                G_pesada.add_edge(enlace_i[0],enlace_i[1], weight = peso_enlace)
+            
+    return G_pesada
+
+
 #%%---------Creamos una tabla con datos generales de nuestra red------------------------
 G_simple = nx.Graph(G)
-df = pd.DataFrame({'n° nodos': round(G.number_of_nodes(),0),
-                'n° enlaces': round(G.number_of_edges(),0),
-                'Grado medio': round(np.mean([G.degree(n) for n in G.nodes()]),2),
-                'Coeficiente de clustering medio': round(nx.average_clustering(G_simple),2)},
-                round(nx.average_shortest_path_length(G),2),
+df = pd.DataFrame({'n° nodos': np.round(G.number_of_nodes(),0),
+                'n° enlaces': np.round(G.number_of_edges(),0),
+                'Grado medio': np.round(np.mean([G.degree(n) for n in G.nodes()]),2),
+                'Coeficiente de clustering medio': np.round(nx.average_clustering(G_simple),2),
+                "Distancia media entre nodos": np.round(nx.average_shortest_path_length(G),2),
+                "Diámetro": nx.diameter(G)},
                 index = ["Red"])
 df = df.transpose()
 display(df)
-
 #%%
 def hacer_lista_grados(red): #devuelve una lista con los nodos de la red.
   lista_grados=[grado for (nodo,grado) in red.degree()]
@@ -234,7 +262,7 @@ G_copia = copy.deepcopy(G)
 lista_genero = [i[1]["genero"] for i in G.nodes(data=True)]
 homofilia = []
 n = 5000
-for i in range(n): 
+for i in tqdm(range(n)): 
     random.shuffle(lista_genero) 
     for j, nodo in enumerate(list(G_copia.nodes())): 
         G_copia.nodes()[nodo]['genero'] = lista_genero[j] 
@@ -244,7 +272,7 @@ for i in range(n):
 
 G_copia = copy.deepcopy(G)
 #%%
-from tqdm import tqdm
+
 iteracion = 0
 lista_nodos = list(G_copia.nodes())
 homofilia_recableo = []
@@ -255,13 +283,26 @@ for iteracion in tqdm(range(1000)):
     nueva_red = nx.double_edge_swap(G_copia, nswap=len(list(G_copia.edges()))*4, max_tries=len(list(G_copia.edges()))*10)
     homofilia_recableo.append(calcular_homofilia(nueva_red))
     homofilia_recableo_generos_musicales.append(calcular_homofilia_generos_musicales(nueva_red))
-    nueva_red_simple = nx.Graph()
-    nueva_red_simple.add_nodes_from(lista_nodos)
-    nueva_red_simple.add_edges_from(nueva_red.edges())
-    clustering_recableo.append(nx.average_clustering(nueva_red_simple))
+    G_pesada = crear_red_pesada(G_copia)
+    clustering_recableo.append(nx.average_clustering(G_pesada, weight = "weight"))
 #%%
 print(iteracion)
-
+G_pesada_original = crear_red_pesada(G)
+fig, ax = plt.subplots(nrows = 1, ncols = 1, figsize = (14, 8))
+counts, bins = np.histogram(clustering_recableo, bins=20)
+sns.histplot(clustering_recableo, bins=20,ax=ax,stat = "probability")
+ax.vlines(x = np.mean(clustering_recableo), ymin = 0, ymax = 0.5, linewidth = 3, linestyle = '--', alpha = 0.8, color = 'm', label = 'Media')
+ax.vlines(x = nx.average_clustering(G_pesada_original, weight = "weight"), ymin = 0, ymax = 0.5, linewidth = 3, linestyle = '--', alpha = 0.8, color = 'k', label = 'Clustering de la red original')
+ax.fill_between(x = [np.mean(clustering_recableo)-np.std(clustering_recableo),np.std(clustering_recableo)+np.mean(clustering_recableo)], y1 = 0.5, color = 'b', alpha = 0.2, label = 'Desviación estándar')
+ax.grid('on', linestyle = 'dashed', alpha = 0.5)
+ax.set_ylim(0,0.2)
+ax.set_xlabel("Clustering", fontsize=25)
+ax.set_ylabel("Frecuencia normalizada", fontsize=25)
+ax.tick_params(axis='both', which='major', labelsize=16)
+#axs.title("Clustering por recableo (n = 1000)",fontsize = 30)
+ax.legend(loc = 'upper center',fontsize = 18)
+plt.savefig("Clustering.png")
+plt.show()
 
 
 #%%%
