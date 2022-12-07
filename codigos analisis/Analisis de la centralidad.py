@@ -294,4 +294,3 @@ axs.set_yticklabels(df_artistas_centrales.columns.values)
 axs.set_xticklabels(df_artistas_centrales.columns.values)
 fig.colorbar(img, orientation="vertical", pad=0.1,fraction=0.04,extend='min') # la barra de colores
 plt.show()
-# %%
