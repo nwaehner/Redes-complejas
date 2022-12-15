@@ -40,6 +40,9 @@ for nodo in lista_nodos:
 
     fecha_aparicion = encontrar_fecha_menor(lista_fechas)
     G.nodes[nodo]["fecha_aparicion"] = fecha_aparicion
+
+#%%-------------Para guardar la red con la fecha de aparicion de cada artista------------
+pickle.dump(G, open(f'../red_filtrada/red_filtrada.gpickle', 'wb'))
 #%% Vemos cuantos artistas aparecen cada año
 # Guardo en un diccionario cuantos nodos aparecen por año
 dic_años = {}
@@ -75,7 +78,7 @@ axs[0].tick_params(axis = "both", labelsize = 16)
 #axs[0].yaxis.label.set_color('white')
 
 axs[1].plot(dic_años_ordenado.keys(), artistas_acumulados_año, ".")
-axs[1].set_title("$Artistas\;por\;año\;acumulado$",fontsize = 22)
+axs[1].set_title("$Artistas\;por\;año\;acumulados$",fontsize = 22)
 axs[1].set_xlabel("Año",fontsize = 18)
 axs[1].tick_params(axis = "both", labelsize = 16)
 #axs[1].xaxis.label.set_color('white')
@@ -83,7 +86,7 @@ axs[1].tick_params(axis = "both", labelsize = 16)
 
 plt.savefig("../imagenes del analisis/artistas por año.png")
 plt.show()
-#%%
+ #%%
 lista_cant_artistas = dic_años_ordenado.values()
 max_artistas = max(lista_cant_artistas)
 año_max_artistas = lista_años_ordenados[list(lista_cant_artistas).index(max_artistas)]

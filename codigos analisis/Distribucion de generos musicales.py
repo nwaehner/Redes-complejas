@@ -42,8 +42,8 @@ df_porcentaje = pd.DataFrame(dict_generos_ordenados, index = ["Porcentaje de art
 
 #%% Graficamos la distribucion
 fig, axs = plt.subplots(figsize = (8,4))
-paleta_colores = sns.color_palette("Spectral",17)
-sns.barplot(data = df_porcentaje, ax = axs, orient = "h", palette=paleta_colores)
+#paleta_colores = sns.color_palette("Spectral",17)
+sns.barplot(data = df_porcentaje, ax = axs, orient = "h")
 axs.tick_params(axis = "both", labelsize = 12)
 axs.set_xlabel("Porcentaje de artistas",fontsize = 14)
 #plt.savefig("../imagenes del analisis/Porcentaje de artistas por genero.png")

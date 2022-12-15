@@ -23,7 +23,7 @@ df = pd.DataFrame({'n° nodos': np.round(G.number_of_nodes(),0),
 df = df.transpose()
 display(df)
 
-#%%
+#%%----------Creamos una lista con los grados de los nodos-----------------
 def hacer_lista_grados(red): #devuelve una lista con los nodos de la red.
   lista_grados=[grado for (nodo,grado) in red.degree()]
   return lista_grados
@@ -212,96 +212,3 @@ axs[1].legend(fontsize = 16)
 axs[1].tick_params(axis='both', which='major', labelsize=16)
 axs[1].set_title("Considerando colaboraciones",fontsize = 18)
 plt.show()
-
-#%%
-#RESHUFFLEAR LOS ENLACES RANDOM Y RECOLOREAR. EN AMBOS CASOS CALCULAR HOMOFILIA.
-
-def calcular_homofilia(red):
-    homofilia_numerador = 0
-    for enlace in red.edges(data=True):
-        
-        genero_artista1 = red.nodes()[enlace[0]]["genero"]
-        genero_artista2 = red.nodes()[enlace[1]]["genero"]
-      
-        if genero_artista1 == genero_artista2:
-            homofilia_numerador += 1
-
-    return homofilia_numerador/len(red.edges())
-
-homofilia_real = calcular_homofilia(G)
-
-#%%
-G_copia = G.copy()
-#%% HOMOFILIA POR RECOLOREO
-lista_genero = [i[1]["genero"] for i in G.nodes(data=True)]
-homofilia = []
-n = 5000
-for i in range(n): 
-    random.shuffle(lista_genero) 
-    for j, nodo in enumerate(list(G_copia.nodes())): 
-        G_copia.nodes()[nodo]['genero'] = lista_genero[j] 
-        
-    homofilia.append(calcular_homofilia(G_copia)) 
-#%% HOMOFILIA POR RECABLEO
-
-from tqdm import tqdm
-iteracion = 0
-lista_nodos = list(G.nodes())
-homofilia_recableo = []
-clustering_recableo = []
-for iteracion in tqdm(range(1000)):
-  nueva_red = nx.double_edge_swap(G, nswap=len(list(G_copia.edges()))*2, max_tries=len(list(G_copia.edges()))*10)
-  homofilia_recableo.append(calcular_homofilia(nueva_red))
-  nueva_red_simple = nx.Graph()
-  nueva_red_simple.add_nodes_from(lista_nodos)
-  nueva_red_simple.add_edges_from(nueva_red.edges())
-  clustering_recableo.append(nx.average_clustering(nueva_red_simple))
-#%%
-print(iteracion)
-#%% GRAFICO HOMOFILIA RECOLOREO
-fig, ax = plt.subplots(nrows = 1, ncols = 1, figsize = (14, 8), facecolor='#D4CAC6')
-counts, bins = np.histogram(homofilia, bins=20)
-ax.hist(bins[:-1], bins, weights=counts/n, range = [0,1], rwidth = 0.80, facecolor='g', alpha=0.75)
-ax.vlines(x = np.mean(homofilia), ymin = 0, ymax = 0.3, linewidth = 3, linestyle = '--', alpha = 0.8, color = 'r', label = 'Media')
-ax.vlines(x = homofilia_real, ymin = 0, ymax = 0.3, linewidth = 3, linestyle = '--', alpha = 0.8, color = 'k', label = 'Homofilia de la red original')
-ax.fill_between(x = [np.mean(homofilia)-np.std(homofilia),np.std(homofilia)+np.mean(homofilia)], y1 = 0.3, color = 'g', alpha = 0.4, label = 'Desviación estándar')
-ax.grid('on', linestyle = 'dashed', alpha = 0.5)
-ax.set_xlabel("Homofilia", fontsize=12)
-ax.set_ylabel("Frecuencia normalizada", fontsize=12)
-plt.title("Homofilia por recoloreo (n = 5000)",fontsize = 18)
-ax.legend(loc = 'best')
-plt.savefig("Homofilia por recoloreo.png")
-plt.show()
-  
-
-# %% GRAFICO HOMOFOLIA RECABLEO
-
-fig, ax = plt.subplots(nrows = 1, ncols = 1, figsize = (14, 8), facecolor='#D4CAC6')
-counts, bins = np.histogram(homofilia_recableo, bins=20)
-ax.hist(bins[:-1], bins, weights=counts/iteracion, range = [0,1], rwidth = 0.80, facecolor='g', alpha=0.75)
-ax.vlines(x = np.mean(homofilia_recableo), ymin = 0, ymax = 0.3, linewidth = 3, linestyle = '--', alpha = 0.8, color = 'r', label = 'Media')
-ax.vlines(x = homofilia_real, ymin = 0, ymax = 0.3, linewidth = 3, linestyle = '--', alpha = 0.8, color = 'k', label = 'Homofilia de la red original')
-ax.fill_between(x = [np.mean(homofilia_recableo)-np.std(homofilia_recableo),np.std(homofilia_recableo)+np.mean(homofilia_recableo)], y1 = 0.3, color = 'g', alpha = 0.4, label = 'Desviación estándar')
-ax.grid('on', linestyle = 'dashed', alpha = 0.5)
-ax.set_xlabel("Homofilia", fontsize=12)
-ax.set_ylabel("Frecuencia normalizada", fontsize=12)
-plt.title("Homofilia por recableo (n = 1000)",fontsize = 18)
-ax.legend(loc = 'best')
-#plt.savefig("Homofilia por recableo.png")
-plt.show()
-
-# # %% CALCULO DE CLUSTERING POR RECABLEO
-# clustering_recableo = pd.read_pickle("Clustering_por_recableo.pickle")
-
-nueva_red_simple = nx.Graph()
-nueva_red_simple.add_nodes_from(list(G.nodes()))
-nueva_red_simple.add_edges_from(list(G.edges()))
-
-print(f"El valor del clustering es {nx.average_clustering(nueva_red_simple)}")
-print(f"El valor del clustering al recablear es de {np.mean(clustering_recableo)} +- {np.std(clustering_recableo)}")
-
-# %%
-pickle.dump(homofilia, open(f'Homofilia_por_recoloreo.pickle', 'wb'))
-pickle.dump(homofilia_recableo, open(f'Homofilia_por_recableo.pickle', 'wb'))
-pickle.dump(clustering_recableo, open(f'Clustering_por_recableo.pickle', 'wb'))
-# %%
