@@ -8,7 +8,7 @@ decidimos crear la red desde cero y analizarla.
 
 Para leer sobre nuestro trabajo, se encuentra en la carpeta *paper*, el trabajo de investigación que realizamos y una presentación que hicimos para la materia.
 
-Si no queres leerlo, dejamos abajo información resumida de lo que hicimos para montar la red y estudiarla.
+Si no querés leerlo, dejamos abajo información resumida de lo que hicimos para montar la red y estudiarla.
 
 Sobre la creación de la red:
 * Montamos la red a través de las colaboraciones de músicos de Spotify.
